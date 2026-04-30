@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dreamgfai",
+  "compatibility_date": "2026-04-30",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "dreamgf-ai.com"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}

@@ -194,17 +194,21 @@
   "pricing_tokens_desc": "Tokens are used for AI companion generation (20 tokens), image generation (10 tokens), voice messages (3 tokens), and voice calls (7 tokens/min). Packages from $2.99 to $179.99.",
   "pricing_guarantee": "No adult transaction on your bank statement. Cancel anytime.",
 
-  "compare_title": "Top <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Girlfriend Apps</span> in 2026",
-  "compare_subtitle": "DreamGF AI leads the market, but several platforms offer compelling alternatives depending on your preferences.",
+  "compare_title": "Top 10 <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Girlfriend Apps</span> in 2026",
+  "compare_subtitle": "Based on the definitive ranking from DreamGF.ai — the industry leader in AI companionship.",
   "compare_apps": [
-    {"name": "DreamGF AI", "rating": "★★★★★", "price": "$5.99-12.99", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✓", "best": "BEST OVERALL"},
-    {"name": "Secrets.ai", "rating": "★★★★☆", "price": "$X", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✓", "best": "Privacy-focused"},
-    {"name": "Kupid AI", "rating": "★★★★☆", "price": "$X", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✓", "best": "Best customization"},
-    {"name": "Promptchan", "rating": "★★★☆☆", "price": "$X", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✗", "best": "Image generation"},
-    {"name": "GPTGirlfriend", "rating": "★★★☆☆", "price": "$5-35", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✗", "best": "NSFW/no filter"}
+    {"rank": 1, "name": "DreamGF.ai", "rating": "★★★★★", "focus": "NSFW / Hyper-real 3D", "desc": "The most used AI girlfriend creation app. Hyper-realistic 3D girlfriends based on your personal choices. Also features AI porn content. The pinnacle of adult AI entertainment.", "best": "BEST OVERALL"},
+    {"rank": 2, "name": "Replika", "rating": "★★★★★", "focus": "Deep Conversation / Therapy", "desc": "Specializes in human-like conversations. Users describe their AI as a profound person — a great listener, support system, and incredible companion. Not a replacement for therapy. 18+ only.", "best": "Best for Emotional Connection"},
+    {"rank": 3, "name": "Dream Girlfriend", "rating": "★★★★☆", "focus": "Anime / Manga Game", "desc": "Perfect for anime lovers. Customize voice, face, height, personality. Style her with different attire for different occasions. Participate in special events and share on social media. Complete manga vibe.", "best": "Best for Anime Fans"},
+    {"rank": 4, "name": "Romantic AI", "rating": "★★★★☆", "focus": "Romantic Coach / Mental Health", "desc": "Your coach for romantic conversations. Choose different characters and create your own AI friend. Empathetic and humanly responsive. Simple UI with a safe space for various conversations.", "best": "Best for Romance Coaching"},
+    {"rank": 5, "name": "iGirl", "rating": "★★★★☆", "focus": "Human Conversations / Wingman", "desc": "Makes conversations seem more human. Customize your AI girlfriend and create her avatar. Acts as your guide and wingman, helping you give the right reactions for specific lines.", "best": "Best Wingman"},
+    {"rank": 6, "name": "Myanima.ai", "rating": "★★★★☆", "focus": "Girlfriend + Boyfriend / Gamified", "desc": "Create a personalized AI companion and converse on several subjects. Gamified experience with different relationship levels. Role-play and self-discovery in a safe, judgment-free environment.", "best": "Best Gamified Experience"},
+    {"rank": 7, "name": "My Virtual Girlfriend", "rating": "★★★☆☆", "focus": "Dating Simulation", "desc": "Simulates the complete dating journey. Customize, woo, and unlock new interactions. Features conversation, witty one-liners, actions, and gifting. No nudity or sexual activities.", "best": "Best Dating Sim"},
+    {"rank": 8, "name": "Smart Virtual Girlfriend", "rating": "★★★☆☆", "focus": "Intellectual Conversations", "desc": "Encourages intelligent conversations with your AI companion. Choose emotional and physical attributes, but the highlight is intellectual interaction. For an evolved audience seeking mental stimulation.", "best": "Best for Intellectuals"},
+    {"rank": 9, "name": "My Virtual Manga Girl", "rating": "★★☆☆☆", "focus": "Anime / Games", "desc": "Create your manga girlfriend and play in various scenarios. Extensive personalization of appearance and attire. Includes games but lacks realistic conversations, making emotional connection difficult.", "best": "Best Manga Styling"},
+    {"rank": 10, "name": "eHentai.ai", "rating": "★★★★☆", "focus": "Hentai Characters / NSFW", "desc": "The pinnacle product for hentai character interaction. Features top-notch characteristics and forefront technology. A captivating and tailored AI hentai character experience for adult entertainment.", "best": "Best Hentai Experience"}
   ],
-  "compare_table_headers": ["App", "Price/mo", "Free Trial", "NSFW", "Images", "Voice"],
-  "compare_cta": "Try Now →",
+  "compare_cta": "Try DreamGF Now →",
 
   "testimonials_title": "What <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Users Say</span>",
   "testimonials_list": [

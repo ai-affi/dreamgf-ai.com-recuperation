@@ -252,28 +252,33 @@
   <!-- Footer -->
   <footer class="bg-gray-950 border-t border-gray-800 py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Language Selector -->
+      <!-- Language Selector Dropdown -->
       <div class="mb-8 pb-8 border-b border-gray-800">
-        <p class="text-sm text-gray-400 mb-3" data-i18n="footer.lang_label">🌐 Language</p>
-        <div class="flex flex-wrap gap-2" id="lang-selector">
-          <a href="/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
-          <a href="/fr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="fr">Français</a>
-          <a href="/es/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="es">Español</a>
-          <a href="/de/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="de">Deutsch</a>
-          <a href="/it/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="it">Italiano</a>
-          <a href="/pt/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="pt">Português</a>
-          <a href="/sv/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="sv">Svenska</a>
-          <a href="/pl/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="pl">Polski</a>
-          <a href="/nl/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="nl">Nederlands</a>
-          <a href="/ro/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ro">Română</a>
-          <a href="/hu/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hu">Magyar</a>
-          <a href="/hr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hr">Hrvatski</a>
-          <a href="/tr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="tr">Türkçe</a>
-          <a href="/ar/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ar">العربية</a>
-          <a href="/hi/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hi">हिन्दी</a>
-          <a href="/jp/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="jp">日本語</a>
-          <a href="/kr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="kr">한국어</a>
-          <a href="/ru/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ru">Русский</a>
+        <div class="relative inline-block" id="lang-dropdown-wrap">
+          <button id="lang-dropdown-btn" class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm font-medium transition border border-gray-700">
+            <span id="lang-current">🌐 English</span>
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div id="lang-dropdown-menu" class="hidden absolute bottom-full left-0 mb-2 w-48 bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden z-50 max-h-64 overflow-y-auto">
+            <a href="/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="en">English</a>
+            <a href="/fr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="fr">Français</a>
+            <a href="/es/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="es">Español</a>
+            <a href="/de/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="de">Deutsch</a>
+            <a href="/it/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="it">Italiano</a>
+            <a href="/pt/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="pt">Português</a>
+            <a href="/sv/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="sv">Svenska</a>
+            <a href="/pl/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="pl">Polski</a>
+            <a href="/nl/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="nl">Nederlands</a>
+            <a href="/ro/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="ro">Română</a>
+            <a href="/hu/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="hu">Magyar</a>
+            <a href="/hr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="hr">Hrvatski</a>
+            <a href="/tr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="tr">Türkçe</a>
+            <a href="/ar/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="ar">العربية</a>
+            <a href="/hi/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="hi">हिन्दी</a>
+            <a href="/jp/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="jp">日本語</a>
+            <a href="/kr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="kr">한국어</a>
+            <a href="/ru/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="ru">Русский</a>
+          </div>
         </div>
       </div>
       <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"></div>
@@ -459,12 +464,39 @@
             </div>
           `).join('');
         }
+        // Language dropdown toggle
+        const langBtn = document.getElementById('lang-dropdown-btn');
+        const langMenu = document.getElementById('lang-dropdown-menu');
+        if (langBtn && langMenu) {
+          langBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langMenu.classList.toggle('hidden');
+          });
+          document.addEventListener('click', function() {
+            langMenu.classList.add('hidden');
+          });
+          langMenu.addEventListener('click', function(e) {
+            e.stopPropagation();
+          });
+        }
+
         // Highlight current language
         const currentPath = window.location.pathname;
         const currentLang = currentPath === '/' ? 'en' : currentPath.split('/')[1];
+        const langLabels = {
+          en: '🌐 English', fr: '🌐 Français', es: '🌐 Español', de: '🌐 Deutsch',
+          it: '🌐 Italiano', pt: '🌐 Português', sv: '🌐 Svenska', pl: '🌐 Polski',
+          nl: '🌐 Nederlands', ro: '🌐 Română', hu: '🌐 Magyar', hr: '🌐 Hrvatski',
+          tr: '🌐 Türkçe', ar: '🌐 العربية', hi: '🌐 हिन्दी', jp: '🌐 日本語',
+          kr: '🌐 한국어', ru: '🌐 Русский'
+        };
+        const langCurrent = document.getElementById('lang-current');
+        if (langCurrent && langLabels[currentLang]) {
+          langCurrent.textContent = langLabels[currentLang];
+        }
         document.querySelectorAll('.lang-link').forEach(link => {
           if (link.dataset.lang === currentLang) {
-            link.classList.remove('bg-gray-800', 'text-gray-300', 'hover:bg-gray-700');
+            link.classList.remove('text-gray-300', 'hover:bg-gray-700');
             link.classList.add('bg-pink-600', 'text-white', 'cursor-default');
             link.removeAttribute('href');
           }

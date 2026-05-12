@@ -263,7 +263,7 @@
   <!-- JSON Injection Script -->
   <script>
   (function() {
-    fetch('/content.json')
+    fetch('content.json')
       .then(r => {
         if (!r.ok) throw new Error('Failed to load content.json: ' + r.status);
         return r.json();

@@ -128,32 +128,38 @@
     {
       "name": "금발 스타일",
       "desc": "우아하고 빛나는",
-      "alt": "금발 AI 여자친구 모델"
+      "alt": "금발 AI 여자친구 모델",
+      "image": "model-blonde.webp"
     },
     {
       "name": "갈색머리 스타일",
       "desc": "신비롭고 세련된",
-      "alt": "갈색머리 AI 여자친구 모델"
+      "alt": "갈색머리 AI 여자친구 모델",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asian Style",
       "desc": "섬세하고 매력적인",
-      "alt": "아시안 AI 여자친구 모델"
+      "alt": "아시안 AI 여자친구 모델",
+      "image": "model-asian.webp"
     },
     {
       "name": "라틴 스타일",
       "desc": "열정적이고 발랄한",
-      "alt": "라틴 AI 여자친구 모델"
+      "alt": "라틴 AI 여자친구 모델",
+      "image": "model-latina.webp"
     },
     {
       "name": "흑인 스타일",
       "desc": "눈부시고 자신감 있는",
-      "alt": "흑인 AI 여자친구 모델"
+      "alt": "흑인 AI 여자친구 모델",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Girl",
       "desc": "재미있고 장난스러운",
-      "alt": "게이머 AI 여자친구 모델"
+      "alt": "게이머 AI 여자친구 모델",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">요금제</span>",

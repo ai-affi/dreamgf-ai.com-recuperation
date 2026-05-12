@@ -128,32 +128,38 @@
     {
       "name": "Blonde Style",
       "desc": "Elegant och strålande",
-      "alt": "Blond AI-flickvänsmodell"
+      "alt": "Blond AI-flickvänsmodell",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Brunette Style",
       "desc": "Mysterisk och sofistikerad",
-      "alt": "Brunett AI-flickvänsmodell"
+      "alt": "Brunett AI-flickvänsmodell",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asian Style",
       "desc": "Ömtålig och charmig",
-      "alt": "Asiatisk AI-flickvänsmodell"
+      "alt": "Asiatisk AI-flickvänsmodell",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latinamerikansk stil",
       "desc": "Passionerad och livlig",
-      "alt": "Latinamerikansk AI-flickvänsmodell"
+      "alt": "Latinamerikansk AI-flickvänsmodell",
+      "image": "model-latina.webp"
     },
     {
       "name": "Eboni stil",
       "desc": "Häftig och självsäker",
-      "alt": "Eboni AI-flickvänsmodell"
+      "alt": "Eboni AI-flickvänsmodell",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Girl",
       "desc": "Rolig och lekfull",
-      "alt": "Gamer AI-flickvänsmodell"
+      "alt": "Gamer AI-flickvänsmodell",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> priser",

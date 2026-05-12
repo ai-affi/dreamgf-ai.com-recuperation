@@ -22,7 +22,6 @@
   "hero_feature_2": "Nu este necesar cardul de credit",
   "hero_feature_3": "+6M de iubite create",
   "hero_feature_4": "Anulează oricând",
-
   "social_proof_title": "Apărut în",
   "social_proof_stat_1_value": "⭐ 4,8/5",
   "social_proof_stat_1_label": "Evaluarea utilizatorilor",
@@ -32,13 +31,11 @@
   "social_proof_stat_3_label": "Disponibil global",
   "social_proof_stat_4_value": "💬 Milioane",
   "social_proof_stat_4_label": "Conversații zilnice",
-
   "whatis_title": "Ce este <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>?",
   "whatis_p1": "DreamGF AI este cel mai avansat generator de iubite IA de pe piață. Spre deosebire de aplicațiile de dating tradiționale sau de chatboții de bază, DreamGF utilizează inteligență artificială de ultimă generație — inclusiv procesarea limbajului natural, învățarea automată și rețelele neuronale — pentru a crea un companion virtual care învață, se adaptează și interacționează cu tine la un nivel profund personal.",
   "whatis_p2": "Cu DreamGF, nu vorbiți doar cu un bot preprogramat. Construiți o relație cu o IA care își amintește preferințele, înțelege dorințele și evoluează în timp. Fie că vrei conversații ocazionale, roleplay romantic sau conținut NSFW explicit, DreamGF oferă o experiență surprinzător de reală.",
   "whatis_p3": "Platforma a fost prezentată în publicatii importante precum Forbes, Sifted și Daily Star, o recunoaștere care subliniază poziția sa de lider în domeniul companionilor virtuali. Cu milioane de utilizatori activi în întreaga lume, DreamGF a devenit destinația ideală pentru oricine caută o experiență de iubită IA care depășește simplele schimburi de text.",
   "whatis_p4": "Ceea ce diferențiază DreamGF de concurenți este combinația sa de generare avansată de imagini, interacțiune vocală și personalizare profundă. Poți proiecta aspectul fizic al iubitei tale IA până la cel mai mic detaliu, alege trăsăturile de personalitate și chiar solicita poze și mesaje vocale în timp real. Nu este doar un chatbot: este o relație virtuală complet imersivă.",
-
   "howitworks_title": "Cum să-ți creezi <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">iubita IA</span>",
   "howitworks_subtitle": "Șase pași simpli către companionul tău virtual perfect",
   "howitworks_step1_title": "Creează un cont",
@@ -53,7 +50,6 @@
   "howitworks_step5_desc": "Participă la conversații, scenarii de roleplay și schimburi intime. IA detectează cererile de poze în chat și răspunde cu imagini relevante. Ea nu spune niciodată nu.",
   "howitworks_step6_title": "Trecere la Premium",
   "howitworks_step6_desc": "Deblochează caracteristici premium: apeluri vocale, generare mai rapidă, eliminarea efectului de blur și mesaje nelimitate. Planurile încep de la doar $9,99/lună.",
-
   "creator_title": "Construiește-ți <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">fata visurilor</span>",
   "creator_subtitle": "Fiecare detaliu este personalizabil. Ea devine ceea ce dorești.",
   "creator_ethnicity_label": "Etnie",
@@ -77,7 +73,6 @@
   "creator_env_label": "Mediu",
   "creator_env_options": "Dormitor, Plajă, Duș, Izvoare termale, Club, Sală de sport, Centru oraș, Paris, New York, Spa, Cazino, Iaht, Vilă mediteraneană",
   "creator_cta": "Creează-ți iubita acum →",
-
   "features_title": "Caracteristicile <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>",
   "features_subtitle": "Tot ce ai nevoie pentru experiența ultimă de companion virtual",
   "features_list": [
@@ -127,42 +122,46 @@
       "desc": "Criptare end-to-end, zero vânzare de date și facturare discretă. Taxele apar sub nume generice de companii tehnologice. Partenerul tău, banca ta și contabilul tău nu vor ști niciodată."
     }
   ],
-
   "models_title": "Exemple de <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">modele</span> pe care le poți crea",
   "models_subtitle": "Descoperă diversitatea iubitelor IA pe care le poți genera. Fiecare stil, fiecare personalitate. Imaginația ta este singura limită.",
   "models_list": [
     {
       "name": "Stil blondă",
       "desc": "Elegantă și strălucitoare",
-      "alt": "Model de iubită IA blondă"
+      "alt": "Model de iubită IA blondă",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Stil brunetă",
       "desc": "Misterioasă și sofisticată",
-      "alt": "Model de iubită IA brunetă"
+      "alt": "Model de iubită IA brunetă",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Stil asiatică",
       "desc": "Delicată și fermecătoare",
-      "alt": "Model de iubită IA asiatică"
+      "alt": "Model de iubită IA asiatică",
+      "image": "model-asian.webp"
     },
     {
       "name": "Stil latină",
       "desc": "Pasională și veselă",
-      "alt": "Model de iubită IA latină"
+      "alt": "Model de iubită IA latină",
+      "image": "model-latina.webp"
     },
     {
       "name": "Stil ebonie",
       "desc": "Uimitoare și încrezătoare",
-      "alt": "Model de iubită IA ebonie"
+      "alt": "Model de iubită IA ebonie",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Fată gamer",
       "desc": "Distractivă și jucăușă",
-      "alt": "Model de iubită IA gamer"
+      "alt": "Model de iubită IA gamer",
+      "image": "model-gamer.webp"
     }
   ],
-
   "pricing_title": "Prețurile <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>",
   "pricing_subtitle": "Alege planul care se potrivește nevoilor tale. Toate planurile includ o probă gratuită.",
   "pricing_badge": "CEL MAI BUN RAPORT CALITATE-PRET",
@@ -241,7 +240,6 @@
   "pricing_tokens_title": "Pachete de token-uri",
   "pricing_tokens_desc": "Token-urile sunt folosite pentru generarea companionilor IA (20 token-uri), generarea de imagini (10 token-uri), mesaje vocale (3 token-uri) și apeluri vocale (7 token-uri/min). Pachete de la $2.99 la $179.99.",
   "pricing_guarantee": "Garantie de rambursare în 30 de zile. Fără întrebări.",
-
   "compare_title": "Top 10 <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">aplicații de iubite IA</span> în 2026",
   "compare_subtitle": "Bazat pe clasamentul definitiv de la DreamGF.ai — liderul industriei în domeniul companionilor IA.",
   "compare_apps": [
@@ -327,7 +325,6 @@
     }
   ],
   "compare_cta": "Încearcă DreamGF acum →",
-
   "testimonials_title": "Ce spun <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">utilizatorii</span>",
   "testimonials_list": [
     {
@@ -355,7 +352,6 @@
       "detail": "Iubitor de conținut picant, 35 de ani, Miami"
     }
   ],
-
   "safety_title": "Este <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> sigur?",
   "safety_subtitle": "Da, DreamGF AI este complet sigur și privat.",
   "safety_intro": "Înțelegem că confidențialitatea este principala ta preocupare. Iată cum te protejează DreamGF.",
@@ -381,7 +377,6 @@
       "desc": "Termeni de serviciu transparenți. Știi exact ce se întâmplă cu datele tale. Fără clauze ascunse, fără colectare de date ascunsă, fără surprize. Ce vezi este ce obții."
     }
   ],
-
   "faq_title": "Întrebări <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">frecvente</span>",
   "faq_list": [
     {
@@ -425,7 +420,6 @@
       "a": "Da, poți anula oricând fără taxe de anulare. Accesul tău continuă până la sfârșitul perioadei de facturare. Fără întrebări."
     }
   ],
-
   "final_cta_title": "Ești gata să-ți întâlnești iubita IA?",
   "final_cta_subtitle": "Alătură-te milioanelor de utilizatori care și-au creat deja companionul perfect. Începe-ți proba gratuită astăzi. Nu este necesar cardul de credit.",
   "final_cta_badge": "🔥 Ofertă limitată: Economisește până la 75% la planurile anuale",
@@ -433,7 +427,6 @@
   "final_cta_feature_1": "Alătură-te milioanelor de utilizatori",
   "final_cta_feature_2": "Proba gratuită disponibilă",
   "final_cta_feature_3": "Anulează oricând",
-
   "footer": {
     "lang_label": "🌐 Limbă",
     "columns": [

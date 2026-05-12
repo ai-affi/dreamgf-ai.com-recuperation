@@ -128,32 +128,38 @@
     {
       "name": "Styl Blondynka",
       "desc": "Elegancka i promienista",
-      "alt": "Model dziewczyny AI blondynka"
+      "alt": "Model dziewczyny AI blondynka",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Styl Brunetka",
       "desc": "Tajemnicza i wyrafinowana",
-      "alt": "Model dziewczyny AI brunetka"
+      "alt": "Model dziewczyny AI brunetka",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Styl Azjatycki",
       "desc": "Delikatna i urocza",
-      "alt": "Model dziewczyny AI azjatycka"
+      "alt": "Model dziewczyny AI azjatycka",
+      "image": "model-asian.webp"
     },
     {
       "name": "Styl Latynoska",
       "desc": "Namiętna i pełna energii",
-      "alt": "Model dziewczyny AI latynoska"
+      "alt": "Model dziewczyny AI latynoska",
+      "image": "model-latina.webp"
     },
     {
       "name": "Styl Ciemnoskóra",
       "desc": "Olśniewająca i pewna siebie",
-      "alt": "Model dziewczyny AI ciemnoskóra"
+      "alt": "Model dziewczyny AI ciemnoskóra",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Girl",
       "desc": "Zabawna i figlarnie",
-      "alt": "Model dziewczyny AI gamerka"
+      "alt": "Model dziewczyny AI gamerka",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Cennik</span> DreamGF AI",

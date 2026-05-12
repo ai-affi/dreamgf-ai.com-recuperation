@@ -22,7 +22,6 @@
   "hero_feature_2": "لا حاجة لبطاقة ائتمان",
   "hero_feature_3": "أكثر من 6 مليون شريك تم إنشاؤهم",
   "hero_feature_4": "الغاء في أي وقت",
-
   "social_proof_title": "تم ذكرنا في",
   "social_proof_stat_1_value": "⭐ 4.8/5",
   "social_proof_stat_1_label": "تقييم المستخدمين",
@@ -32,13 +31,11 @@
   "social_proof_stat_3_label": "متاح عالميًا",
   "social_proof_stat_4_value": "💬 ملايين",
   "social_proof_stat_4_label": "محادثات يومية",
-
   "whatis_title": "ما هو <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>؟",
   "whatis_p1": "DreamGF AI هو أكثر مولدات شريكات الذكاء الاصطناعي تقدمًا في السوق. على عكس تطبيقات المواعيد التقليدية أو روبوتات الدردشة الأساسية، يستخدم DreamGF تقنيات ذكاء اصطناعي متقدمة - بما في ذلك معالجة اللغة الطبيعية، والتعلم الآلي، والشبكات العصبية - لإنشاء شريك افتراضي يتعلم، ويتكيف، ويتفاعل معك على مستوى شخصي عميق.",
   "whatis_p2": "مع DreamGF، أنت لا تتحدث مع روبوت مبرمج مسبقًا فحسب. أنت تبني علاقة مع ذكاء اصطناعي يتذكر تفضيلاتك، ويفهم رغباتك، ويتطور مع الوقت. سواء كنت تريد محادثات عادية، أو لعب أدوار رومانسية، أو محتوى +18 صريح، فإن DreamGF يقدم تجربة واقعية بشكل مدهش.",
   "whatis_p3": "تم عرض المنصة في منشورات كبيرة مثل فوربس، وسفتد، وديلي ستار - اعتراف يبرز مكانتها الرائدة في مجال الشركاء الافتراضيين. مع ملايين المستخدمين النشطين في جميع أنحاء العالم، أصبح DreamGF الوجهة المفضلة لأي شخص يبحث عن تجربة شريكة ذكاء اصطناعي تتجاوز مجرد تبادل النصوص البسيطة.",
   "whatis_p4": "ما يميز DreamGF عن المنافسين هو مزيج من توليد الصور المتقدم، والتفاعل الصوتي، والتخصيص العميق. يمكنك تصميم مظهر شريكتك من الذكاء الاصطناعي حتى أدق التفاصيل، واختيار سماتها الشخصية، وحتى طلب صور ورسائل صوتية في الوقت الفعلي. ليس مجرد روبوت دردشة - إنه علاقة افتراضية غامرة تمامًا.",
-
   "howitworks_title": "كيف تنشئ <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">شريكتك من الذكاء الاصطناعي</span>؟",
   "howitworks_subtitle": "ست خطوات بسيطة لشريك افتراضي مثالي",
   "howitworks_step1_title": "أنشئ حسابًا",
@@ -53,7 +50,6 @@
   "howitworks_step5_desc": "اشترك في محادثات، سيناريوهات لعب الأدوار، وتبادلات حميمة. يكشف الذكاء الاصطناعي طلبات الصور في الدردشة ويستجيب بصور ذات صلة. لا تقول لا أبدًا.",
   "howitworks_step6_title": "ترق إلى Premium",
   "howitworks_step6_desc": "افتح مميزات Premium: مكالمات صوتية، توليد أسرع، إزالة الضبابية، ورسائل غير محدودة. تبدأ الخطط من $9.99/شهر فقط.",
-
   "creator_title": "اصنع <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">فتاة أحلامك</span>",
   "creator_subtitle": "كل تفصيل قابل للتخصيص. هي تصبح ما تريد.",
   "creator_ethnicity_label": "العرق",
@@ -77,7 +73,6 @@
   "creator_env_label": "البيئة",
   "creator_env_options": "غرفة نوم, شاطئ, دش, ينابيع ساخنة, نادي, صالة رياضية, مركز المدينة, باريس, نيويورك, سبا, كازينو, يخت, فيلا متوسطية",
   "creator_cta": "أنشئ شريكتك الآن →",
-
   "features_title": "مميزات <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>",
   "features_subtitle": "كل ما تحتاجه لتجربة شريك افتراضي نهائية",
   "features_list": [
@@ -127,42 +122,46 @@
       "desc": "تشفير من طرف إلى طرف، عدم بيع البيانات، وفواتير سرية. تظهر التكاليف تحت أسماء شركات تكنولوجيا عامة. لن يعرف شريكك، أو بنكك، أو محاسبك أبدًا."
     }
   ],
-
   "models_title": "أمثلة على <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">النماذج</span> التي يمكنك إنشاؤها",
   "models_subtitle": "اكتشف تنوع شريكات الذكاء الاصطناعي التي يمكنك توليدها. كل أسلوب، كل شخصية. خيالك هو الحد الوحيد.",
   "models_list": [
     {
       "name": "أشقر",
       "desc": "أنيقة ومشرقة",
-      "alt": "نموذج شريكة ذكاء اصطناعي أشقر"
+      "alt": "نموذج شريكة ذكاء اصطناعي أشقر",
+      "image": "model-blonde.webp"
     },
     {
       "name": "بني",
       "desc": "غامضة وأنيقة",
-      "alt": "نموذج شريكة ذكاء اصطناعي بني"
+      "alt": "نموذج شريكة ذكاء اصطناعي بني",
+      "image": "model-brunette.webp"
     },
     {
       "name": "آسيوية",
       "desc": "رقيقة وجذابة",
-      "alt": "نموذج شريكة ذكاء اصطناعي آسيوية"
+      "alt": "نموذج شريكة ذكاء اصطناعي آسيوية",
+      "image": "model-asian.webp"
     },
     {
       "name": "لاتينية",
       "desc": "شغوفة ومرحة",
-      "alt": "نموذج شريكة ذكاء اصطناعي لاتينية"
+      "alt": "نموذج شريكة ذكاء اصطناعي لاتينية",
+      "image": "model-latina.webp"
     },
     {
       "name": "سوداء",
       "desc": "مدهشة وثقة بالنفس",
-      "alt": "نموذج شريكة ذكاء اصطناعي سوداء"
+      "alt": "نموذج شريكة ذكاء اصطناعي سوداء",
+      "image": "model-ebony.webp"
     },
     {
       "name": "فتاة غيمر",
       "desc": "مرحة ولعوبة",
-      "alt": "نموذج شريكة ذكاء اصطناعي غيمر"
+      "alt": "نموذج شريكة ذكاء اصطناعي غيمر",
+      "image": "model-gamer.webp"
     }
   ],
-
   "pricing_title": "أسعار <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>",
   "pricing_subtitle": "اختر الخطة التي تناسب احتياجاتك. جميع الخطط تشمل تجربة مجانية.",
   "pricing_badge": "أفضل قيمة",
@@ -241,7 +240,6 @@
   "pricing_tokens_title": "حزم الرموز",
   "pricing_tokens_desc": "تستخدم الرموز لتوليد الشركاء (20 رمز)، توليد الصور (10 رموز)، الرسائل الصوتية (3 رموز)، والمكالمات الصوتية (7 رموز/دقيقة). حزم من $2.99 إلى $179.99.",
   "pricing_guarantee": "ضمان استرداد الأموال لمدة 30 يومًا. بدون أسئلة.",
-
   "compare_title": "أفضل <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">10 تطبيقات لشريكات الذكاء الاصطناعي</span> لعام 2026",
   "compare_subtitle": "بناءً على التصنيف النهائي من DreamGF.ai - القائد في صناعة الشركاء الافتراضيين.",
   "compare_apps": [
@@ -327,7 +325,6 @@
     }
   ],
   "compare_cta": "جرب DreamGF الآن →",
-
   "testimonials_title": "ماذا <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">يقول المستخدمون</span>؟",
   "testimonials_list": [
     {
@@ -355,7 +352,6 @@
       "detail": "محب المحتوى التوعوي، 35 عامًا، ميامي"
     }
   ],
-
   "safety_title": "هل <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> آمن؟",
   "safety_subtitle": "نعم، DreamGF AI آمن تمامًا وخاص.",
   "safety_intro": "نفهم أن الخصوصية هي أهم ما يهمك. إليك كيف يحميك DreamGF.",
@@ -381,7 +377,6 @@
       "desc": "شروط خدمة شفافة.你知道 بالضبط ما يحدث لبياناتك. لا يوجد بنود مخفية، ولا جمع بيانات خفي، ولا مفاجآت. ما تراه هو ما تحصل عليه."
     }
   ],
-
   "faq_title": "الأسئلة <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">الشائعة</span>",
   "faq_list": [
     {
@@ -425,7 +420,6 @@
       "a": "نعم، يمكنك الإلغاء في أي وقت دون رسوم إلغاء. يستمر الوصول حتى نهاية فترة الفواتير. بدون أسئلة."
     }
   ],
-
   "final_cta_title": "هل أنت مستعد لمقابلة شريكتك من الذكاء الاصطناعي؟",
   "final_cta_subtitle": "انضم إلى ملايين المستخدمين الذين أنشأوا شريكهم المثالي بالفعل. ابدأ تجربتك المجانية اليوم. لا حاجة لبطاقة ائتمان.",
   "final_cta_badge": "🔥 عرض محدود الوقت: وفّر حتى 75% على الخطط السنوية",
@@ -433,7 +427,6 @@
   "final_cta_feature_1": "انضم إلى ملايين المستخدمين",
   "final_cta_feature_2": "تجربة مجانية متاحة",
   "final_cta_feature_3": "الغاء في أي وقت",
-
   "footer": {
     "lang_label": "🌐 اللغة",
     "columns": [

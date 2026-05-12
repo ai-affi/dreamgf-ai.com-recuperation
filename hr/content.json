@@ -128,32 +128,38 @@
     {
       "name": "Plava boja",
       "desc": "Elegantna i sjajna",
-      "alt": "Plavi AI model dečka/djevojke"
+      "alt": "Plavi AI model dečka/djevojke",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Smeda boja",
       "desc": "Misteriozna i sofisticirana",
-      "alt": "Smedi AI model dečka/djevojke"
+      "alt": "Smedi AI model dečka/djevojke",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asian Style",
       "desc": "Nježna i šarmantna",
-      "alt": "Azijski AI model dečka/djevojke"
+      "alt": "Azijski AI model dečka/djevojke",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latina Style",
       "desc": "Strastvena i živahna",
-      "alt": "Latino AI model dečka/djevojke"
+      "alt": "Latino AI model dečka/djevojke",
+      "image": "model-latina.webp"
     },
     {
       "name": "Ebony Style",
       "desc": "Zapanjujuća i samouvjerena",
-      "alt": "Crni AI model dečka/djevojke"
+      "alt": "Crni AI model dečka/djevojke",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Djevojka gamerica",
       "desc": "Zabavna i igrica",
-      "alt": "Gamer AI model dečka/djevojke"
+      "alt": "Gamer AI model dečka/djevojke",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> cijene",

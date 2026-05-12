@@ -128,32 +128,38 @@
     {
       "name": "Blonde Stijl",
       "desc": "Elegant en stralend",
-      "alt": "Blond AI-vriendin model"
+      "alt": "Blond AI-vriendin model",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Bruine Stijl",
       "desc": "Mysterieus en verfijnd",
-      "alt": "Bruin AI-vriendin model"
+      "alt": "Bruin AI-vriendin model",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Aziatische Stijl",
       "desc": "Delicaat en charmant",
-      "alt": "Aziatisch AI-vriendin model"
+      "alt": "Aziatisch AI-vriendin model",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latina Stijl",
       "desc": "Gepassioneerd en bruisend",
-      "alt": "Latina AI-vriendin model"
+      "alt": "Latina AI-vriendin model",
+      "image": "model-latina.webp"
     },
     {
       "name": "Ebony Stijl",
       "desc": "Verbluffend en zelfverzekerd",
-      "alt": "Ebony AI-vriendin model"
+      "alt": "Ebony AI-vriendin model",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Meisje",
       "desc": "Leuk en speels",
-      "alt": "Gamer AI-vriendin model"
+      "alt": "Gamer AI-vriendin model",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Prijzen</span>",

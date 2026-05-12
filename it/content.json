@@ -128,32 +128,38 @@
     {
       "name": "Stile bionda",
       "desc": "Elegante e radiosa",
-      "alt": "Modello di fidanzata IA bionda"
+      "alt": "Modello di fidanzata IA bionda",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Brunette Style",
       "desc": "Misteriosa e sofisticata",
-      "alt": "Modello di fidanzata IA bruna"
+      "alt": "Modello di fidanzata IA bruna",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Stile asiatica",
       "desc": "Delicata e affascinante",
-      "alt": "Modello di fidanzata IA asiatica"
+      "alt": "Modello di fidanzata IA asiatica",
+      "image": "model-asian.webp"
     },
     {
       "name": "Stile latina",
       "desc": "Passionale e vivace",
-      "alt": "Modello di fidanzata IA latina"
+      "alt": "Modello di fidanzata IA latina",
+      "image": "model-latina.webp"
     },
     {
       "name": "Stile ebano",
       "desc": "Sbalorditiva e sicura di sé",
-      "alt": "Modello di fidanzata IA ebano"
+      "alt": "Modello di fidanzata IA ebano",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Girl",
       "desc": "Divertente e giocosa",
-      "alt": "Modello di fidanzata IA gamer"
+      "alt": "Modello di fidanzata IA gamer",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "Prezzi <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>",

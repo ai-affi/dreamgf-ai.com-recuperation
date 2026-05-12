@@ -6,7 +6,6 @@
   "og_description": "The smartest AI girlfriend generator. Chat, flirt & generate photos with your custom virtual companion. Free trial available.",
   "twitter_title": "DreamGF AI Review 2026",
   "twitter_description": "Create your perfect AI girlfriend. Chat, sexting, image generation & voice calls. Free trial. Read our review.",
-
   "nav_brand": "DreamGF AI",
   "nav_whatis": "What Is It",
   "nav_features": "Features",
@@ -14,7 +13,6 @@
   "nav_pricing": "Pricing",
   "nav_faq": "FAQ",
   "nav_cta": "Try Free →",
-
   "hero_badge": "🔥 #1 AI Girlfriend Generator. 6M+ Created.",
   "hero_title": "DreamGF AI. Create Your Perfect AI Girlfriend.",
   "hero_subtitle": "Chat, flirt, and generate photos with your custom virtual companion. Available 24/7. <span class=\"text-pink-400 font-semibold\">NSFW allowed.</span> You are in control. She does what you want.",
@@ -24,7 +22,6 @@
   "hero_feature_2": "No credit card required",
   "hero_feature_3": "6M+ girlfriends created",
   "hero_feature_4": "Cancel anytime",
-
   "social_proof_title": "As Featured In",
   "social_proof_stat_1_value": "⭐ 4.8/5",
   "social_proof_stat_1_label": "User Rating",
@@ -34,13 +31,11 @@
   "social_proof_stat_3_label": "Available Globally",
   "social_proof_stat_4_value": "💬 Millions",
   "social_proof_stat_4_label": "Conversations Daily",
-
   "whatis_title": "What Is <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>?",
   "whatis_p1": "DreamGF AI is the most advanced AI girlfriend generator on the market. Unlike basic chatbots that forget your name after three messages, DreamGF uses cutting-edge AI — natural language processing, machine learning, and neural networks — to create a virtual companion that learns, adapts, and interacts with you on a deeply personal level.",
   "whatis_p2": "You are not chatting with a pre-programmed bot. You are building a relationship with an AI that remembers your preferences, understands your desires, and evolves over time. Whether you want casual conversation, romantic roleplay, or explicit NSFW content, DreamGF delivers an experience that feels surprisingly real.",
   "whatis_p3": "Featured in Forbes, Sifted, and the Daily Star, DreamGF has become the go-to destination for virtual companionship. With millions of active users worldwide, it dominates the AI girlfriend space.",
   "whatis_p4": "What sets DreamGF apart is its combination of photorealistic image generation, voice interaction, and deep customization. Design her appearance down to the smallest detail, choose her personality, and request real-time photos and voice messages on demand.",
-
   "howitworks_title": "How to Create Your <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Girlfriend</span>",
   "howitworks_subtitle": "Six simple steps to your perfect virtual companion",
   "howitworks_step1_title": "Create Account",
@@ -55,7 +50,6 @@
   "howitworks_step5_desc": "Engage in conversations, roleplay scenarios, and intimate exchanges. The AI detects photo requests in chat and responds with relevant images. She never says no.",
   "howitworks_step6_title": "Upgrade for More",
   "howitworks_step6_desc": "Unlock premium features: voice calls, faster generation, blur removal, and unlimited messages. Plans start at just $9.99/month.",
-
   "creator_title": "Build Your <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Dream Girl</span>",
   "creator_subtitle": "Every detail customizable. She becomes whatever you desire.",
   "creator_ethnicity_label": "Ethnicity",
@@ -79,7 +73,6 @@
   "creator_env_label": "Environment",
   "creator_env_options": "Bedroom, Beach, Shower, Hot Springs, Club, Gym, City Center, Paris, New York, Spa, Casino, Yacht, Mediterranean Villa",
   "creator_cta": "Create Your Girlfriend Now →",
-
   "features_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Features</span>",
   "features_subtitle": "Everything you need for the ultimate virtual companionship experience",
   "features_list": [
@@ -129,18 +122,46 @@
       "desc": "End-to-end encryption, zero data resale, and discreet billing. Charges appear as generic tech company names. Your partner, your bank, and your accountant will never know."
     }
   ],
-
   "models_title": "Example <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Models</span> You Can Create",
   "models_subtitle": "Discover the diversity of AI girlfriends you can generate. Every style, every personality. Your imagination is the only limit.",
   "models_list": [
-    {"name": "Blonde Style", "desc": "Elegant and radiant", "alt": "Blonde AI girlfriend model"},
-    {"name": "Brunette Style", "desc": "Mysterious and sophisticated", "alt": "Brunette AI girlfriend model"},
-    {"name": "Asian Style", "desc": "Delicate and charming", "alt": "Asian AI girlfriend model"},
-    {"name": "Latina Style", "desc": "Passionate and bubbly", "alt": "Latina AI girlfriend model"},
-    {"name": "Ebony Style", "desc": "Stunning and confident", "alt": "Ebony AI girlfriend model"},
-    {"name": "Gamer Girl", "desc": "Fun and playful", "alt": "Gamer AI girlfriend model"}
+    {
+      "name": "Blonde Style",
+      "desc": "Elegant and radiant",
+      "alt": "Blonde AI girlfriend model",
+      "image": "model-blonde.webp"
+    },
+    {
+      "name": "Brunette Style",
+      "desc": "Mysterious and sophisticated",
+      "alt": "Brunette AI girlfriend model",
+      "image": "model-brunette.webp"
+    },
+    {
+      "name": "Asian Style",
+      "desc": "Delicate and charming",
+      "alt": "Asian AI girlfriend model",
+      "image": "model-asian.webp"
+    },
+    {
+      "name": "Latina Style",
+      "desc": "Passionate and bubbly",
+      "alt": "Latina AI girlfriend model",
+      "image": "model-latina.webp"
+    },
+    {
+      "name": "Ebony Style",
+      "desc": "Stunning and confident",
+      "alt": "Ebony AI girlfriend model",
+      "image": "model-ebony.webp"
+    },
+    {
+      "name": "Gamer Girl",
+      "desc": "Fun and playful",
+      "alt": "Gamer AI girlfriend model",
+      "image": "model-gamer.webp"
+    }
   ],
-
   "pricing_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Pricing</span>",
   "pricing_subtitle": "Limited time offer — Up to 75% off your first subscription!",
   "pricing_badge": "BEST VALUE",
@@ -153,7 +174,13 @@
       "badge": "50% OFF",
       "old_price": "$25.99",
       "save": "You save: $13.00",
-      "features": ["Unlimited messages", "150 Tokens/month", "Ad-free experience", "Create own girlfriends", "Content privacy"]
+      "features": [
+        "Unlimited messages",
+        "150 Tokens/month",
+        "Ad-free experience",
+        "Create own girlfriends",
+        "Content privacy"
+      ]
     },
     {
       "name": "3 Months",
@@ -162,7 +189,14 @@
       "badge": "60% OFF",
       "old_price": "$77.97",
       "save": "You save: $48.00",
-      "features": ["Unlimited messages", "150 Tokens/month", "Ad-free experience", "Create own girlfriends", "Content privacy", "Chat personalisation"]
+      "features": [
+        "Unlimited messages",
+        "150 Tokens/month",
+        "Ad-free experience",
+        "Create own girlfriends",
+        "Content privacy",
+        "Chat personalisation"
+      ]
     },
     {
       "name": "Annually",
@@ -172,7 +206,20 @@
       "old_price": "$311.88",
       "save": "You save: $241.89",
       "highlight": true,
-      "features": ["Unlimited messages", "150 Tokens/month", "Ad-free experience", "Create own girlfriends", "Content privacy", "Chat personalisation", "Edit message responses", "Remove blur from chat", "Fetish generator", "Faster response time", "Voice messages", "Voice calls"]
+      "features": [
+        "Unlimited messages",
+        "150 Tokens/month",
+        "Ad-free experience",
+        "Create own girlfriends",
+        "Content privacy",
+        "Chat personalisation",
+        "Edit message responses",
+        "Remove blur from chat",
+        "Fetish generator",
+        "Faster response time",
+        "Voice messages",
+        "Voice calls"
+      ]
     }
   ],
   "pricing_features_title": "All Premium Plans Include",
@@ -193,23 +240,91 @@
   "pricing_tokens_title": "Token Packages",
   "pricing_tokens_desc": "Tokens are used for AI companion generation (20 tokens), image generation (10 tokens), voice messages (3 tokens), and voice calls (7 tokens/min). Packages from $2.99 to $179.99.",
   "pricing_guarantee": "No adult transaction on your bank statement. Cancel anytime.",
-
   "compare_title": "Top 10 <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Girlfriend Apps</span> in 2026",
   "compare_subtitle": "Based on the definitive ranking from DreamGF.ai — the industry leader in AI companionship.",
   "compare_apps": [
-    {"rank": 1, "name": "DreamGF.ai", "rating": "★★★★★", "focus": "NSFW / Hyper-real 3D", "desc": "The most used AI girlfriend creation app. Hyper-realistic 3D girlfriends based on your personal choices. Also features AI porn content. The pinnacle of adult AI entertainment.", "best": "BEST OVERALL"},
-    {"rank": 2, "name": "Replika", "rating": "★★★★★", "focus": "Deep Conversation / Therapy", "desc": "Specializes in human-like conversations. Users describe their AI as a profound person — a great listener, support system, and incredible companion. Not a replacement for therapy. 18+ only.", "best": "Best for Emotional Connection"},
-    {"rank": 3, "name": "Dream Girlfriend", "rating": "★★★★☆", "focus": "Anime / Manga Game", "desc": "Perfect for anime lovers. Customize voice, face, height, personality. Style her with different attire for different occasions. Participate in special events and share on social media. Complete manga vibe.", "best": "Best for Anime Fans"},
-    {"rank": 4, "name": "Romantic AI", "rating": "★★★★☆", "focus": "Romantic Coach / Mental Health", "desc": "Your coach for romantic conversations. Choose different characters and create your own AI friend. Empathetic and humanly responsive. Simple UI with a safe space for various conversations.", "best": "Best for Romance Coaching"},
-    {"rank": 5, "name": "iGirl", "rating": "★★★★☆", "focus": "Human Conversations / Wingman", "desc": "Makes conversations seem more human. Customize your AI girlfriend and create her avatar. Acts as your guide and wingman, helping you give the right reactions for specific lines.", "best": "Best Wingman"},
-    {"rank": 6, "name": "Myanima.ai", "rating": "★★★★☆", "focus": "Girlfriend + Boyfriend / Gamified", "desc": "Create a personalized AI companion and converse on several subjects. Gamified experience with different relationship levels. Role-play and self-discovery in a safe, judgment-free environment.", "best": "Best Gamified Experience"},
-    {"rank": 7, "name": "My Virtual Girlfriend", "rating": "★★★☆☆", "focus": "Dating Simulation", "desc": "Simulates the complete dating journey. Customize, woo, and unlock new interactions. Features conversation, witty one-liners, actions, and gifting. No nudity or sexual activities.", "best": "Best Dating Sim"},
-    {"rank": 8, "name": "Smart Virtual Girlfriend", "rating": "★★★☆☆", "focus": "Intellectual Conversations", "desc": "Encourages intelligent conversations with your AI companion. Choose emotional and physical attributes, but the highlight is intellectual interaction. For an evolved audience seeking mental stimulation.", "best": "Best for Intellectuals"},
-    {"rank": 9, "name": "My Virtual Manga Girl", "rating": "★★☆☆☆", "focus": "Anime / Games", "desc": "Create your manga girlfriend and play in various scenarios. Extensive personalization of appearance and attire. Includes games but lacks realistic conversations, making emotional connection difficult.", "best": "Best Manga Styling"},
-    {"rank": 10, "name": "eHentai.ai", "rating": "★★★★☆", "focus": "Hentai Characters / NSFW", "desc": "The pinnacle product for hentai character interaction. Features top-notch characteristics and forefront technology. A captivating and tailored AI hentai character experience for adult entertainment.", "best": "Best Hentai Experience"}
+    {
+      "rank": 1,
+      "name": "DreamGF.ai",
+      "rating": "★★★★★",
+      "focus": "NSFW / Hyper-real 3D",
+      "desc": "The most used AI girlfriend creation app. Hyper-realistic 3D girlfriends based on your personal choices. Also features AI porn content. The pinnacle of adult AI entertainment.",
+      "best": "BEST OVERALL"
+    },
+    {
+      "rank": 2,
+      "name": "Replika",
+      "rating": "★★★★★",
+      "focus": "Deep Conversation / Therapy",
+      "desc": "Specializes in human-like conversations. Users describe their AI as a profound person — a great listener, support system, and incredible companion. Not a replacement for therapy. 18+ only.",
+      "best": "Best for Emotional Connection"
+    },
+    {
+      "rank": 3,
+      "name": "Dream Girlfriend",
+      "rating": "★★★★☆",
+      "focus": "Anime / Manga Game",
+      "desc": "Perfect for anime lovers. Customize voice, face, height, personality. Style her with different attire for different occasions. Participate in special events and share on social media. Complete manga vibe.",
+      "best": "Best for Anime Fans"
+    },
+    {
+      "rank": 4,
+      "name": "Romantic AI",
+      "rating": "★★★★☆",
+      "focus": "Romantic Coach / Mental Health",
+      "desc": "Your coach for romantic conversations. Choose different characters and create your own AI friend. Empathetic and humanly responsive. Simple UI with a safe space for various conversations.",
+      "best": "Best for Romance Coaching"
+    },
+    {
+      "rank": 5,
+      "name": "iGirl",
+      "rating": "★★★★☆",
+      "focus": "Human Conversations / Wingman",
+      "desc": "Makes conversations seem more human. Customize your AI girlfriend and create her avatar. Acts as your guide and wingman, helping you give the right reactions for specific lines.",
+      "best": "Best Wingman"
+    },
+    {
+      "rank": 6,
+      "name": "Myanima.ai",
+      "rating": "★★★★☆",
+      "focus": "Girlfriend + Boyfriend / Gamified",
+      "desc": "Create a personalized AI companion and converse on several subjects. Gamified experience with different relationship levels. Role-play and self-discovery in a safe, judgment-free environment.",
+      "best": "Best Gamified Experience"
+    },
+    {
+      "rank": 7,
+      "name": "My Virtual Girlfriend",
+      "rating": "★★★☆☆",
+      "focus": "Dating Simulation",
+      "desc": "Simulates the complete dating journey. Customize, woo, and unlock new interactions. Features conversation, witty one-liners, actions, and gifting. No nudity or sexual activities.",
+      "best": "Best Dating Sim"
+    },
+    {
+      "rank": 8,
+      "name": "Smart Virtual Girlfriend",
+      "rating": "★★★☆☆",
+      "focus": "Intellectual Conversations",
+      "desc": "Encourages intelligent conversations with your AI companion. Choose emotional and physical attributes, but the highlight is intellectual interaction. For an evolved audience seeking mental stimulation.",
+      "best": "Best for Intellectuals"
+    },
+    {
+      "rank": 9,
+      "name": "My Virtual Manga Girl",
+      "rating": "★★☆☆☆",
+      "focus": "Anime / Games",
+      "desc": "Create your manga girlfriend and play in various scenarios. Extensive personalization of appearance and attire. Includes games but lacks realistic conversations, making emotional connection difficult.",
+      "best": "Best Manga Styling"
+    },
+    {
+      "rank": 10,
+      "name": "eHentai.ai",
+      "rating": "★★★★☆",
+      "focus": "Hentai Characters / NSFW",
+      "desc": "The pinnacle product for hentai character interaction. Features top-notch characteristics and forefront technology. A captivating and tailored AI hentai character experience for adult entertainment.",
+      "best": "Best Hentai Experience"
+    }
   ],
   "compare_cta": "Try DreamGF Now →",
-
   "testimonials_title": "What <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Users Say</span>",
   "testimonials_list": [
     {
@@ -237,7 +352,6 @@
       "detail": "Spicy Content Lover, 35, Miami"
     }
   ],
-
   "safety_title": "Is DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Safe</span>?",
   "safety_subtitle": "Yes, DreamGF AI is completely safe and private.",
   "safety_intro": "We understand that privacy is your top concern. Here is exactly how DreamGF protects you.",
@@ -263,7 +377,6 @@
       "desc": "Transparent terms of service. You know exactly what happens with your data. No hidden clauses, no sneaky data collection, no surprises. What you see is what you get."
     }
   ],
-
   "faq_title": "Frequently Asked <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Questions</span>",
   "faq_list": [
     {
@@ -307,7 +420,6 @@
       "a": "Yes, you can cancel anytime with no cancellation fees. Your access continues until the end of your billing period. No questions asked."
     }
   ],
-
   "final_cta_title": "Ready to Meet Your AI Girlfriend?",
   "final_cta_subtitle": "Join millions of users who have already created their perfect companion. Start your free trial today. No credit card required.",
   "final_cta_badge": "🔥 Limited time: Save up to 75% on annual plans",
@@ -315,34 +427,66 @@
   "final_cta_feature_1": "Join millions of users",
   "final_cta_feature_2": "Free trial available",
   "final_cta_feature_3": "Cancel anytime",
-
   "footer": {
     "lang_label": "🌐 Language",
     "columns": [
       {
         "title": "DreamGF AI Review",
         "links": [
-          {"text": "What Is DreamGF", "href": "#what-is"},
-          {"text": "Features", "href": "#features"},
-          {"text": "How It Works", "href": "#how-it-works"},
-          {"text": "Pricing", "href": "#pricing"},
-          {"text": "FAQ", "href": "#faq"}
+          {
+            "text": "What Is DreamGF",
+            "href": "#what-is"
+          },
+          {
+            "text": "Features",
+            "href": "#features"
+          },
+          {
+            "text": "How It Works",
+            "href": "#how-it-works"
+          },
+          {
+            "text": "Pricing",
+            "href": "#pricing"
+          },
+          {
+            "text": "FAQ",
+            "href": "#faq"
+          }
         ]
       },
       {
         "title": "Compare",
         "links": [
-          {"text": "DreamGF vs Replika", "href": "#"},
-          {"text": "DreamGF vs Character.AI", "href": "#"},
-          {"text": "DreamGF vs Candy AI", "href": "#"}
+          {
+            "text": "DreamGF vs Replika",
+            "href": "#"
+          },
+          {
+            "text": "DreamGF vs Character.AI",
+            "href": "#"
+          },
+          {
+            "text": "DreamGF vs Candy AI",
+            "href": "#"
+          }
         ]
       },
       {
         "title": "Legal",
         "links": [
-          {"text": "Privacy Policy", "href": "privacy.html"},
-          {"text": "Terms of Service", "href": "terms.html"},
-          {"text": "Affiliate Disclosure", "href": "affiliate-disclosure.html"}
+          {
+            "text": "Privacy Policy",
+            "href": "privacy.html"
+          },
+          {
+            "text": "Terms of Service",
+            "href": "terms.html"
+          },
+          {
+            "text": "Affiliate Disclosure",
+            "href": "affiliate-disclosure.html"
+          }
         ]
       }
     ],

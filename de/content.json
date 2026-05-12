@@ -128,32 +128,38 @@
     {
       "name": "Blonde Style",
       "desc": "Elegant und strahlend",
-      "alt": "Blondes KI-Freundin-Modell"
+      "alt": "Blondes KI-Freundin-Modell",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Brunette Style",
       "desc": "Geheimnisvoll und raffiniert",
-      "alt": "Brünettes KI-Freundin-Modell"
+      "alt": "Brünettes KI-Freundin-Modell",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asian Style",
       "desc": "Zart und charmant",
-      "alt": "Asiatisches KI-Freundin-Modell"
+      "alt": "Asiatisches KI-Freundin-Modell",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latina-Stil",
       "desc": "Leidenschaftlich und lebhaft",
-      "alt": "Latina KI-Freundin-Modell"
+      "alt": "Latina KI-Freundin-Modell",
+      "image": "model-latina.webp"
     },
     {
       "name": "Ebony-Stil",
       "desc": "Atemberaubend und selbstbewusst",
-      "alt": "Ebony KI-Freundin-Modell"
+      "alt": "Ebony KI-Freundin-Modell",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer-Girl",
       "desc": "Lustig und verspielt",
-      "alt": "Gamer KI-Freundin-Modell"
+      "alt": "Gamer KI-Freundin-Modell",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Preise</span>",

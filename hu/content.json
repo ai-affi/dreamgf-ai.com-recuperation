@@ -128,32 +128,38 @@
     {
       "name": "Blonde Style",
       "desc": "Elegáns és ragyogó",
-      "alt": "Szőke AI barátnő modell"
+      "alt": "Szőke AI barátnő modell",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Brunette Style",
       "desc": "Rejtélyes és kifinomult",
-      "alt": "Barna AI barátnő modell"
+      "alt": "Barna AI barátnő modell",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asian Style",
       "desc": "Finom és bájos",
-      "alt": "Ázsiai AI barátnő modell"
+      "alt": "Ázsiai AI barátnő modell",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latina Style",
       "desc": "Szenvedélyes és élénk",
-      "alt": "Latin AI barátnő modell"
+      "alt": "Latin AI barátnő modell",
+      "image": "model-latina.webp"
     },
     {
       "name": "Ébenfa stílus",
       "desc": "Lenyűgöző és önbiztos",
-      "alt": "Ébenfa AI barátnő modell"
+      "alt": "Ébenfa AI barátnő modell",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Girl",
       "desc": "Vidám és játékos",
-      "alt": "Gamer AI barátnő modell"
+      "alt": "Gamer AI barátnő modell",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> árak",

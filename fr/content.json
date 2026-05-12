@@ -128,32 +128,38 @@
     {
       "name": "Blonde Style",
       "desc": "Élégant et rayonnant",
-      "alt": "Modèle de petite amie IA blonde"
+      "alt": "Modèle de petite amie IA blonde",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Brunette Style",
       "desc": "Mystérieux et sophistiqué",
-      "alt": "Modèle de petite amie IA brune"
+      "alt": "Modèle de petite amie IA brune",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asian Style",
       "desc": "Délicat et charmant",
-      "alt": "Modèle de petite amie IA asiatique"
+      "alt": "Modèle de petite amie IA asiatique",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latina Style",
       "desc": "Passionné et enjoué",
-      "alt": "Modèle de petite amie IA latino"
+      "alt": "Modèle de petite amie IA latino",
+      "image": "model-latina.webp"
     },
     {
       "name": "Ebony Style",
       "desc": "Éblouissant et confiant",
-      "alt": "Modèle de petite amie IA ébène"
+      "alt": "Modèle de petite amie IA ébène",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Gamer Girl",
       "desc": "Amusante et espiègle",
-      "alt": "Modèle de petite amie IA gamer"
+      "alt": "Modèle de petite amie IA gamer",
+      "image": "model-gamer.webp"
     }
   ],
   "pricing_title": "Tarifs <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>",

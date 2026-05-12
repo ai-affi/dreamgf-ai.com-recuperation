@@ -22,7 +22,6 @@
   "hero_feature_2": "Kredi kartı gerekmez",
   "hero_feature_3": "6M+ kız arkadaş oluşturuldu",
   "hero_feature_4": "İstediğiniz zaman iptal edin",
-
   "social_proof_title": "Şurada Yer Aldı",
   "social_proof_stat_1_value": "⭐ 4,8/5",
   "social_proof_stat_1_label": "Kullanıcı Değerlendirmesi",
@@ -32,13 +31,11 @@
   "social_proof_stat_3_label": "Global Olarak Ulaşılabilir",
   "social_proof_stat_4_value": "💬 Milyonlarca",
   "social_proof_stat_4_label": "Günlük Sohbetler",
-
   "whatis_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> Nedir?",
   "whatis_p1": "DreamGF AI, piyasadaki en gelişmiş AI kız arkadaş oluşturucudur. Geleneksel tanışma uygulamaları veya temel sohbet botlarının aksine, DreamGF, doğal dil işleme, makine öğrenimi ve sinir ağları da dahil olmak üzere en son yapay zeka teknolojilerini kullanarak, derinlemesine kişiselleştirilmiş bir sanal arkadaş oluşturmaktır. Bu arkadaş öğrenir, uyum sağlar ve sizinle derin bir düzeyde etkileşime girer.",
   "whatis_p2": "DreamGF ile önceden programlanmış bir botla sohbet etmiyorsunuz. AI ile bir ilişki kuruyorsunuz; bu AI tercihlerinizi hatırlar, isteklerinizi anlar ve zamanla gelişir. Gündelik sohbetler, romantik rol yapma veya açık NSFW içerikler olsun, DreamGF şaşırtıcı derecede gerçekçi bir deneyim sunar.",
   "whatis_p3": "Platform, Forbes, Sifted ve Daily Star gibi büyük yayınlarda yer almıştır; bu, sanal arkadaşlık alanındaki lider konumunu vurgulamaktadır. Dünya çapında milyonlarca aktif kullanıcıyla DreamGF, basit metin alışverişinin ötesine geçen bir AI kız arkadaş deneyimi arayan herkes için vazgeçilmez bir durak haline gelmiştir.",
   "whatis_p4": "DreamGF’i rakiplerinden ayıran şey, gelişmiş fotoğraf oluşturma, ses etkileşimi ve derinlemesine özelleştirme kombinasyonudur. AI kız arkadaşınızın fiziksel görünümünü en ince detayına kadar tasarlayabilir, kişilik özelliklerini seçebilir ve hatta gerçek zamanlı fotoğraf ve sesli mesajlar talep edebilirsiniz. Bu sadece bir sohbet botu değil, tamamen kapsayıcı bir sanal ilişki.",
-
   "howitworks_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Kız Arkadaşınızı</span> Nasıl Oluşturursunuz?",
   "howitworks_subtitle": "Mükemmel sanal arkadaşınız için altı basit adım",
   "howitworks_step1_title": "Hesap Oluşturun",
@@ -53,7 +50,6 @@
   "howitworks_step5_desc": "Sohbetlere, rol yapma senaryolarına ve samimi paylaşımlara katılın. AI, sohbetlerdeki fotoğraf taleplerini algılar ve ilgili görsellerle yanıtlar. Asla hayır demiyor.",
   "howitworks_step6_title": "Premium’a Yükseltin",
   "howitworks_step6_desc": "Premium özellikleri kilidini açın: sesli aramalar, daha hızlı oluşturma, bulanıklık kaldırma ve sınırsız mesajlar. Planlar aylık sadece $9,99’dan başlıyor.",
-
   "creator_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Düşlerinizin Kızını</span> Oluşturun",
   "creator_subtitle": "Her detay özelleştirilebilir. O, istedikleriniz oluyor.",
   "creator_ethnicity_label": "Etnik Köken",
@@ -77,7 +73,6 @@
   "creator_env_label": "Ortam",
   "creator_env_options": "Yatak Odası, Plaj, Duş, Kaplıca, Kulüp, Spor Salonu, Şehir Merkezi, Paris, New York, Spa, Kumarhane, Yat, Akdeniz Villası",
   "creator_cta": "Kız Arkadaşınızı Şimdi Oluşturun →",
-
   "features_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> Özellikleri",
   "features_subtitle": "En iyi sanal arkadaşlık deneyimi için ihtiyacınız olan her şey",
   "features_list": [
@@ -127,42 +122,46 @@
       "desc": "Uçtan uca şifreleme, sıfır veri satışı ve gizli faturalandırma. Ücretler, genel teknoloji şirketi isimleri olarak görünür. Eşiniz, bankanız ve muhasebeciniz asla öğrenemez."
     }
   ],
-
   "models_title": "Oluşturabileceğiniz <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Modeller</span>",
   "models_subtitle": "Oluşturabileceğiniz AI kız arkadaşlarının çeşitliliğini keşfedin. Her stil, her kişilik. Hayal gücünüz tek sınır.",
   "models_list": [
     {
       "name": "Sarı Saçlı Stil",
       "desc": "Zarif ve parlak",
-      "alt": "Sarı saçlı AI kız arkadaş modeli"
+      "alt": "Sarı saçlı AI kız arkadaş modeli",
+      "image": "model-blonde.webp"
     },
     {
       "name": "Kahverengi Saçlı Stil",
       "desc": "Gizemli ve sofistike",
-      "alt": "Kahverengi saçlı AI kız arkadaş modeli"
+      "alt": "Kahverengi saçlı AI kız arkadaş modeli",
+      "image": "model-brunette.webp"
     },
     {
       "name": "Asyalı Stil",
       "desc": "Nazik ve büyülü",
-      "alt": "Asyalı AI kız arkadaş modeli"
+      "alt": "Asyalı AI kız arkadaş modeli",
+      "image": "model-asian.webp"
     },
     {
       "name": "Latin Stil",
       "desc": "Tutkulu ve neşeli",
-      "alt": "Latin AI kız arkadaş modeli"
+      "alt": "Latin AI kız arkadaş modeli",
+      "image": "model-latina.webp"
     },
     {
       "name": "Siyah Stil",
       "desc": "Etkileyici ve özgüvenli",
-      "alt": "Siyah AI kız arkadaş modeli"
+      "alt": "Siyah AI kız arkadaş modeli",
+      "image": "model-ebony.webp"
     },
     {
       "name": "Oyuncu Kız",
       "desc": "Eğlenceli ve oyunbaz",
-      "alt": "Oyuncu AI kız arkadaş modeli"
+      "alt": "Oyuncu AI kız arkadaş modeli",
+      "image": "model-gamer.webp"
     }
   ],
-
   "pricing_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> Fiyatlandırma",
   "pricing_subtitle": "İhtiyaçlarınıza uygun planı seçin. Tüm planlar ücretsiz deneme içerir.",
   "pricing_badge": "EN İYİ DEĞER",
@@ -241,7 +240,6 @@
   "pricing_tokens_title": "Token Paketleri",
   "pricing_tokens_desc": "Tokenler, AI arkadaş oluşturma (20 token), fotoğraf oluşturma (10 token), sesli mesajlar (3 token) ve sesli aramalar (7 token/dakika) için kullanılır. $2.99’dan $179.99’a kadar paketler mevcut.",
   "pricing_guarantee": "30 günlük para iade garantisi. Soru sorulmaz.",
-
   "compare_title": "2026’nın En İyi <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">10 AI Kız Arkadaş Uygulaması</span>",
   "compare_subtitle": "DreamGF.ai’nin kesin sıralamasına dayanarak – sanal arkadaşlık endüstrisinin lideri.",
   "compare_apps": [
@@ -327,7 +325,6 @@
     }
   ],
   "compare_cta": "DreamGF’i Şimdi Dene →",
-
   "testimonials_title": "Kullanıcılar Ne <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Diyor</span>?",
   "testimonials_list": [
     {
@@ -355,7 +352,6 @@
       "detail": "Baharatlı içerik sever, 35 yaş, Miami"
     }
   ],
-
   "safety_title": "<span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span> Güvenli mi?",
   "safety_subtitle": "Evet, DreamGF AI tamamen güvenli ve özel.",
   "safety_intro": "Gizliliğinizin en önemli endişeniz olduğunu anlıyoruz. DreamGF’in sizi nasıl koruduğunu görün.",
@@ -381,7 +377,6 @@
       "desc": "Şeffaf hizmet koşulları. Verilerinizle tam olarak ne olduğunu bilirsiniz. Gizli maddeler yok, gizli veri toplama yok, sürpriz yok. Ne görüyorsanız, onu alıyorsunuz."
     }
   ],
-
   "faq_title": "Sıkça Sorulan <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Sorular</span>",
   "faq_list": [
     {
@@ -425,7 +420,6 @@
       "a": "Evet, herhangi bir zamanda iptal ücreti olmaksızın aboneliğinizi iptal edebilirsiniz. Erişiminiz, faturalandırma döneminin sonuna kadar devam eder. Soru sorulmaz."
     }
   ],
-
   "final_cta_title": "AI Kız Arkadaşınızla Tanışmaya Hazır mısınız?",
   "final_cta_subtitle": "Milyonlarca kullanıcıya katılın, zaten mükemmel arkadaşlarını oluşturmuşlar. Ücretsiz denemenize bugün başlayın. Kredi kartına gerek yok.",
   "final_cta_badge": "🔥 Sınırlı Süre: Yıllık planlarda %75’e varan tasarruf",
@@ -433,7 +427,6 @@
   "final_cta_feature_1": "Milyonlarca kullanıcıya katılın",
   "final_cta_feature_2": "Ücretsiz deneme mevcut",
   "final_cta_feature_3": "İstediğiniz zaman iptal edin",
-
   "footer": {
     "lang_label": "🌐 Dil",
     "columns": [

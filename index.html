@@ -252,6 +252,30 @@
   <!-- Footer -->
   <footer class="bg-gray-950 border-t border-gray-800 py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Language Selector -->
+      <div class="mb-8 pb-8 border-b border-gray-800">
+        <p class="text-sm text-gray-400 mb-3" data-i18n="footer.lang_label">🌐 Language</p>
+        <div class="flex flex-wrap gap-2" id="lang-selector">
+          <a href="/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
+          <a href="/fr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="fr">Français</a>
+          <a href="/es/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="es">Español</a>
+          <a href="/de/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="de">Deutsch</a>
+          <a href="/it/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="it">Italiano</a>
+          <a href="/pt/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="pt">Português</a>
+          <a href="/sv/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="sv">Svenska</a>
+          <a href="/pl/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="pl">Polski</a>
+          <a href="/nl/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="nl">Nederlands</a>
+          <a href="/ro/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ro">Română</a>
+          <a href="/hu/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hu">Magyar</a>
+          <a href="/hr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hr">Hrvatski</a>
+          <a href="/tr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="tr">Türkçe</a>
+          <a href="/ar/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ar">العربية</a>
+          <a href="/hi/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hi">हिन्दी</a>
+          <a href="/jp/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="jp">日本語</a>
+          <a href="/kr/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="kr">한국어</a>
+          <a href="/ru/" class="lang-link px-3 py-1.5 rounded-lg text-sm font-medium transition bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ru">Русский</a>
+        </div>
+      </div>
       <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"></div>
       <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
         <p data-i18n="footer.copyright">© 2026 DreamGF AI Review. All rights reserved. Not affiliated with DreamGF.ai.</p>
@@ -435,6 +459,16 @@
             </div>
           `).join('');
         }
+        // Highlight current language
+        const currentPath = window.location.pathname;
+        const currentLang = currentPath === '/' ? 'en' : currentPath.split('/')[1];
+        document.querySelectorAll('.lang-link').forEach(link => {
+          if (link.dataset.lang === currentLang) {
+            link.classList.remove('bg-gray-800', 'text-gray-300', 'hover:bg-gray-700');
+            link.classList.add('bg-pink-600', 'text-white', 'cursor-default');
+            link.removeAttribute('href');
+          }
+        });
       })
       .catch(e => {
         console.error('Content injection failed:', e);

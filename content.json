@@ -460,15 +460,15 @@
         "links": [
           {
             "text": "DreamGF vs Replika",
-            "href": "#"
+            "href": "#compare"
           },
           {
             "text": "DreamGF vs Character.AI",
-            "href": "#"
+            "href": "#compare"
           },
           {
             "text": "DreamGF vs Candy AI",
-            "href": "#"
+            "href": "#compare"
           }
         ]
       },
@@ -492,5 +492,6 @@
     ],
     "copyright": "© 2026 DreamGF AI Review. All rights reserved. Not affiliated with DreamGF.ai.",
     "disclaimer": "Affiliate Disclosure: We earn commissions when you purchase through our links. This does not affect our recommendations."
-  }
+  },
+  "nav_compare": "Compare"
 }

@@ -197,27 +197,12 @@
     </div>
   </section>
 
-  <!-- Comparison Table -->
+  <!-- Comparison Section -->
   <section id="compare" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="compare_title">Top <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI Girlfriend Apps</span> in 2026</h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="compare_subtitle">DreamGF AI leads the market, but several platforms offer compelling alternatives depending on your preferences.</p>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="border-b border-gray-700">
-              <th class="text-left py-3 px-4 text-gray-400">App</th>
-              <th class="text-center py-3 px-4 text-gray-400">Price/mo</th>
-              <th class="text-center py-3 px-4 text-gray-400">Free Trial</th>
-              <th class="text-center py-3 px-4 text-gray-400">NSFW</th>
-              <th class="text-center py-3 px-4 text-gray-400">Images</th>
-              <th class="text-center py-3 px-4 text-gray-400">Voice</th>
-              <th class="text-center py-3 px-4 text-gray-400"></th>
-            </tr>
-          </thead>
-          <tbody id="compare-table-body"></tbody>
-        </table>
-      </div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="compare_title">Top 10 <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI Girlfriend Apps</span> in 2026</h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="compare_subtitle">Based on the definitive ranking from DreamGF.ai — the industry leader in AI companionship.</p>
+      <div class="space-y-4" id="compare-list"></div>
     </div>
   </section>
 
@@ -370,21 +355,31 @@
           `).join('');
         }
 
-        // Render comparison table
-        const compareTable = document.getElementById('compare-table-body');
-        if (compareTable && c.compare_apps) {
-          compareTable.innerHTML = c.compare_apps.map(app => `
-            <tr class="border-b border-gray-800 ${app.best === 'BEST OVERALL' ? 'bg-pink-500/5' : ''}">
-              <td class="py-3 px-4 ${app.best === 'BEST OVERALL' ? 'font-semibold text-white' : 'text-gray-300'}">${app.name} ${app.best === 'BEST OVERALL' ? '★' : ''}</td>
-              <td class="text-center py-3 px-4 text-gray-300">${app.price}</td>
-              <td class="text-center py-3 px-4 text-green-400">${app.trial}</td>
-              <td class="text-center py-3 px-4 text-green-400">${app.nsfw}</td>
-              <td class="text-center py-3 px-4 text-green-400">${app.images}</td>
-              <td class="text-center py-3 px-4 ${app.voice === '✓' ? 'text-green-400' : 'text-red-400'}">${app.voice}</td>
-              <td class="text-center py-3 px-4">
-                <a href="/go/dreamgf" class="text-pink-400 hover:underline text-xs" rel="nofollow noreferrer noopener">${c.compare_cta}</a>
-              </td>
-            </tr>
+        // Render comparison list
+        const compareList = document.getElementById('compare-list');
+        if (compareList && c.compare_apps) {
+          compareList.innerHTML = c.compare_apps.map(app => `
+            <div class="bg-gray-800 rounded-xl p-5 border ${app.best === 'BEST OVERALL' ? 'border-pink-500/50' : 'border-gray-700'} hover:border-pink-500/30 transition">
+              <div class="flex flex-col md:flex-row md:items-center gap-4">
+                <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
+                  <div class="w-10 h-10 rounded-full ${app.best === 'BEST OVERALL' ? 'bg-pink-500' : 'bg-gray-700'} flex items-center justify-center text-white font-bold text-sm">#${app.rank}</div>
+                  <div>
+                    <h3 class="font-bold text-white ${app.best === 'BEST OVERALL' ? 'text-pink-400' : ''}">${app.name}</h3>
+                    <div class="text-yellow-400 text-sm">${app.rating}</div>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-2 mb-2">
+                    <span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">${app.focus}</span>
+                    ${app.best ? `<span class="px-2 py-0.5 ${app.best === 'BEST OVERALL' ? 'bg-pink-500/20 text-pink-300' : 'bg-green-500/20 text-green-300'} text-xs rounded font-medium">${app.best}</span>` : ''}
+                  </div>
+                  <p class="text-gray-400 text-sm">${app.desc}</p>
+                </div>
+                <div class="md:w-32 flex-shrink-0 text-right">
+                  <a href="/go/dreamgf" class="inline-block px-4 py-2 ${app.best === 'BEST OVERALL' ? 'bg-pink-500 hover:bg-pink-600 text-white' : 'border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400'} text-sm font-semibold rounded-lg transition" rel="nofollow noreferrer noopener">${app.best === 'BEST OVERALL' ? 'Try Free →' : 'See More'}</a>
+                </div>
+              </div>
+            </div>
           `).join('');
         }
 

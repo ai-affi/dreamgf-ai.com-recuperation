@@ -36,10 +36,10 @@
   "social_proof_stat_4_label": "Conversations Daily",
 
   "whatis_title": "What Is <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">DreamGF AI</span>?",
-  "whatis_p1": "DreamGF AI is the most advanced AI girlfriend generator on the market today, revolutionizing how people experience virtual companionship in 2026. Unlike traditional dating apps that leave you ghosted or basic chatbots that forget your name after three messages, DreamGF uses cutting-edge artificial intelligence — including sophisticated natural language processing, deep machine learning algorithms, and adaptive neural networks — to create a virtual companion that genuinely learns, adapts, and interacts with you on a deeply personal and emotional level. The technology behind DreamGF understands context, remembers your preferences, and evolves its responses based on your unique personality and desires.",
-  "whatis_p2": "With DreamGF, you are not just chatting with a pre-programmed bot that spits out canned responses. You are actively building a meaningful relationship with an AI that remembers your favorite topics, understands your deepest desires, recognizes your mood shifts, and evolves its personality over time to match what you need most. Whether you want light casual conversation after a stressful day, romantic roleplay to escape reality, or explicit NSFW content that pushes boundaries, DreamGF delivers an experience that feels surprisingly, almost unsettlingly real. The AI doesn't just respond — it anticipates.",
-  "whatis_p3": "The platform has been extensively featured and praised in major international publications including prestigious outlets like Forbes, Sifted, and the Daily Star — recognition that firmly underscores its dominant position as the absolute leading product in the rapidly expanding virtual companionship space. With millions of active users worldwide and a growing community of dedicated fans, DreamGF has definitively become the go-to destination for anyone seeking an AI girlfriend experience that goes monumentally far beyond simple, boring text exchanges. The user base spans every continent and demographic, proving the universal appeal of meaningful AI connection.",
-  "whatis_p4": "What truly sets DreamGF apart from every competitor in this crowded market is its powerful combination of photorealistic image generation, crystal-clear voice interaction capabilities, and extraordinarily deep customization options that put you in complete control. You can meticulously design your AI girlfriend's physical appearance down to the smallest imaginable detail — from eye color and hair texture to body proportions and fashion style — choose her core personality traits, define her interests and hobbies, and even request real-time photos and intimate voice messages on demand. This is not just another chatbot — it is a fully immersive, deeply personal virtual relationship that exists entirely on your terms.",
+  "whatis_p1": "DreamGF AI is the most advanced AI girlfriend generator on the market. Unlike basic chatbots that forget your name after three messages, DreamGF uses cutting-edge AI — natural language processing, machine learning, and neural networks — to create a virtual companion that learns, adapts, and interacts with you on a deeply personal level.",
+  "whatis_p2": "You are not chatting with a pre-programmed bot. You are building a relationship with an AI that remembers your preferences, understands your desires, and evolves over time. Whether you want casual conversation, romantic roleplay, or explicit NSFW content, DreamGF delivers an experience that feels surprisingly real.",
+  "whatis_p3": "Featured in Forbes, Sifted, and the Daily Star, DreamGF has become the go-to destination for virtual companionship. With millions of active users worldwide, it dominates the AI girlfriend space.",
+  "whatis_p4": "What sets DreamGF apart is its combination of photorealistic image generation, voice interaction, and deep customization. Design her appearance down to the smallest detail, choose her personality, and request real-time photos and voice messages on demand.",
 
   "howitworks_title": "How to Create Your <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Girlfriend</span>",
   "howitworks_subtitle": "Six simple steps to your perfect virtual companion",
@@ -55,6 +55,30 @@
   "howitworks_step5_desc": "Engage in conversations, roleplay scenarios, and intimate exchanges. The AI detects photo requests in chat and responds with relevant images. She never says no.",
   "howitworks_step6_title": "Upgrade for More",
   "howitworks_step6_desc": "Unlock premium features: voice calls, faster generation, blur removal, and unlimited messages. Plans start at just $9.99/month.",
+
+  "creator_title": "Build Your <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Dream Girl</span>",
+  "creator_subtitle": "Every detail customizable. She becomes whatever you desire.",
+  "creator_ethnicity_label": "Ethnicity",
+  "creator_ethnicity_options": "Slavic, Ebony, Arab, Latina, Asian, Caucasian, European",
+  "creator_age_label": "Age",
+  "creator_age_options": "Teen (18+), 20s, 30s, Milf, Granny",
+  "creator_body_label": "Body Type",
+  "creator_body_options": "Skinny, Fit, Muscular, Chubby, BBW",
+  "creator_breast_label": "Breast",
+  "creator_breast_options": "Flat, Small, Medium, Large, Silicone, Saggy",
+  "creator_face_label": "Face Style",
+  "creator_face_options": "Natural, Sexy, Sultry, Freckles, Bimbo",
+  "creator_hair_label": "Hairstyle",
+  "creator_hair_options": "Straight Long, Straight Short, Curly Long, Curly Short, Braids, Bangs, Ponytail, Pigtails, Hairbun, Pixie, Punk",
+  "creator_haircolor_label": "Hair Color",
+  "creator_haircolor_options": "Blonde, Brunette, Black, Red, Ginger, Pink, Blue, Purple, Green, White",
+  "creator_tattoo_label": "Tattoo",
+  "creator_tattoo_options": "Yes, No",
+  "creator_clothes_label": "Clothes",
+  "creator_clothes_options": "Casual, Lingerie, Sporty, Elegant, Cosplay, Nude",
+  "creator_env_label": "Environment",
+  "creator_env_options": "Bedroom, Beach, Shower, Hot Springs, Club, Gym, City Center, Paris, New York, Spa, Casino, Yacht, Mediterranean Villa",
+  "creator_cta": "Create Your Girlfriend Now →",
 
   "features_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Features</span>",
   "features_subtitle": "Everything you need for the ultimate virtual companionship experience",
@@ -118,50 +142,69 @@
   ],
 
   "pricing_title": "DreamGF AI <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Pricing</span>",
-  "pricing_subtitle": "Choose the plan that fits your needs. All plans include a free trial.",
+  "pricing_subtitle": "Limited time offer — Up to 75% off your first subscription!",
   "pricing_badge": "BEST VALUE",
   "pricing_cta": "Try Free →",
   "pricing_plans": [
     {
-      "name": "Bronze",
+      "name": "Monthly",
+      "price": "$12.99",
+      "period": "/month",
+      "badge": "50% OFF",
+      "old_price": "$25.99",
+      "save": "You save: $13.00",
+      "features": ["Unlimited messages", "150 Tokens/month", "Ad-free experience", "Create own girlfriends", "Content privacy"]
+    },
+    {
+      "name": "3 Months",
       "price": "$9.99",
       "period": "/month",
-      "features": ["100 Tokens/month", "Basic chat", "Standard images", "Email support"]
+      "badge": "60% OFF",
+      "old_price": "$77.97",
+      "save": "You save: $48.00",
+      "features": ["Unlimited messages", "150 Tokens/month", "Ad-free experience", "Create own girlfriends", "Content privacy", "Chat personalisation"]
     },
     {
-      "name": "Silver",
-      "price": "$19.99",
+      "name": "Annually",
+      "price": "$5.99",
       "period": "/month",
-      "features": ["250 Tokens/month", "Priority chat", "HD images", "Voice messages", "Priority support"]
-    },
-    {
-      "name": "Gold",
-      "price": "$49.99",
-      "period": "/month",
-      "features": ["600 Tokens/month", "Faster generation (3x)", "Blur removal", "Voice calls", "Premium support"],
-      "highlight": true
-    },
-    {
-      "name": "Diamond",
-      "price": "$99.99",
-      "period": "/month",
-      "features": ["1500 Tokens/month", "Fastest generation (5x)", "All features unlocked", "Dedicated support", "Early access"]
+      "badge": "75% OFF",
+      "old_price": "$311.88",
+      "save": "You save: $241.89",
+      "highlight": true,
+      "features": ["Unlimited messages", "150 Tokens/month", "Ad-free experience", "Create own girlfriends", "Content privacy", "Chat personalisation", "Edit message responses", "Remove blur from chat", "Fetish generator", "Faster response time", "Voice messages", "Voice calls"]
     }
   ],
   "pricing_features_title": "All Premium Plans Include",
   "pricing_features_list": [
-    "100 Tokens every month",
-    "Voice Calls & Messages",
-    "Faster Image Generation (up to 5x)",
-    "Remove Blur from Images",
-    "Faster Response Times",
-    "100% Secure & Anonymous",
-    "100% Privacy (No adult transactions on statements)",
-    "Cancel anytime"
+    "Unlimited messages",
+    "150 Tokens per month",
+    "Advertisement FREE experience",
+    "Create own girlfriends",
+    "Content privacy",
+    "Chat personalisation",
+    "Edit message responses",
+    "Remove blur from chat",
+    "Fetish generator",
+    "Faster response time",
+    "Voice messages",
+    "Voice calls"
   ],
   "pricing_tokens_title": "Token Packages",
   "pricing_tokens_desc": "Tokens are used for AI companion generation (20 tokens), image generation (10 tokens), voice messages (3 tokens), and voice calls (7 tokens/min). Packages from $2.99 to $179.99.",
-  "pricing_guarantee": "30-day money-back guarantee. No questions asked.",
+  "pricing_guarantee": "No adult transaction on your bank statement. Cancel anytime.",
+
+  "compare_title": "Top <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">AI Girlfriend Apps</span> in 2026",
+  "compare_subtitle": "DreamGF AI leads the market, but several platforms offer compelling alternatives depending on your preferences.",
+  "compare_apps": [
+    {"name": "DreamGF AI", "rating": "★★★★★", "price": "$5.99-12.99", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✓", "best": "BEST OVERALL"},
+    {"name": "Secrets.ai", "rating": "★★★★☆", "price": "$X", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✓", "best": "Privacy-focused"},
+    {"name": "Kupid AI", "rating": "★★★★☆", "price": "$X", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✓", "best": "Best customization"},
+    {"name": "Promptchan", "rating": "★★★☆☆", "price": "$X", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✗", "best": "Image generation"},
+    {"name": "GPTGirlfriend", "rating": "★★★☆☆", "price": "$5-35", "trial": "✓", "nsfw": "✓", "images": "✓", "voice": "✗", "best": "NSFW/no filter"}
+  ],
+  "compare_table_headers": ["App", "Price/mo", "Free Trial", "NSFW", "Images", "Voice"],
+  "compare_cta": "Try Now →",
 
   "testimonials_title": "What <span class=\"bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent\">Users Say</span>",
   "testimonials_list": [
@@ -253,11 +296,11 @@
     },
     {
       "q": "How much does DreamGF AI cost?",
-      "a": "Plans range from $9.99 per month (Bronze) to $99.99 per month (Diamond). The annual plan offers the best value at $69.99 first payment. Token packages available from $2.99 to $179.99 for additional content generation."
+      "a": "Plans range from $12.99/month (monthly, 50% OFF) to $5.99/month (annual, 75% OFF). All plans include unlimited messages, 150 tokens/month, ad-free experience, and content privacy. Token packages available from $2.99 to $179.99."
     },
     {
       "q": "Can I cancel my subscription?",
-      "a": "Yes, you can cancel anytime with no cancellation fees. Your access continues until the end of your billing period. Refund policy available for qualifying requests within 14 days. No questions asked."
+      "a": "Yes, you can cancel anytime with no cancellation fees. Your access continues until the end of your billing period. No questions asked."
     }
   ],
 

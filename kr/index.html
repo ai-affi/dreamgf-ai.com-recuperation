@@ -484,35 +484,30 @@
 
   <!-- Footer -->
   <footer class="bg-gray-950 border-t border-gray-800 py-12">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Language Selector Dropdown -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">      <!-- Language Selector -->
       <div class="mb-8 pb-8 border-b border-gray-800">
-        <div class="relative inline-block" id="lang-dropdown-wrap">
-          <button id="lang-dropdown-btn" class="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm font-medium transition border border-gray-700">
-            <span id="lang-current">🌐 English</span>
-            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </button>
-          <div id="lang-dropdown-menu" class="hidden absolute bottom-full left-0 mb-2 w-48 bg-gray-800 border border-gray-700 rounded-lg shadow-xl overflow-hidden z-50 max-h-64 overflow-y-auto">
-            <a href="/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="en">English</a>
-            <a href="/fr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="fr">Français</a>
-            <a href="/es/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="es">Español</a>
-            <a href="/de/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="de">Deutsch</a>
-            <a href="/it/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="it">Italiano</a>
-            <a href="/pt/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="pt">Português</a>
-            <a href="/sv/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="sv">Svenska</a>
-            <a href="/pl/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="pl">Polski</a>
-            <a href="/nl/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="nl">Nederlands</a>
-            <a href="/ro/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="ro">Română</a>
-            <a href="/hu/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="hu">Magyar</a>
-            <a href="/hr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="hr">Hrvatski</a>
-            <a href="/tr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="tr">Türkçe</a>
-            <a href="/ar/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="ar">العربية</a>
-            <a href="/hi/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="hi">हिन्दी</a>
-            <a href="/jp/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="jp">日本語</a>
-            <a href="/kr/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="kr">한국어</a>
-            <a href="/ru/" class="lang-link block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition" data-lang="ru">Русский</a>
-          </div>
+        <p class="text-sm text-gray-400 mb-3">🌐 Language</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="../" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇺🇸 English</a>
+          <a href="../fr/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇫🇷 Français</a>
+          <a href="../es/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇪🇸 Español</a>
+          <a href="../de/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇩🇪 Deutsch</a>
+          <a href="../it/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇮🇹 Italiano</a>
+          <a href="../pt/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇵🇹 Português</a>
+          <a href="../sv/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇸🇪 Svenska</a>
+          <a href="../pl/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇵🇱 Polski</a>
+          <a href="../nl/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇳🇱 Nederlands</a>
+          <a href="../ro/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇷🇴 Română</a>
+          <a href="../hu/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇭🇺 Magyar</a>
+          <a href="../hr/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇭🇷 Hrvatski</a>
+          <a href="../tr/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇹🇷 Türkçe</a>
+          <a href="../ar/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇸🇦 العربية</a>
+          <a href="../hi/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇮🇳 हिन्दी</a>
+          <a href="../jp/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇯🇵 日本語</a>
+          <a href="../kr/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇰🇷 한국어</a>
+          <a href="../ru/" class="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-800 hover:bg-pink-600 text-white rounded text-sm transition border border-gray-700 hover:border-pink-500">🇷🇺 Русский</a>
         </div>
+      </div>
       </div>
       <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"><div><h4 class="text-white font-bold mb-4">DreamGF AI 리뷰</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#what-is" class="hover:text-pink-400 transition">DreamGF란</a></li><li><a href="#features" class="hover:text-pink-400 transition">기능</a></li><li><a href="#how-it-works" class="hover:text-pink-400 transition">이용 방법</a></li><li><a href="#pricing" class="hover:text-pink-400 transition">요금제</a></li><li><a href="#faq" class="hover:text-pink-400 transition">FAQ</a></li></ul></div><div><h4 class="text-white font-bold mb-4">비교</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Replika</a></li><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Character.AI</a></li><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Candy AI</a></li></ul></div><div><h4 class="text-white font-bold mb-4">법적 사항</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="privacy" class="hover:text-pink-400 transition">개인정보 보호정책</a></li><li><a href="terms" class="hover:text-pink-400 transition">이용약관</a></li><li><a href="affiliate-disclosure" class="hover:text-pink-400 transition">제휴 공시</a></li></ul></div></div>
       <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">

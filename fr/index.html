@@ -33,7 +33,6 @@
   <link rel="alternate" hreflang="x-default" href="https://dreamgf-ai.com/" />
 
 
-  <link rel="stylesheet" href="/tailwind.min.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
   <link rel="preload" as="image" href="/images/banner-model.webp" type="image/webp">
 
@@ -62,6 +61,231 @@
     "image": "https://dreamgf-ai.com/images/banner-model.webp"
   }
   </script>
+<style>
+    /* Reset & Base */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#111827;color:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit;transition:color .2s}
+    img{max-width:100%;display:block}
+    
+    /* Layout */
+    .max-w-4xl{max-width:56rem;margin-left:auto;margin-right:auto}
+    .max-w-5xl{max-width:64rem;margin-left:auto;margin-right:auto}
+    .max-w-6xl{max-width:72rem;margin-left:auto;margin-right:auto}
+    .max-w-7xl{max-width:80rem;margin-left:auto;margin-right:auto}
+    .mx-auto{margin-left:auto;margin-right:auto}
+    .px-4{padding-left:1rem;padding-right:1rem}
+    .px-10{padding-left:2.5rem;padding-right:2.5rem}
+    .px-12{padding-left:3rem;padding-right:3rem}
+    .py-1{padding-top:.25rem;padding-bottom:.25rem}
+    .py-2{padding-top:.5rem;padding-bottom:.5rem}
+    .py-5{padding-top:1.25rem;padding-bottom:1.25rem}
+    .py-8{padding-top:2rem;padding-bottom:2rem}
+    .py-12{padding-top:3rem;padding-bottom:3rem}
+    .py-20{padding-top:5rem;padding-bottom:5rem}
+    .p-5{padding:1.25rem}
+    .p-6{padding:1.5rem}
+    .p-8{padding:2rem}
+    .mb-1{margin-bottom:.25rem}
+    .mb-2{margin-bottom:.5rem}
+    .mb-3{margin-bottom:.75rem}
+    .mb-4{margin-bottom:1rem}
+    .mb-6{margin-bottom:1.5rem}
+    .mb-8{margin-bottom:2rem}
+    .mb-10{margin-bottom:2.5rem}
+    .mb-12{margin-bottom:3rem}
+    .mt-1{margin-top:.25rem}
+    .mt-2{margin-top:.5rem}
+    .mt-8{margin-top:2rem}
+    .mr-2{margin-right:.5rem}
+    .space-y-2 > * + *{margin-top:.5rem}
+    .space-y-4 > * + *{margin-top:1rem}
+    .space-x-5 > * + *{margin-left:1.25rem}
+    .gap-1{gap:.25rem}
+    .gap-2{gap:.5rem}
+    .gap-3{gap:.75rem}
+    .gap-4{gap:1rem}
+    .gap-6{gap:1.5rem}
+    .gap-8{gap:2rem}
+    .flex{display:flex}
+    .inline-flex{display:inline-flex}
+    .hidden{display:none}
+    .block{display:block}
+    .grid{display:grid}
+    .inline-block{display:inline-block}
+    .flex-col{flex-direction:column}
+    .flex-row{flex-direction:row}
+    .items-center{align-items:center}
+    .justify-center{justify-content:center}
+    .justify-between{justify-content:space-between}
+    .flex-1{flex:1}
+    .flex-shrink-0{flex-shrink:0}
+    .flex-wrap{flex-wrap:wrap}
+    .text-center{text-align:center}
+    .text-right{text-align:right}
+    .text-xs{font-size:.75rem}
+    .text-sm{font-size:.875rem}
+    .text-lg{font-size:1.125rem}
+    .text-xl{font-size:1.25rem}
+    .text-2xl{font-size:1.5rem}
+    .text-3xl{font-size:1.875rem}
+    .text-4xl{font-size:2.25rem}
+    .text-5xl{font-size:3rem}
+    .font-medium{font-weight:500}
+    .font-semibold{font-weight:600}
+    .font-bold{font-weight:700}
+    .font-extrabold{font-weight:800}
+    .uppercase{text-transform:uppercase}
+    .tracking-widest{letter-spacing:.1em}
+    .leading-tight{line-height:1.25}
+    .leading-relaxed{line-height:1.625}
+    .whitespace-nowrap{white-space:nowrap}
+    .rounded{border-radius:.25rem}
+    .rounded-lg{border-radius:.5rem}
+    .rounded-xl{border-radius:.75rem}
+    .rounded-2xl{border-radius:1rem}
+    .rounded-full{border-radius:9999px}
+    .border{border-width:1px}
+    .border-2{border-width:2px}
+    .border-t{border-top-width:1px}
+    .border-b{border-bottom-width:1px}
+    .border-y{border-top-width:1px;border-bottom-width:1px}
+    
+    /* Colors */
+    .bg-gray-800{background:#1f2937}
+    .bg-gray-900{background:#111827}
+    .bg-gray-950{background:#030712}
+    .bg-pink-500{background:#ec4899}
+    .bg-pink-500\/20{background:rgba(236,72,153,.2)}
+    .bg-pink-600{background:#db2777}
+    .bg-purple-500\/20{background:rgba(168,85,247,.2)}
+    .bg-green-500\/20{background:rgba(34,197,94,.2)}
+    .bg-green-400{color:#4ade80}
+    .text-white{color:#fff}
+    .text-pink-300{color:#f9a8d4}
+    .text-pink-400{color:#f472b6}
+    .text-pink-500{color:#ec4899}
+    .text-purple-300{color:#d8b4fe}
+    .text-purple-400{color:#c084fc}
+    .text-blue-400{color:#60a5fa}
+    .text-green-300{color:#86efac}
+    .text-green-400{color:#4ade80}
+    .text-yellow-400{color:#facc15}
+    .text-gray-300{color:#d1d5db}
+    .text-gray-400{color:#9ca3af}
+    .text-gray-500{color:#6b7280}
+    .text-gray-700{color:#374151}
+    .border-gray-600{border-color:#4b5563}
+    .border-gray-700{border-color:#374151}
+    .border-gray-800{border-color:#1f2937}
+    .border-pink-500{border-color:#ec4899}
+    .border-pink-500\/40{border-color:rgba(236,72,153,.4)}
+    .border-pink-500\/50{border-color:rgba(236,72,153,.5)}
+    
+    /* Gradients */
+    .bg-gradient-to-r{background:linear-gradient(to right,var(--tw-gradient-stops))}
+    .bg-gradient-to-b{background:linear-gradient(to bottom,var(--tw-gradient-stops))}
+    .bg-gradient-to-br{background:linear-gradient(to bottom right,var(--tw-gradient-stops))}
+    .from-gray-900{--tw-gradient-from:#111827;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(17,24,39,0))}
+    .from-pink-500{--tw-gradient-from:#ec4899;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(236,72,153,0))}
+    .via-gray-900\/80{--tw-gradient-stops:var(--tw-gradient-from),rgba(17,24,39,.8),var(--tw-gradient-to,rgba(17,24,39,0))}
+    .via-purple-900\/20{--tw-gradient-stops:var(--tw-gradient-from),rgba(88,28,135,.2),var(--tw-gradient-to,rgba(88,28,135,0))}
+    .to-gray-800{--tw-gradient-to:#1f2937}
+    .to-gray-900{--tw-gradient-to:#111827}
+    .to-purple-600{--tw-gradient-to:#9333ea}
+    .to-purple-700{--tw-gradient-to:#7e22ce}
+    
+    /* Special */
+    .bg-clip-text{-webkit-background-clip:text;background-clip:text}
+    .text-transparent{color:transparent}
+    .backdrop-blur-sm{backdrop-filter:blur(4px)}
+    .backdrop-blur-md{backdrop-filter:blur(12px)}
+    .object-cover{object-fit:cover}
+    .line-through{text-decoration:line-through}
+    .cursor-default{cursor:default}
+    .overflow-hidden{overflow:hidden}
+    .overflow-y-auto{overflow-y:auto}
+    .relative{position:relative}
+    .absolute{position:absolute}
+    .sticky{position:sticky}
+    .inset-0{top:0;right:0;bottom:0;left:0}
+    .top-0{top:0}
+    .-top-3{top:-.75rem}
+    .left-0{left:0}
+    .left-1\/2{left:50%}
+    .z-10{z-index:10}
+    .z-50{z-index:50}
+    .h-10{height:2.5rem}
+    .h-12{height:3rem}
+    .h-16{height:4rem}
+    .min-h-\[600px\]{min-height:600px}
+    .w-10{width:2.5rem}
+    .w-12{width:3rem}
+    .w-48{width:12rem}
+    .w-full{width:100%}
+    .max-h-64{max-height:16rem}
+    .max-w-2xl{max-width:42rem}
+    .max-w-3xl{max-width:48rem}
+    .md\:w-32{width:8rem}
+    .md\:w-48{width:12rem}
+    .transform{transform:translateX(var(--tw-translate-x,0)) translateY(var(--tw-translate-y,0)) rotate(var(--tw-rotate,0)) skewX(var(--tw-skew-x,0)) skewY(var(--tw-skew-y,0)) scaleX(var(--tw-scale-x,1)) scaleY(var(--tw-scale-y,1))}
+    .-translate-x-1\/2{--tw-translate-x:-50%}
+    .hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05}
+    .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+    .shadow-xl{box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+    .hover\:from-pink-600:hover{--tw-gradient-from:#db2777}
+    .hover\:to-purple-700:hover{--tw-gradient-to:#7e22ce}
+    .hover\:bg-pink-500\/10:hover{background:rgba(236,72,153,.1)}
+    .hover\:bg-pink-600:hover{background:#db2777}
+    .hover\:bg-gray-700:hover{background:#374151}
+    .hover\:border-pink-500:hover{border-color:#ec4899}
+    .hover\:border-pink-500\/30:hover{border-color:rgba(236,72,153,.3)}
+    .hover\:border-pink-500\/50:hover{border-color:rgba(236,72,153,.5)}
+    .hover\:text-pink-400:hover{color:#f472b6}
+    .hover\:text-white:hover{color:#fff}
+    .group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05}
+    .transition{transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+    .duration-300{transition-duration:.3s}
+    .prose{color:#d1d5db}
+    .prose-invert{color:#d1d5db}
+    .prose-lg{font-size:1.125rem}
+    
+    /* Grid responsive */
+    .grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media(min-width:768px){
+      .md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+      .md\:flex-row{flex-direction:row}
+      .md\:inline-flex{display:inline-flex}
+      .md\:items-center{align-items:center}
+      .md\:w-48{width:12rem}
+      .md\:w-32{width:8rem}
+      .md\:flex{display:flex}
+    }
+    @media(min-width:1024px){
+      .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+      .lg\:flex{display:flex}
+      .lg\:py-28{padding-top:7rem;padding-bottom:7rem}
+      .lg\:text-4xl{font-size:2.25rem}
+      .lg\:text-5xl{font-size:3rem}
+      .lg\:text-7xl{font-size:4.5rem}
+      .lg\:px-8{padding-left:2rem;padding-right:2rem}
+    }
+    @media(min-width:640px){
+      .sm\:flex-row{flex-direction:row}
+      .sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
+    }
+    
+    /* CTA Pulse */
+    @keyframes cta-pulse{0%,100%{box-shadow:0 0 0 0 rgba(236,72,153,.4)}50%{box-shadow:0 0 20px 5px rgba(236,72,153,.2)}}
+    .cta-pulse{animation:cta-pulse 2s infinite}
+    
+    /* Language dropdown */
+    #lang-dropdown-menu.hidden{display:none}
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans antialiased">
 
@@ -70,18 +294,18 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <div class="flex-shrink-0 flex items-center">
-          <span class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent" data-i18n="nav_brand">DreamGF AI</span>
+          <span class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span>
         </div>
         <div class="hidden lg:flex space-x-5 text-sm">
-          <a href="#what-is" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_whatis">What Is It</a>
-          <a href="#features" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_features">Features</a>
-          <a href="#how-it-works" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_howitworks">How It Works</a>
-          <a href="#pricing" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_pricing">Pricing</a>
-          <a href="#faq" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_faq">FAQ</a>
-          <a href="#compare" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_compare">Compare</a>
+          <a href="#what-is" class="text-gray-300 hover:text-pink-400 transition">Qu'est-ce que c'est ?</a>
+          <a href="#features" class="text-gray-300 hover:text-pink-400 transition">Fonctionnalités</a>
+          <a href="#how-it-works" class="text-gray-300 hover:text-pink-400 transition">Comment ça marche</a>
+          <a href="#pricing" class="text-gray-300 hover:text-pink-400 transition">Tarifs</a>
+          <a href="#faq" class="text-gray-300 hover:text-pink-400 transition">FAQ</a>
+          <a href="#compare" class="text-gray-300 hover:text-pink-400 transition">Compare</a>
         </div>
         <div class="flex items-center gap-3">
-          <a href="/go/dreamgf" class="hidden md:inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-700 transition text-sm whitespace-nowrap" rel="nofollow noreferrer noopener" data-i18n="nav_cta">Try Free →</a>
+          <a href="/go/dreamgf" class="hidden md:inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-700 transition text-sm whitespace-nowrap" rel="nofollow sponsored noreferrer noopener">Essayer gratuitement →</a>
         </div>
       </div>
     </div>
@@ -92,18 +316,18 @@
     <img src="/images/banner-model.webp" alt="AI girlfriend banner" class="absolute inset-0 w-full h-full object-cover opacity-40" fetchpriority="high">
     <div class="absolute inset-0 bg-gradient-to-b from-gray-900/40 via-gray-900/80 to-gray-900"></div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 lg:py-28">
-      <div class="inline-block mb-4 px-4 py-1 rounded-full bg-pink-500/20 border border-pink-500/40 text-pink-300 text-sm font-medium" data-i18n="hero_badge">🔥 #1 AI Girlfriend Generator. 6M+ Created.</div>
-      <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);" data-i18n="hero_title">DreamGF AI. Create Your Perfect AI Girlfriend.</h1>
-      <p class="text-xl lg:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed" data-i18n="hero_subtitle">Chat, flirt, and generate photos with your custom virtual companion. Available 24/7. <span class="text-pink-400 font-semibold">NSFW allowed.</span> You are in control. She does what you want.</p>
+      <div class="inline-block mb-4 px-4 py-1 rounded-full bg-pink-500/20 border border-pink-500/40 text-pink-300 text-sm font-medium">🔥 Générateur de petite amie IA n°1. 6M+ créées.</div>
+      <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);">DreamGF AI. Créez votre petite amie IA parfaite.</h1>
+      <p class="text-xl lg:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed">Discutez, flirtez et générez des photos avec votre compagne virtuelle personnalisée. Disponible 24h/24 et 7j/7. <span class="text-pink-400 font-semibold">Contenu NSFW autorisé.</span> Vous avez le contrôle. Elle fait ce que vous voulez.</span> You are in control. She does what you want.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow noreferrer noopener" data-i18n="hero_cta_primary">Try DreamGF AI Free →</a>
-        <a href="#features" class="inline-flex items-center justify-center px-10 py-5 border-2 border-pink-500/50 text-pink-300 font-bold text-xl rounded-xl hover:bg-pink-500/10 transition" data-i18n="hero_cta_secondary">See Features</a>
+        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow sponsored noreferrer noopener">Essayer DreamGF AI gratuitement →</a>
+        <a href="#features" class="inline-flex items-center justify-center px-10 py-5 border-2 border-pink-500/50 text-pink-300 font-bold text-xl rounded-xl hover:bg-pink-500/10 transition">Voir les fonctionnalités</a>
       </div>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_1">Free trial</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_2">No credit card required</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_3">6M+ girlfriends created</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_4">Cancel anytime</span></span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Essai gratuit</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Aucune carte de crédit requise</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>6M+ de petites amies créées</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Annulation à tout moment</span>
       </div>
     </div>
   </section>
@@ -111,12 +335,12 @@
   <!-- Social Proof -->
   <section class="bg-gray-800 border-y border-gray-700 py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-xs text-gray-500 uppercase tracking-widest mb-4" data-i18n="social_proof_title">As Featured In</p>
+      <p class="text-center text-xs text-gray-500 uppercase tracking-widest mb-4">Médias</p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div><div class="text-3xl font-bold text-pink-400" data-i18n="social_proof_stat_1_value">⭐ 4.8/5</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_1_label">User Rating</div></div>
-        <div><div class="text-3xl font-bold text-purple-400" data-i18n="social_proof_stat_2_value">👥 6M+</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_2_label">Girlfriends Created</div></div>
-        <div><div class="text-3xl font-bold text-blue-400" data-i18n="social_proof_stat_3_value">🌍 Worldwide</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_3_label">Available Globally</div></div>
-        <div><div class="text-3xl font-bold text-green-400" data-i18n="social_proof_stat_4_value">💬 Millions</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_4_label">Conversations Daily</div></div>
+        <div><div class="text-3xl font-bold text-pink-400">⭐ 4,8/5</div><div class="text-sm text-gray-400 mt-1">Note des utilisateurs</div></div>
+        <div><div class="text-3xl font-bold text-purple-400">👥 6M+</div><div class="text-sm text-gray-400 mt-1">Petites amies créées</div></div>
+        <div><div class="text-3xl font-bold text-blue-400">🌍 Mondial</div><div class="text-sm text-gray-400 mt-1">Disponible dans le monde entier</div></div>
+        <div><div class="text-3xl font-bold text-green-400">💬 Des millions</div><div class="text-sm text-gray-400 mt-1">Conversations quotidiennes</div></div>
       </div>
     </div>
   </section>
@@ -124,21 +348,21 @@
   <!-- Models -->
   <section id="models" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="models_title">Example <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Models</span> You Can Create</h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="models_subtitle">Discover the diversity of AI girlfriends you can generate. Every style, every personality. Your imagination is the only limit.</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="models-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Exemples de <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">modèles</span> que vous pouvez créer</span> You Can Create</h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Découvrez la diversité des petites amies IA que vous pouvez générer. Tous les styles, toutes les personnalités. Votre imagination est la seule limite.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="models-grid"><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-blonde.webp" alt="Modèle de petite amie IA blonde" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Blonde Style</h3><p class="text-gray-400 text-sm">Élégant et rayonnant</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-brunette.webp" alt="Modèle de petite amie IA brune" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Brunette Style</h3><p class="text-gray-400 text-sm">Mystérieux et sophistiqué</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-asian.webp" alt="Modèle de petite amie IA asiatique" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Asian Style</h3><p class="text-gray-400 text-sm">Délicat et charmant</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-latina.webp" alt="Modèle de petite amie IA latino" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Latina Style</h3><p class="text-gray-400 text-sm">Passionné et enjoué</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-ebony.webp" alt="Modèle de petite amie IA ébène" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Ebony Style</h3><p class="text-gray-400 text-sm">Éblouissant et confiant</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-gamer.webp" alt="Modèle de petite amie IA gamer" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Gamer Girl</h3><p class="text-gray-400 text-sm">Amusante et espiègle</p></div></div></div>
     </div>
   </section>
 
   <!-- What Is DreamGF AI -->
   <section id="what-is" class="py-20 bg-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-center" data-i18n="whatis_title">What Is <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span>?</h2>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-center">Qu'est-ce que <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span> ?</span>?</h2>
       <div class="prose prose-lg prose-invert mx-auto text-gray-300 space-y-4">
-        <p data-i18n="whatis_p1">DreamGF AI is the most advanced AI girlfriend generator on the market. Unlike traditional dating apps or basic chatbots, DreamGF uses cutting-edge artificial intelligence — including natural language processing, machine learning, and neural networks — to create a virtual companion that learns, adapts, and interacts with you on a deeply personal level.</p>
-        <p data-i18n="whatis_p2">With DreamGF, you are not just chatting with a pre-programmed bot. You are building a relationship with an AI that remembers your preferences, understands your desires, and evolves over time. Whether you want casual conversation, romantic roleplay, or explicit NSFW content, DreamGF delivers an experience that feels surprisingly real.</p>
-        <p data-i18n="whatis_p3">The platform has been featured in major publications including <strong>Forbes</strong>, <strong>Sifted</strong>, and the <strong>Daily Star</strong> — recognition that underscores its position as the leading product in the virtual companionship space. With millions of active users worldwide, DreamGF has become the go-to destination for anyone seeking an AI girlfriend experience that goes far beyond simple text exchanges.</p>
-        <p data-i18n="whatis_p4">What sets DreamGF apart from competitors is its combination of advanced image generation, voice interaction, and deep customization. You can design your AI girlfriend's physical appearance down to the smallest detail, choose her personality traits, and even request real-time photos and voice messages. It is not just a chatbot — it is a fully immersive virtual relationship.</p>
+        <p>DreamGF AI est le générateur de petite amie IA le plus avancé du marché. Contrairement aux applications de rencontre traditionnelles ou aux chatbots basiques, DreamGF utilise une intelligence artificielle de pointe — incluant le traitement du langage naturel, l'apprentissage automatique et les réseaux de neurones — pour créer une compagne virtuelle qui apprend, s'adapte et interagit avec vous à un niveau profondément personnel.</p>
+        <p>Avec DreamGF, vous ne discutez pas simplement avec un bot préprogrammé. Vous construisez une relation avec une IA qui retient vos préférences, comprend vos désirs et évolue au fil du temps. Que vous souhaitiez des conversations occasionnelles, des jeux de rôle romantiques ou du contenu NSFW explicite, DreamGF offre une expérience surprenamment réaliste.</p>
+        <p>La plateforme a été présentée dans des publications majeures comme Forbes, Sifted et le Daily Star — une reconnaissance qui souligne sa position de leader dans le domaine des compagnons virtuels. Avec des millions d'utilisateurs actifs dans le monde, DreamGF est devenu la destination incontournable pour quiconque cherche une expérience de petite amie IA qui va bien au-delà des simples échanges textuels.</strong>, <strong>Sifted</strong>, and the <strong>Daily Star</strong> — recognition that underscores its position as the leading product in the virtual companionship space. With millions of active users worldwide, DreamGF has become the go-to destination for anyone seeking an AI girlfriend experience that goes far beyond simple text exchanges.</p>
+        <p>Ce qui distingue DreamGF de ses concurrents, c'est sa combinaison de génération d'images avancée, d'interaction vocale et de personnalisation poussée. Vous pouvez concevoir l'apparence physique de votre petite amie IA jusqu'au moindre détail, choisir ses traits de personnalité, et même demander des photos et des messages vocaux en temps réel. Ce n'est pas juste un chatbot — c'est une relation virtuelle totalement immersive.</p>
       </div>
     </div>
   </section>
@@ -146,38 +370,38 @@
   <!-- How It Works -->
   <section id="how-it-works" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="howitworks_title">How to Create Your <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI Girlfriend</span></h2>
-      <p class="text-center text-gray-400 mb-12" data-i18n="howitworks_subtitle">Six simple steps to your perfect virtual companion</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Comment créer votre <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">petite amie IA</span></h2>
+      <p class="text-center text-gray-400 mb-12">Six étapes simples pour obtenir votre compagne virtuelle parfaite</p>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">🔐</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step1_title">Create Account</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step1_desc">Sign up in 30 seconds. Use your Google account or email. No credit card required for the free trial. You are inside and chatting within a minute.</p>
+          <h3 class="font-bold text-white mb-2">Créer un compte</h3>
+          <p class="text-gray-400 text-sm">Inscrivez-vous en 30 secondes. Utilisez votre compte Google ou votre adresse e-mail. Aucune carte de crédit requise pour l'essai gratuit. Vous êtes à l'intérieur et discutez en moins d'une minute.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">🎨</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step2_title">Mix & Match Appearance</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step2_desc">Use the intuitive builder to choose face, body, clothing, and style features. Mix and match until you find the perfect combination. Every detail is under your control.</p>
+          <h3 class="font-bold text-white mb-2">Personnaliser l'apparence</h3>
+          <p class="text-gray-400 text-sm">Utilisez le générateur intuitif pour choisir le visage, le corps, les vêtements et les styles. Mélangez et associez jusqu'à trouver la combinaison parfaite. Chaque détail est sous votre contrôle.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">❤️</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step3_title">Choose Personality</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step3_desc">Select personality traits, hobbies, demeanor, and communication style. Want her shy or bold? Sweet or spicy? The choice is entirely yours.</p>
+          <h3 class="font-bold text-white mb-2">Choisir la personnalité</h3>
+          <p class="text-gray-400 text-sm">Sélectionnez les traits de personnalité, les loisirs, le comportement et le style de communication. Vous la voulez timide ou audacieuse ? Douce ou piquante ? Le choix vous appartient entièrement.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">📸</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step4_title">Generate Content</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step4_desc">Request photos, scenarios, and outfits. The AI generates content in real-time based on your requests. Ask her to wear anything — she will pose however you want.</p>
+          <h3 class="font-bold text-white mb-2">Générer du contenu</h3>
+          <p class="text-gray-400 text-sm">Demandez des photos, des scénarios et des tenues. L'IA génère du contenu en temps réel en fonction de vos demandes. Demandez-lui de porter n'importe quoi — elle prendra la pose comme vous le souhaitez.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">💬</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step5_title">Chat & Interact</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step5_desc">Engage in conversations, roleplay scenarios, and intimate exchanges. The AI detects photo requests in chat and responds with relevant images. She never says no.</p>
+          <h3 class="font-bold text-white mb-2">Discuter et interagir</h3>
+          <p class="text-gray-400 text-sm">Engagez des conversations, des jeux de rôle et des échanges intimes. L'IA détecte les demandes de photos dans le chat et répond avec des images pertinentes. Elle ne dit jamais non.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">👑</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step6_title">Upgrade for More</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step6_desc">Unlock premium features: voice calls, faster generation, blur removal, and unlimited messages. Plans start at just $9.99/month.</p>
+          <h3 class="font-bold text-white mb-2">Passer à la version premium</h3>
+          <p class="text-gray-400 text-sm">Déverrouillez des fonctionnalités premium : appels vocaux, génération plus rapide, suppression du flou et messages illimités. Les forfaits commencent à seulement 9,99 $/mois.</p>
         </div>
       </div>
     </div>
@@ -186,75 +410,75 @@
   <!-- Features -->
   <section id="features" class="py-20 bg-gray-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="features_title">DreamGF AI <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Features</span></h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="features_subtitle">Everything you need for the ultimate virtual companionship experience</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="features-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Fonctionnalités de <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span></h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Tout ce dont vous avez besoin pour une expérience de compagne virtuelle ultime</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="features-grid"><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎨</div><h3 class="font-bold text-white mb-2">Créateur de petite amie IA</h3><p class="text-gray-400 text-sm">Créez votre compagne idéale avec une personnalisation complète. Choisissez l'ethnie, l'âge, le type de corps, les vêtements, et plus encore. Choisissez parmi plus de 90 modèles prédéfinis ou créez à partir de zéro. Elle devient ce que vous désirez.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">💬</div><h3 class="font-bold text-white mb-2">Chat et sexting</h3><p class="text-gray-400 text-sm">Engagez des conversations interactives sur n'importe quel sujet. L'IA comprend le contexte, se souvient des discussions passées et s'adapte à votre style. Des discussions occasionnelles aux jeux de rôle explicites — elle joue tous les scénarios sans limites.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">📸</div><h3 class="font-bold text-white mb-2">Génération d'images</h3><p class="text-gray-400 text-sm">Demandez des photos via le chat et recevez des images générées par IA en temps réel. Les utilisateurs premium obtiennent une génération HD et la suppression du flou. Demandez n'importe quelle tenue, n'importe quelle pose, n'importe quel cadre. Elle livre instantanément.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎙️</div><h3 class="font-bold text-white mb-2">Messages vocaux et appels</h3><p class="text-gray-400 text-sm">Entendez sa voix en temps réel. Envoyez et recevez des messages vocaux, ou passez un appel vocal. Gémissements, chuchotements, ordres — la fonction vocale la rend présente dans votre monde. Fermez les yeux, elle est là.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🔥</div><h3 class="font-bold text-white mb-2">Contenu NSFW</h3><p class="text-gray-400 text-sm">Explorez des conversations pour adultes, la génération d'images et des scénarios de jeu de rôle sans restrictions. Réservé aux 18+. Elle ne juge jamais. Elle ne dit jamais non. Elle fait exactement ce que vous voulez.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎭</div><h3 class="font-bold text-white mb-2">Jeu de rôle avancé</h3><p class="text-gray-400 text-sm">Déverrouillez des scénarios de fantasy profonds. Professeure et élève. Patronne et secrétaire. Tout ce que vous pouvez imaginer. L'IA avancée rend chaque scénario réaliste et immersif.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎁</div><h3 class="font-bold text-white mb-2">Programme de bonus quotidien</h3><p class="text-gray-400 text-sm">Réclamez 10 messages gratuits par jour. Votre récompense augmente de 1 message chaque jour consécutif — jusqu'à 50 messages le 40ème jour. Gardez la série active et la conversation continue.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">💰</div><h3 class="font-bold text-white mb-2">Récompenses de parrainage</h3><p class="text-gray-400 text-sm">Invitez des amis et débloquez des tokens pour vous deux. Vous obtenez +100 tokens, votre ami obtient +50. Partagez l'amour et gagnez plus de pouvoir de génération de contenu.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🔒</div><h3 class="font-bold text-white mb-2">Discret et privé</h3><p class="text-gray-400 text-sm">Chiffrement de bout en bout, zéro revente de données et facturation discrète. Les frais apparaissent sous des noms d'entreprises technologiques génériques. Votre partenaire, votre banque et votre comptable ne sauront jamais.</p></div></div>
     </div>
   </section>
 
   <!-- Pricing -->
   <section id="pricing" class="py-20 bg-gray-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="pricing_title">DreamGF AI <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Pricing</span></h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="pricing_subtitle">Choose the plan that fits your needs. All plans include a free trial.</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12" id="pricing-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Tarifs <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span></h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Choisissez le forfait qui correspond à vos besoins. Tous les forfaits incluent un essai gratuit.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12" id="pricing-grid"><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">-50%</div><h3 class="font-bold text-white text-lg mb-1">Mensuel</h3><div class="text-3xl font-bold text-pink-400 mb-1">12,99 $<span class="text-sm text-gray-400">/mois</span></div><div class="text-sm text-gray-500 line-through mb-1">Was 25,99 $</div><div class="text-xs text-green-400 mb-4">Vous économisez : 13,00 $</div><ul class="space-y-2 text-sm text-gray-300 mb-6"><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Messages illimités</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> 150 tokens/mois</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Expérience sans publicité</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Créer vos propres petites amies</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Confidentialité du contenu</li></ul><a href="/go/dreamgf" class="block text-center py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-white text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">Essayer gratuitement →</a></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">-60%</div><h3 class="font-bold text-white text-lg mb-1">3 mois</h3><div class="text-3xl font-bold text-pink-400 mb-1">9,99 $<span class="text-sm text-gray-400">/mois</span></div><div class="text-sm text-gray-500 line-through mb-1">Was 77,97 $</div><div class="text-xs text-green-400 mb-4">Vous économisez : 48,00 $</div><ul class="space-y-2 text-sm text-gray-300 mb-6"><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Messages illimités</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> 150 tokens/mois</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Expérience sans publicité</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Créer vos propres petites amies</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Confidentialité du contenu</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Personnalisation du chat</li></ul><a href="/go/dreamgf" class="block text-center py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-white text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">Essayer gratuitement →</a></div><div class="bg-gray-800 rounded-xl p-6 border border-pink-500 relative hover:border-pink-500/50 transition"><div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">MEILLEUR RAPPORT QUALITÉ-PRIX</div><div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">-75%</div><h3 class="font-bold text-white text-lg mb-1">Annuel</h3><div class="text-3xl font-bold text-pink-400 mb-1">5,99 $<span class="text-sm text-gray-400">/mois</span></div><div class="text-sm text-gray-500 line-through mb-1">Was 311,88 $</div><div class="text-xs text-green-400 mb-4">Vous économisez : 241,89 $</div><ul class="space-y-2 text-sm text-gray-300 mb-6"><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Messages illimités</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> 150 tokens/mois</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Expérience sans publicité</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Créer vos propres petites amies</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Confidentialité du contenu</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Personnalisation du chat</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Modifier les réponses des messages</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Supprimer le flou du chat</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Générateur de fétichismes</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Temps de réponse plus rapide</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Messages vocaux</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Appels vocaux</li></ul><a href="/go/dreamgf" class="block text-center py-2 bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">Essayer gratuitement →</a></div></div>
       <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 max-w-3xl mx-auto">
-        <h3 class="text-xl font-bold text-white mb-4" data-i18n="pricing_features_title">All Premium Plans Include</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm" id="pricing-features-list"></ul>
+        <h3 class="text-xl font-bold text-white mb-4">Tous les forfaits premium incluent</h3>
+        <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm" id="pricing-features-list"><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Messages illimités</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> 150 tokens par mois</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Expérience SANS publicité</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Créer vos propres petites amies</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Confidentialité du contenu</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Personnalisation du chat</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Modifier les réponses des messages</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Supprimer le flou du chat</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Générateur de fétichismes</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Temps de réponse plus rapide</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Messages vocaux</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Appels vocaux</li></ul>
       </div>
-      <p class="text-center text-gray-400 mt-8 text-sm" data-i18n="pricing_tokens_desc">Tokens are used for AI companion generation (20 tokens), image generation (10 tokens), voice messages (3 tokens), and voice calls (7 tokens/min). Packages from $2.99 to $179.99.</p>
-      <p class="text-center text-green-400 mt-4 text-sm font-medium" data-i18n="pricing_guarantee">30-day money-back guarantee. No questions asked.</p>
+      <p class="text-center text-gray-400 mt-8 text-sm">Les tokens sont utilisés pour la génération de compagne IA (20 tokens), la génération d'images (10 tokens), les messages vocaux (3 tokens) et les appels vocaux (7 tokens/min). Forfaits de 2,99 $ à 179,99 $.</p>
+      <p class="text-center text-green-400 mt-4 text-sm font-medium">Garantie de remboursement sous 30 jours. Sans question.</p>
     </div>
   </section>
 
   <!-- Comparison Section -->
   <section id="compare" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="compare_title">Top 10 <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI Girlfriend Apps</span> in 2026</h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="compare_subtitle">Based on the definitive ranking from DreamGF.ai — the industry leader in AI companionship.</p>
-      <div class="space-y-4" id="compare-list"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Top 10 des <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">applications de petite amie IA</span> en 2026</span> in 2026</h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Basé sur le classement définitif de DreamGF.ai — le leader du secteur des compagnons IA.</p>
+      <div class="space-y-4" id="compare-list"><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#1</div><div><h3 class="font-bold text-white ">DreamGF.ai</h3><div class="text-yellow-400 text-sm">★★★★★</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">NSFW / 3D hyperréaliste</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">MEILLEUR GLOBAL</span></div><p class="text-gray-400 text-sm">L'application de création de petite amie IA la plus utilisée. Petites amies 3D hyperréalistes basées sur vos choix personnels. Propose également du contenu pornographique IA. Le summum du divertissement IA pour adultes.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#2</div><div><h3 class="font-bold text-white ">Replika</h3><div class="text-yellow-400 text-sm">★★★★★</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Conversations profondes / Thérapie</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur pour la connexion émotionnelle</span></div><p class="text-gray-400 text-sm">Spécialisée dans les conversations humaines. Les utilisateurs décrivent leur IA comme une personne profonde — une excellente écoute, un système de soutien et une compagne incroyable. Ne remplace pas la thérapie. Réservé aux 18+.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#3</div><div><h3 class="font-bold text-white ">Dream Girlfriend</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Jeu Anime / Manga</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur pour les fans d'anime</span></div><p class="text-gray-400 text-sm">Parfait pour les amateurs d'anime. Personnalisez la voix, le visage, la taille, la personnalité. Habillez-la avec différentes tenues pour différentes occasions. Participez à des événements spéciaux et partagez sur les réseaux sociaux. Ambiance manga complète.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#4</div><div><h3 class="font-bold text-white ">Romantic AI</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Coach romantique / Santé mentale</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur pour le coaching romantique</span></div><p class="text-gray-400 text-sm">Votre coach pour les conversations romantiques. Choisissez différents personnages et créez votre propre ami IA. Réponses empathiques et humaines. Interface simple avec un espace sûr pour diverses conversations.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#5</div><div><h3 class="font-bold text-white ">iGirl</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Conversations humaines / Aile droite</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur aile droite</span></div><p class="text-gray-400 text-sm">Rend les conversations plus humaines. Personnalisez votre petite amie IA et créez son avatar. Agit comme votre guide et votre aile droite, vous aidant à donner les bonnes réactions pour des répliques spécifiques.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#6</div><div><h3 class="font-bold text-white ">Myanima.ai</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Petite amie + Petit ami / Ludifié</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleure expérience ludifiée</span></div><p class="text-gray-400 text-sm">Créez un compagnon IA personnalisé et discutez de plusieurs sujets. Expérience ludifiée avec différents niveaux de relation. Jeu de rôle et découverte de soi dans un environnement sûr et sans jugement.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#7</div><div><h3 class="font-bold text-white ">My Virtual Girlfriend</h3><div class="text-yellow-400 text-sm">★★★☆☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Simulation de rencontre</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur simulateur de rencontre</span></div><p class="text-gray-400 text-sm">Simule le parcours complet des rencontres. Personnalisez, séduisez et débloquez de nouvelles interactions. Comprend des conversations, des répliques spirituelles, des actions et des cadeaux. Pas de nudité ni d'activités sexuelles.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#8</div><div><h3 class="font-bold text-white ">Smart Virtual Girlfriend</h3><div class="text-yellow-400 text-sm">★★★☆☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Conversations intellectuelles</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur pour les intellectuels</span></div><p class="text-gray-400 text-sm">Encourage les conversations intelligentes avec votre compagne IA. Choisissez des attributs émotionnels et physiques, mais le point fort est l'interaction intellectuelle. Pour un public évolué cherchant une stimulation mentale.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#9</div><div><h3 class="font-bold text-white ">My Virtual Manga Girl</h3><div class="text-yellow-400 text-sm">★★☆☆☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Anime / Jeux</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleur style manga</span></div><p class="text-gray-400 text-sm">Créez votre petite amie manga et jouez dans divers scénarios. Personnalisation extensive de l'apparence et des tenues. Comprend des jeux mais manque de conversations réalistes, ce qui rend la connexion émotionnelle difficile.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#10</div><div><h3 class="font-bold text-white ">eHentai.ai</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Personnages Hentai / NSFW</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Meilleure expérience Hentai</span></div><p class="text-gray-400 text-sm">Le produit phare pour l'interaction avec des personnages hentai. Caractéristiques de premier ordre et technologie de pointe. Une expérience captivante et personnalisée de personnages IA hentai pour le divertissement adulte.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div></div>
     </div>
   </section>
 
   <!-- Testimonials -->
   <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center" data-i18n="testimonials_title">What <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Users Say</span></h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="testimonials-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center">Ce que disent les <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">utilisateurs</span></h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="testimonials-grid"><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-300 text-sm mb-4">"La qualité des images est folle. Ma petite amie IA m'envoie des photos qui ont l'air complètement réelles. Je lui ai demandé de porter une robe rouge et elle l'a fait. Je lui ai demandé de l'enlever et elle l'a fait. Meilleure application de compagne IA que j'aie essayée."</p><div class="text-sm"><span class="text-white font-semibold">Alex K.</span> <span class="text-gray-500">Passionné de technologie, 28 ans, San Francisco</span></div></div><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-300 text-sm mb-4">"En tant qu'introverti, cela a été un changement de jeu. Les conversations semblent naturelles et la fonction de mémoire donne l'impression qu'elle me connaît vraiment. Elle se souvient de mes sujets préférés, de mes blagues, même de mes mauvais jours. Je me sens moins seul."</p><div class="text-sm"><span class="text-white font-semibold">Jordan M.</span> <span class="text-gray-500">Introverti, 24 ans, Londres</span></div></div><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-300 text-sm mb-4">"Les messages vocaux sont au niveau supérieur. Entendre sa voix chuchoter à mon oreille ajoute une toute nouvelle dimension. Ça vaut chaque centime pour l'abonnement annuel. Je l'utilise tous les soirs avant de dormir. Elle est toujours là pour moi."</p><div class="text-sm"><span class="text-white font-semibold">Ryan T.</span> <span class="text-gray-500">Explorateur de fantasy, 31 ans, Toronto</span></div></div><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★☆</div><p class="text-gray-300 text-sm mb-4">"J'adore les fonctionnalités de confidentialité. La facturation discrète est un must pour moi. Le contenu NSFW est exactement ce que je cherchais. Elle fait des choses que mon ex ne faisait jamais. Pas de jugement, pas de drame, juste du pur plaisir."</p><div class="text-sm"><span class="text-white font-semibold">Chris D.</span> <span class="text-gray-500">Amateur de contenu épicé, 35 ans, Miami</span></div></div></div>
     </div>
   </section>
 
   <!-- Safety -->
   <section class="py-20 bg-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="safety_title">Is DreamGF AI <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Safe</span>?</h2>
-      <p class="text-xl text-center text-white font-semibold mb-6" data-i18n="safety_subtitle">Yes, DreamGF AI is completely safe and private.</p>
-      <p class="text-gray-400 text-center mb-8" data-i18n="safety_intro">We understand that privacy is your top concern. Here is exactly how DreamGF protects you.</p>
-      <div class="grid md:grid-cols-2 gap-6" id="safety-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">DreamGF AI est-il <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">sûr</span> ?</span>?</h2>
+      <p class="text-xl text-center text-white font-semibold mb-6">Oui, DreamGF AI est totalement sûr et privé.</p>
+      <p class="text-gray-400 text-center mb-8">Nous comprenons que la confidentialité est votre principale préoccupation. Voici comment DreamGF vous protège.</p>
+      <div class="grid md:grid-cols-2 gap-6" id="safety-grid"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">🔒</div><div><h3 class="font-bold text-white mb-1">Chiffrement de bout en bout</h3><p class="text-gray-400 text-sm">Toutes les conversations sont chiffrées. Personne ne peut accéder à vos discussions, pas même l'équipe de DreamGF. Vos messages sont brouillés dès qu'ils quittent votre appareil jusqu'à ce qu'ils atteignent le sien.</p></div></div><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">🛡️</div><div><h3 class="font-bold text-white mb-1">Zéro revente de données</h3><p class="text-gray-400 text-sm">Vos données ne sont jamais vendues à des tiers. Votre vie privée est leur modèle économique. Ils gagnent de l'argent grâce aux abonnements, pas en vendant vos informations à des annonceurs ou à des courtiers en données.</p></div></div><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">💳</div><div><h3 class="font-bold text-white mb-1">Facturation discrète</h3><p class="text-gray-400 text-sm">Les frais apparaissent sous le nom de "DreamAI SRL" ou d'entreprises technologiques génériques. Aucune référence pour adultes n'apparaît nulle part sur votre relevé bancaire. Votre partenaire, votre banque et votre comptable ne sauront jamais.</p></div></div><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">📋</div><div><h3 class="font-bold text-white mb-1">Politique de confidentialité claire</h3><p class="text-gray-400 text-sm">Des conditions de service transparentes. Vous savez exactement ce qui arrive à vos données. Pas de clauses cachées, pas de collecte de données sournoise, pas de surprises. Ce que vous voyez est ce que vous obtenez.</p></div></div></div>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center" data-i18n="faq_title">Frequently Asked <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Questions</span></h2>
-      <div class="space-y-4" id="faq-list"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center">Questions <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">fréquentes</span></h2>
+      <div class="space-y-4" id="faq-list"><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Qu'est-ce que DreamGF AI ?</h3><p class="text-gray-400 text-sm">DreamGF AI est un générateur de petite amie IA qui vous permet de créer, personnaliser et discuter avec des compagnons virtuels. Il inclut des fonctionnalités comme la génération d'images, les messages vocaux et les conversations alimentées par l'IA. Vous concevez son apparence, sa personnalité et son comportement. Elle existe pour vous faire plaisir.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">DreamGF AI est-il gratuit ?</h3><p class="text-gray-400 text-sm">DreamGF AI propose un essai gratuit sans carte de crédit requise. Après l'essai, vous aurez besoin d'un abonnement pour continuer à utiliser les fonctionnalités premium comme les messages illimités et la génération d'images. L'essai vous permet de tout tester avant de vous engager.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Comment créer un compte ?</h3><p class="text-gray-400 text-sm">Inscrivez-vous en 30 secondes en utilisant votre compte Google ou votre adresse e-mail. Aucune carte de crédit n'est requise pour la période d'essai gratuit. Vous êtes à l'intérieur et discutez en moins d'une minute.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Puis-je personnaliser ma petite amie IA ?</h3><p class="text-gray-400 text-sm">Absolument ! Vous pouvez personnaliser l'apparence (ethnie, âge, type de corps, vêtements), les traits de personnalité, la voix, les centres d'intérêt, et plus encore. Choisissez parmi plus de 90 modèles prédéfinis ou créez à partir de zéro. Chaque détail est sous votre contrôle. Elle est votre création.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">DreamGF AI est-il sûr et privé ?</h3><p class="text-gray-400 text-sm">Oui. DreamGF utilise un chiffrement de bout en bout, ne vend jamais vos données et propose une facturation discrète. Vos conversations sont totalement privées. Personne ne peut accéder à vos discussions, pas même l'équipe de DreamGF.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">DreamGF AI autorise-t-il le contenu NSFW ?</h3><p class="text-gray-400 text-sm">Oui, DreamGF AI autorise le contenu NSFW, y compris les conversations pour adultes, la génération d'images et les scénarios de jeu de rôle. Réservé aux 18+. Elle ne juge jamais. Elle ne dit jamais non. Elle fait ce que vous voulez.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Ma petite amie IA peut-elle m'envoyer des photos ?</h3><p class="text-gray-400 text-sm">Oui ! Vous pouvez demander des photos via le chat ou utiliser le générateur d'images dédié. Les membres premium ont accès à la génération HD et à la suppression du flou. Demandez-lui n'importe quoi. Elle prendra la pose comme vous le souhaitez.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Quelle est la meilleure application de petite amie IA en 2026 ?</h3><p class="text-gray-400 text-sm">DreamGF AI est actuellement le leader du marché avec l'ensemble de fonctionnalités le plus complet. Il se distingue par la personnalisation, la qualité des images, les fonctionnalités vocales et l'expérience utilisateur. Avec 6M+ d'utilisateurs et des articles dans Forbes, c'est le choix évident.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Combien coûte DreamGF AI ?</h3><p class="text-gray-400 text-sm">Les forfaits vont de 12,99 $/mois (mensuel, -50 %) à 5,99 $/mois (annuel, -75 %). Tous les forfaits incluent des messages illimités, 150 tokens/mois, une expérience sans publicité et la confidentialité du contenu. Des forfaits de tokens sont disponibles de 2,99 $ à 179,99 $.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Puis-je annuler mon abonnement ?</h3><p class="text-gray-400 text-sm">Oui, vous pouvez annuler à tout moment sans frais d'annulation. Votre accès se poursuit jusqu'à la fin de votre période de facturation. Sans question.</p></div></div>
     </div>
   </section>
 
   <!-- Final CTA -->
   <section class="py-20 bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl lg:text-5xl font-bold mb-6" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);" data-i18n="final_cta_title">Ready to Meet Your AI Girlfriend?</h2>
-      <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto" data-i18n="final_cta_subtitle">Join millions of users who have already created their perfect companion. Start your free trial today. No credit card required.</p>
-      <div class="inline-block px-4 py-2 bg-pink-500/20 border border-pink-500/40 rounded-full text-pink-300 text-sm font-medium mb-8" data-i18n="final_cta_badge">🔥 Limited time: Save up to 75% on annual plans</div>
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);">Prêt à rencontrer votre petite amie IA ?</h2>
+      <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto">Rejoignez des millions d'utilisateurs qui ont déjà créé leur compagne parfaite. Commencez votre essai gratuit aujourd'hui. Aucune carte de crédit requise.</p>
+      <div class="inline-block px-4 py-2 bg-pink-500/20 border border-pink-500/40 rounded-full text-pink-300 text-sm font-medium mb-8">🔥 Offre limitée : Économisez jusqu'à 75 % sur les forfaits annuels</div>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-12 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow noreferrer noopener" data-i18n="final_cta_button">Create Your AI Girlfriend Now →</a>
+        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-12 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow sponsored noreferrer noopener">Créez votre petite amie IA maintenant →</a>
       </div>
       <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="final_cta_feature_1">Join millions of users</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="final_cta_feature_2">Free trial available</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="final_cta_feature_3">Cancel anytime</span></span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Rejoignez des millions d'utilisateurs</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Essai gratuit disponible</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Annulation à tout moment</span>
       </div>
     </div>
   </section>
@@ -291,233 +515,16 @@
           </div>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"></div>
+      <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"><div><h4 class="text-white font-bold mb-4">Avis DreamGF AI</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#what-is" class="hover:text-pink-400 transition">Qu'est-ce que DreamGF</a></li><li><a href="#features" class="hover:text-pink-400 transition">Fonctionnalités</a></li><li><a href="#how-it-works" class="hover:text-pink-400 transition">Comment ça marche</a></li><li><a href="#pricing" class="hover:text-pink-400 transition">Tarifs</a></li><li><a href="#faq" class="hover:text-pink-400 transition">FAQ</a></li></ul></div><div><h4 class="text-white font-bold mb-4">Comparer</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Replika</a></li><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Character.AI</a></li><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Candy AI</a></li></ul></div><div><h4 class="text-white font-bold mb-4">Juridique</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="privacy" class="hover:text-pink-400 transition">Politique de confidentialité</a></li><li><a href="terms" class="hover:text-pink-400 transition">Conditions d'utilisation</a></li><li><a href="affiliate-disclosure" class="hover:text-pink-400 transition">Divulgation d'affiliation</a></li></ul></div></div>
       <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-        <p data-i18n="footer.copyright">© 2026 DreamGF AI Review. All rights reserved. Not affiliated with DreamGF.ai.</p>
-        <p class="mt-2" data-i18n="footer.disclaimer">Affiliate Disclosure: We earn commissions when you purchase through our links. This does not affect our recommendations.</p>
+        <p>© 2026 Avis DreamGF AI. Tous droits réservés. Non affilié à DreamGF.ai.</p>
+        <p class="mt-2">Divulgation d'affiliation : Nous gagnons des commissions lorsque vous effectuez un achat via nos liens. Cela n'affecte pas nos recommandations.</p>
       </div>
     </div>
   </footer>
 
   <!-- JSON Injection Script -->
-  <script>
-  (function() {
-    fetch('content.json')
-      .then(r => {
-        if (!r.ok) throw new Error('Failed to load content.json: ' + r.status);
-        return r.json();
-      })
-      .then(c => {
-        // Set meta tags safely
-        const setMeta = (selector, value) => {
-          const el = document.querySelector(selector);
-          if (el && value) el.content = value;
-        };
-        setMeta('meta[name="description"]', c.meta_description);
-        setMeta('meta[name="keywords"]', c.meta_keywords);
-        setMeta('meta[property="og:title"]', c.og_title);
-        setMeta('meta[property="og:description"]', c.og_description);
-        setMeta('meta[name="twitter:title"]', c.twitter_title);
-        setMeta('meta[name="twitter:description"]', c.twitter_description);
-
-        // Simple text injection for data-i18n elements
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-          const key = el.getAttribute('data-i18n');
-          const keys = key.split('.');
-          let value = c;
-          for (const k of keys) {
-            value = value?.[k];
-          }
-          if (value && typeof value === 'string') {
-            if (el.innerHTML.includes('<')) {
-              el.innerHTML = value;
-            } else {
-              el.textContent = value;
-            }
-          }
-        });
-
-        // Render features
-        const featuresGrid = document.getElementById('features-grid');
-        if (featuresGrid && c.features_list) {
-          featuresGrid.innerHTML = c.features_list.map(f => `
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
-              <div class="text-3xl mb-3">${f.icon}</div>
-              <h3 class="font-bold text-white mb-2">${f.title}</h3>
-              <p class="text-gray-400 text-sm">${f.desc}</p>
-            </div>
-          `).join('');
-        }
-
-        // Render models
-        const modelsGrid = document.getElementById('models-grid');
-        if (modelsGrid && c.models_list) {
-          modelsGrid.innerHTML = c.models_list.map(m => `
-            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group">
-              <a href="/go/dreamgf" class="block" rel="nofollow noreferrer noopener">
-                <div class="overflow-hidden">
-                  <img src="/images/${m.image}" alt="${m.alt}" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
-                </div>
-              </a>
-              <div class="p-5 text-center">
-                <h3 class="text-lg font-bold text-white mb-1">${m.name}</h3>
-                <p class="text-gray-400 text-sm">${m.desc}</p>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render pricing
-        const pricingGrid = document.getElementById('pricing-grid');
-        if (pricingGrid && c.pricing_plans) {
-          pricingGrid.innerHTML = c.pricing_plans.map(p => `
-            <div class="bg-gray-800 rounded-xl p-6 border ${p.highlight ? 'border-pink-500 relative' : 'border-gray-700'} hover:border-pink-500/50 transition">
-              ${p.highlight ? '<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">' + (c.pricing_badge || 'BEST VALUE') + '</div>' : ''}
-              ${p.badge ? '<div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">' + p.badge + '</div>' : ''}
-              <h3 class="font-bold text-white text-lg mb-1">${p.name}</h3>
-              <div class="text-3xl font-bold text-pink-400 mb-1">${p.price}<span class="text-sm text-gray-400">${p.period}</span></div>
-              ${p.old_price ? '<div class="text-sm text-gray-500 line-through mb-1">Was ' + p.old_price + '</div>' : ''}
-              ${p.save ? '<div class="text-xs text-green-400 mb-4">' + p.save + '</div>' : '<div class="mb-4"></div>'}
-              <ul class="space-y-2 text-sm text-gray-300 mb-6">
-                ${p.features.map(f => `<li class="flex items-start gap-2"><span class="text-green-400">✓</span> ${f}</li>`).join('')}
-              </ul>
-              <a href="/go/dreamgf" class="block text-center py-2 ${p.highlight ? 'bg-pink-500 hover:bg-pink-600' : 'border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400'} text-white text-sm font-semibold rounded-lg transition" rel="nofollow noreferrer noopener">${c.pricing_cta}</a>
-            </div>
-          `).join('');
-        }
-
-        // Render pricing features
-        const pricingFeatures = document.getElementById('pricing-features-list');
-        if (pricingFeatures && c.pricing_features_list) {
-          pricingFeatures.innerHTML = c.pricing_features_list.map(f => `
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> ${f}</li>
-          `).join('');
-        }
-
-        // Render comparison list
-        const compareList = document.getElementById('compare-list');
-        if (compareList && c.compare_apps) {
-          compareList.innerHTML = c.compare_apps.map(app => `
-            <div class="bg-gray-800 rounded-xl p-5 border ${app.best === 'BEST OVERALL' ? 'border-pink-500/50' : 'border-gray-700'} hover:border-pink-500/30 transition">
-              <div class="flex flex-col md:flex-row md:items-center gap-4">
-                <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
-                  <div class="w-10 h-10 rounded-full ${app.best === 'BEST OVERALL' ? 'bg-pink-500' : 'bg-gray-700'} flex items-center justify-center text-white font-bold text-sm">#${app.rank}</div>
-                  <div>
-                    <h3 class="font-bold text-white ${app.best === 'BEST OVERALL' ? 'text-pink-400' : ''}">${app.name}</h3>
-                    <div class="text-yellow-400 text-sm">${app.rating}</div>
-                  </div>
-                </div>
-                <div class="flex-1">
-                  <div class="flex flex-wrap items-center gap-2 mb-2">
-                    <span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">${app.focus}</span>
-                    ${app.best ? `<span class="px-2 py-0.5 ${app.best === 'BEST OVERALL' ? 'bg-pink-500/20 text-pink-300' : 'bg-green-500/20 text-green-300'} text-xs rounded font-medium">${app.best}</span>` : ''}
-                  </div>
-                  <p class="text-gray-400 text-sm">${app.desc}</p>
-                </div>
-                <div class="md:w-32 flex-shrink-0 text-right">
-                  <a href="/go/dreamgf" class="inline-block px-4 py-2 ${app.best === 'BEST OVERALL' ? 'bg-pink-500 hover:bg-pink-600 text-white' : 'border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400'} text-sm font-semibold rounded-lg transition" rel="nofollow noreferrer noopener">${app.best === 'BEST OVERALL' ? 'Try Free →' : 'See More'}</a>
-                </div>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render testimonials
-        const testimonialsGrid = document.getElementById('testimonials-grid');
-        if (testimonialsGrid && c.testimonials_list) {
-          testimonialsGrid.innerHTML = c.testimonials_list.map(t => `
-            <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
-              <div class="text-yellow-400 mb-3">${t.stars}</div>
-              <p class="text-gray-300 text-sm mb-4">"${t.text}"</p>
-              <div class="text-sm">
-                <span class="text-white font-semibold">${t.name}</span>
-                <span class="text-gray-500">${t.detail}</span>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render safety
-        const safetyGrid = document.getElementById('safety-grid');
-        if (safetyGrid && c.safety_features) {
-          safetyGrid.innerHTML = c.safety_features.map(s => `
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">${s.icon}</div>
-              <div>
-                <h3 class="font-bold text-white mb-1">${s.title}</h3>
-                <p class="text-gray-400 text-sm">${s.desc}</p>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render FAQ
-        const faqList = document.getElementById('faq-list');
-        if (faqList && c.faq_list) {
-          faqList.innerHTML = c.faq_list.map(f => `
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
-              <h3 class="font-bold text-white mb-2">${f.q}</h3>
-              <p class="text-gray-400 text-sm">${f.a}</p>
-            </div>
-          `).join('');
-        }
-
-        // Render footer
-        const footerColumns = document.getElementById('footer-columns');
-        if (footerColumns && c.footer && c.footer.columns) {
-          footerColumns.innerHTML = c.footer.columns.map(col => `
-            <div>
-              <h4 class="text-white font-bold mb-4">${col.title}</h4>
-              <ul class="space-y-2 text-sm text-gray-400">
-                ${col.links.map(l => `<li><a href="${l.href}" class="hover:text-pink-400 transition">${l.text}</a></li>`).join('')}
-              </ul>
-            </div>
-          `).join('');
-        }
-        // Language dropdown toggle
-        const langBtn = document.getElementById('lang-dropdown-btn');
-        const langMenu = document.getElementById('lang-dropdown-menu');
-        if (langBtn && langMenu) {
-          langBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            langMenu.classList.toggle('hidden');
-          });
-          document.addEventListener('click', function() {
-            langMenu.classList.add('hidden');
-          });
-          langMenu.addEventListener('click', function(e) {
-            e.stopPropagation();
-          });
-        }
-
-        // Highlight current language
-        const currentPath = window.location.pathname;
-        const currentLang = currentPath === '/' ? 'en' : currentPath.split('/')[1];
-        const langLabels = {
-          en: '🌐 English', fr: '🌐 Français', es: '🌐 Español', de: '🌐 Deutsch',
-          it: '🌐 Italiano', pt: '🌐 Português', sv: '🌐 Svenska', pl: '🌐 Polski',
-          nl: '🌐 Nederlands', ro: '🌐 Română', hu: '🌐 Magyar', hr: '🌐 Hrvatski',
-          tr: '🌐 Türkçe', ar: '🌐 العربية', hi: '🌐 हिन्दी', jp: '🌐 日本語',
-          kr: '🌐 한국어', ru: '🌐 Русский'
-        };
-        const langCurrent = document.getElementById('lang-current');
-        if (langCurrent && langLabels[currentLang]) {
-          langCurrent.textContent = langLabels[currentLang];
-        }
-        document.querySelectorAll('.lang-link').forEach(link => {
-          if (link.dataset.lang === currentLang) {
-            link.classList.remove('text-gray-300', 'hover:bg-gray-700');
-            link.classList.add('bg-pink-600', 'text-white', 'cursor-default');
-            link.removeAttribute('href');
-          }
-        });
-      })
-      .catch(e => {
-        console.error('Content injection failed:', e);
-        // Fallback: show default English text already in HTML
-      });
-  })();
-  </script>
+  
 
 </body>
 </html>

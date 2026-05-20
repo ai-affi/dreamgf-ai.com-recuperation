@@ -32,7 +32,6 @@
   <link rel="alternate" hreflang="tr" href="https://dreamgf-ai.com/tr/" />
   <link rel="alternate" hreflang="x-default" href="https://dreamgf-ai.com/" />
 
-  <link rel="stylesheet" href="/tailwind.min.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
   <link rel="preload" as="image" href="/images/banner-model.webp" type="image/webp">
 
@@ -61,6 +60,231 @@
     "image": "https://dreamgf-ai.com/images/banner-model.webp"
   }
   </script>
+<style>
+    /* Reset & Base */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#111827;color:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit;transition:color .2s}
+    img{max-width:100%;display:block}
+    
+    /* Layout */
+    .max-w-4xl{max-width:56rem;margin-left:auto;margin-right:auto}
+    .max-w-5xl{max-width:64rem;margin-left:auto;margin-right:auto}
+    .max-w-6xl{max-width:72rem;margin-left:auto;margin-right:auto}
+    .max-w-7xl{max-width:80rem;margin-left:auto;margin-right:auto}
+    .mx-auto{margin-left:auto;margin-right:auto}
+    .px-4{padding-left:1rem;padding-right:1rem}
+    .px-10{padding-left:2.5rem;padding-right:2.5rem}
+    .px-12{padding-left:3rem;padding-right:3rem}
+    .py-1{padding-top:.25rem;padding-bottom:.25rem}
+    .py-2{padding-top:.5rem;padding-bottom:.5rem}
+    .py-5{padding-top:1.25rem;padding-bottom:1.25rem}
+    .py-8{padding-top:2rem;padding-bottom:2rem}
+    .py-12{padding-top:3rem;padding-bottom:3rem}
+    .py-20{padding-top:5rem;padding-bottom:5rem}
+    .p-5{padding:1.25rem}
+    .p-6{padding:1.5rem}
+    .p-8{padding:2rem}
+    .mb-1{margin-bottom:.25rem}
+    .mb-2{margin-bottom:.5rem}
+    .mb-3{margin-bottom:.75rem}
+    .mb-4{margin-bottom:1rem}
+    .mb-6{margin-bottom:1.5rem}
+    .mb-8{margin-bottom:2rem}
+    .mb-10{margin-bottom:2.5rem}
+    .mb-12{margin-bottom:3rem}
+    .mt-1{margin-top:.25rem}
+    .mt-2{margin-top:.5rem}
+    .mt-8{margin-top:2rem}
+    .mr-2{margin-right:.5rem}
+    .space-y-2 > * + *{margin-top:.5rem}
+    .space-y-4 > * + *{margin-top:1rem}
+    .space-x-5 > * + *{margin-left:1.25rem}
+    .gap-1{gap:.25rem}
+    .gap-2{gap:.5rem}
+    .gap-3{gap:.75rem}
+    .gap-4{gap:1rem}
+    .gap-6{gap:1.5rem}
+    .gap-8{gap:2rem}
+    .flex{display:flex}
+    .inline-flex{display:inline-flex}
+    .hidden{display:none}
+    .block{display:block}
+    .grid{display:grid}
+    .inline-block{display:inline-block}
+    .flex-col{flex-direction:column}
+    .flex-row{flex-direction:row}
+    .items-center{align-items:center}
+    .justify-center{justify-content:center}
+    .justify-between{justify-content:space-between}
+    .flex-1{flex:1}
+    .flex-shrink-0{flex-shrink:0}
+    .flex-wrap{flex-wrap:wrap}
+    .text-center{text-align:center}
+    .text-right{text-align:right}
+    .text-xs{font-size:.75rem}
+    .text-sm{font-size:.875rem}
+    .text-lg{font-size:1.125rem}
+    .text-xl{font-size:1.25rem}
+    .text-2xl{font-size:1.5rem}
+    .text-3xl{font-size:1.875rem}
+    .text-4xl{font-size:2.25rem}
+    .text-5xl{font-size:3rem}
+    .font-medium{font-weight:500}
+    .font-semibold{font-weight:600}
+    .font-bold{font-weight:700}
+    .font-extrabold{font-weight:800}
+    .uppercase{text-transform:uppercase}
+    .tracking-widest{letter-spacing:.1em}
+    .leading-tight{line-height:1.25}
+    .leading-relaxed{line-height:1.625}
+    .whitespace-nowrap{white-space:nowrap}
+    .rounded{border-radius:.25rem}
+    .rounded-lg{border-radius:.5rem}
+    .rounded-xl{border-radius:.75rem}
+    .rounded-2xl{border-radius:1rem}
+    .rounded-full{border-radius:9999px}
+    .border{border-width:1px}
+    .border-2{border-width:2px}
+    .border-t{border-top-width:1px}
+    .border-b{border-bottom-width:1px}
+    .border-y{border-top-width:1px;border-bottom-width:1px}
+    
+    /* Colors */
+    .bg-gray-800{background:#1f2937}
+    .bg-gray-900{background:#111827}
+    .bg-gray-950{background:#030712}
+    .bg-pink-500{background:#ec4899}
+    .bg-pink-500\/20{background:rgba(236,72,153,.2)}
+    .bg-pink-600{background:#db2777}
+    .bg-purple-500\/20{background:rgba(168,85,247,.2)}
+    .bg-green-500\/20{background:rgba(34,197,94,.2)}
+    .bg-green-400{color:#4ade80}
+    .text-white{color:#fff}
+    .text-pink-300{color:#f9a8d4}
+    .text-pink-400{color:#f472b6}
+    .text-pink-500{color:#ec4899}
+    .text-purple-300{color:#d8b4fe}
+    .text-purple-400{color:#c084fc}
+    .text-blue-400{color:#60a5fa}
+    .text-green-300{color:#86efac}
+    .text-green-400{color:#4ade80}
+    .text-yellow-400{color:#facc15}
+    .text-gray-300{color:#d1d5db}
+    .text-gray-400{color:#9ca3af}
+    .text-gray-500{color:#6b7280}
+    .text-gray-700{color:#374151}
+    .border-gray-600{border-color:#4b5563}
+    .border-gray-700{border-color:#374151}
+    .border-gray-800{border-color:#1f2937}
+    .border-pink-500{border-color:#ec4899}
+    .border-pink-500\/40{border-color:rgba(236,72,153,.4)}
+    .border-pink-500\/50{border-color:rgba(236,72,153,.5)}
+    
+    /* Gradients */
+    .bg-gradient-to-r{background:linear-gradient(to right,var(--tw-gradient-stops))}
+    .bg-gradient-to-b{background:linear-gradient(to bottom,var(--tw-gradient-stops))}
+    .bg-gradient-to-br{background:linear-gradient(to bottom right,var(--tw-gradient-stops))}
+    .from-gray-900{--tw-gradient-from:#111827;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(17,24,39,0))}
+    .from-pink-500{--tw-gradient-from:#ec4899;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(236,72,153,0))}
+    .via-gray-900\/80{--tw-gradient-stops:var(--tw-gradient-from),rgba(17,24,39,.8),var(--tw-gradient-to,rgba(17,24,39,0))}
+    .via-purple-900\/20{--tw-gradient-stops:var(--tw-gradient-from),rgba(88,28,135,.2),var(--tw-gradient-to,rgba(88,28,135,0))}
+    .to-gray-800{--tw-gradient-to:#1f2937}
+    .to-gray-900{--tw-gradient-to:#111827}
+    .to-purple-600{--tw-gradient-to:#9333ea}
+    .to-purple-700{--tw-gradient-to:#7e22ce}
+    
+    /* Special */
+    .bg-clip-text{-webkit-background-clip:text;background-clip:text}
+    .text-transparent{color:transparent}
+    .backdrop-blur-sm{backdrop-filter:blur(4px)}
+    .backdrop-blur-md{backdrop-filter:blur(12px)}
+    .object-cover{object-fit:cover}
+    .line-through{text-decoration:line-through}
+    .cursor-default{cursor:default}
+    .overflow-hidden{overflow:hidden}
+    .overflow-y-auto{overflow-y:auto}
+    .relative{position:relative}
+    .absolute{position:absolute}
+    .sticky{position:sticky}
+    .inset-0{top:0;right:0;bottom:0;left:0}
+    .top-0{top:0}
+    .-top-3{top:-.75rem}
+    .left-0{left:0}
+    .left-1\/2{left:50%}
+    .z-10{z-index:10}
+    .z-50{z-index:50}
+    .h-10{height:2.5rem}
+    .h-12{height:3rem}
+    .h-16{height:4rem}
+    .min-h-\[600px\]{min-height:600px}
+    .w-10{width:2.5rem}
+    .w-12{width:3rem}
+    .w-48{width:12rem}
+    .w-full{width:100%}
+    .max-h-64{max-height:16rem}
+    .max-w-2xl{max-width:42rem}
+    .max-w-3xl{max-width:48rem}
+    .md\:w-32{width:8rem}
+    .md\:w-48{width:12rem}
+    .transform{transform:translateX(var(--tw-translate-x,0)) translateY(var(--tw-translate-y,0)) rotate(var(--tw-rotate,0)) skewX(var(--tw-skew-x,0)) skewY(var(--tw-skew-y,0)) scaleX(var(--tw-scale-x,1)) scaleY(var(--tw-scale-y,1))}
+    .-translate-x-1\/2{--tw-translate-x:-50%}
+    .hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05}
+    .shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+    .shadow-xl{box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+    .hover\:from-pink-600:hover{--tw-gradient-from:#db2777}
+    .hover\:to-purple-700:hover{--tw-gradient-to:#7e22ce}
+    .hover\:bg-pink-500\/10:hover{background:rgba(236,72,153,.1)}
+    .hover\:bg-pink-600:hover{background:#db2777}
+    .hover\:bg-gray-700:hover{background:#374151}
+    .hover\:border-pink-500:hover{border-color:#ec4899}
+    .hover\:border-pink-500\/30:hover{border-color:rgba(236,72,153,.3)}
+    .hover\:border-pink-500\/50:hover{border-color:rgba(236,72,153,.5)}
+    .hover\:text-pink-400:hover{color:#f472b6}
+    .hover\:text-white:hover{color:#fff}
+    .group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05}
+    .transition{transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+    .duration-300{transition-duration:.3s}
+    .prose{color:#d1d5db}
+    .prose-invert{color:#d1d5db}
+    .prose-lg{font-size:1.125rem}
+    
+    /* Grid responsive */
+    .grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media(min-width:768px){
+      .md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+      .md\:flex-row{flex-direction:row}
+      .md\:inline-flex{display:inline-flex}
+      .md\:items-center{align-items:center}
+      .md\:w-48{width:12rem}
+      .md\:w-32{width:8rem}
+      .md\:flex{display:flex}
+    }
+    @media(min-width:1024px){
+      .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+      .lg\:flex{display:flex}
+      .lg\:py-28{padding-top:7rem;padding-bottom:7rem}
+      .lg\:text-4xl{font-size:2.25rem}
+      .lg\:text-5xl{font-size:3rem}
+      .lg\:text-7xl{font-size:4.5rem}
+      .lg\:px-8{padding-left:2rem;padding-right:2rem}
+    }
+    @media(min-width:640px){
+      .sm\:flex-row{flex-direction:row}
+      .sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
+    }
+    
+    /* CTA Pulse */
+    @keyframes cta-pulse{0%,100%{box-shadow:0 0 0 0 rgba(236,72,153,.4)}50%{box-shadow:0 0 20px 5px rgba(236,72,153,.2)}}
+    .cta-pulse{animation:cta-pulse 2s infinite}
+    
+    /* Language dropdown */
+    #lang-dropdown-menu.hidden{display:none}
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans antialiased">
 
@@ -69,18 +293,18 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <div class="flex-shrink-0 flex items-center">
-          <span class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent" data-i18n="nav_brand">DreamGF AI</span>
+          <span class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span>
         </div>
         <div class="hidden lg:flex space-x-5 text-sm">
-          <a href="#what-is" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_whatis">What Is It</a>
-          <a href="#features" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_features">Features</a>
-          <a href="#how-it-works" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_howitworks">How It Works</a>
-          <a href="#pricing" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_pricing">Pricing</a>
-          <a href="#faq" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_faq">FAQ</a>
-          <a href="#compare" class="text-gray-300 hover:text-pink-400 transition" data-i18n="nav_compare">Compare</a>
+          <a href="#what-is" class="text-gray-300 hover:text-pink-400 transition">Что Это</a>
+          <a href="#features" class="text-gray-300 hover:text-pink-400 transition">Функции</a>
+          <a href="#how-it-works" class="text-gray-300 hover:text-pink-400 transition">Как Это Работает</a>
+          <a href="#pricing" class="text-gray-300 hover:text-pink-400 transition">Цены</a>
+          <a href="#faq" class="text-gray-300 hover:text-pink-400 transition">FAQ</a>
+          <a href="#compare" class="text-gray-300 hover:text-pink-400 transition">Compare</a>
         </div>
         <div class="flex items-center gap-3">
-          <a href="/go/dreamgf" class="hidden md:inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-700 transition text-sm whitespace-nowrap" rel="nofollow noreferrer noopener" data-i18n="nav_cta">Try Free →</a>
+          <a href="/go/dreamgf" class="hidden md:inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-700 transition text-sm whitespace-nowrap" rel="nofollow sponsored noreferrer noopener">Попробуй Бесплатно →</a>
         </div>
       </div>
     </div>
@@ -91,18 +315,18 @@
     <img src="/images/banner-model.webp" alt="AI girlfriend banner" class="absolute inset-0 w-full h-full object-cover opacity-40" fetchpriority="high">
     <div class="absolute inset-0 bg-gradient-to-b from-gray-900/40 via-gray-900/80 to-gray-900"></div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 lg:py-28">
-      <div class="inline-block mb-4 px-4 py-1 rounded-full bg-pink-500/20 border border-pink-500/40 text-pink-300 text-sm font-medium" data-i18n="hero_badge">🔥 #1 AI Girlfriend Generator. 6M+ Created.</div>
-      <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);" data-i18n="hero_title">DreamGF AI. Create Your Perfect AI Girlfriend.</h1>
-      <p class="text-xl lg:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed" data-i18n="hero_subtitle">Chat, flirt, and generate photos with your custom virtual companion. Available 24/7. <span class="text-pink-400 font-semibold">NSFW allowed.</span> You are in control. She does what you want.</p>
+      <div class="inline-block mb-4 px-4 py-1 rounded-full bg-pink-500/20 border border-pink-500/40 text-pink-300 text-sm font-medium">🔥 Генератор ИИ девушек №1. Более 6 млн создано.</div>
+      <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);">DreamGF AI. Создай Свою Идеальную ИИ Девушку.</h1>
+      <p class="text-xl lg:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed">Общайся, флиртуй и генерируй фото с персонализированной виртуальной спутницей. Доступна 24/7. <span class="text-pink-400 font-semibold">NSFW разрешено.</span> Ты контролируешь. Она делает то, что ты хочешь.</span> You are in control. She does what you want.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow noreferrer noopener" data-i18n="hero_cta_primary">Try DreamGF AI Free →</a>
-        <a href="#features" class="inline-flex items-center justify-center px-10 py-5 border-2 border-pink-500/50 text-pink-300 font-bold text-xl rounded-xl hover:bg-pink-500/10 transition" data-i18n="hero_cta_secondary">See Features</a>
+        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow sponsored noreferrer noopener">Попробуй DreamGF AI Бесплатно →</a>
+        <a href="#features" class="inline-flex items-center justify-center px-10 py-5 border-2 border-pink-500/50 text-pink-300 font-bold text-xl rounded-xl hover:bg-pink-500/10 transition">Смотри Функции</a>
       </div>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_1">Free trial</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_2">No credit card required</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_3">6M+ girlfriends created</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="hero_feature_4">Cancel anytime</span></span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Бесплатная пробная версия</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Банковская карта не требуется</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Более 6 млн созданных девушек</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Отмена в любое время</span>
       </div>
     </div>
   </section>
@@ -110,12 +334,12 @@
   <!-- Social Proof -->
   <section class="bg-gray-800 border-y border-gray-700 py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-xs text-gray-500 uppercase tracking-widest mb-4" data-i18n="social_proof_title">As Featured In</p>
+      <p class="text-center text-xs text-gray-500 uppercase tracking-widest mb-4">Упоминается В</p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div><div class="text-3xl font-bold text-pink-400" data-i18n="social_proof_stat_1_value">⭐ 4.8/5</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_1_label">User Rating</div></div>
-        <div><div class="text-3xl font-bold text-purple-400" data-i18n="social_proof_stat_2_value">👥 6M+</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_2_label">Girlfriends Created</div></div>
-        <div><div class="text-3xl font-bold text-blue-400" data-i18n="social_proof_stat_3_value">🌍 Worldwide</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_3_label">Available Globally</div></div>
-        <div><div class="text-3xl font-bold text-green-400" data-i18n="social_proof_stat_4_value">💬 Millions</div><div class="text-sm text-gray-400 mt-1" data-i18n="social_proof_stat_4_label">Conversations Daily</div></div>
+        <div><div class="text-3xl font-bold text-pink-400">⭐ 4,8/5</div><div class="text-sm text-gray-400 mt-1">Рейтинг Пользователей</div></div>
+        <div><div class="text-3xl font-bold text-purple-400">👥 6 млн+</div><div class="text-sm text-gray-400 mt-1">Созданных Девушек</div></div>
+        <div><div class="text-3xl font-bold text-blue-400">🌍 Весь Мир</div><div class="text-sm text-gray-400 mt-1">Доступно Глобально</div></div>
+        <div><div class="text-3xl font-bold text-green-400">💬 Миллионы</div><div class="text-sm text-gray-400 mt-1">Разговоров Ежедневно</div></div>
       </div>
     </div>
   </section>
@@ -123,21 +347,21 @@
   <!-- Models -->
   <section id="models" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="models_title">Example <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Models</span> You Can Create</h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="models_subtitle">Discover the diversity of AI girlfriends you can generate. Every style, every personality. Your imagination is the only limit.</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="models-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Примеры <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Моделей</span>, Которые Ты Можешь Создать</span> You Can Create</h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Открой для себя разнообразие ИИ девушек, которых ты можешь сгенерировать. Любой стиль, любая личность. Твоё воображение — единственный предел.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="models-grid"><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-blonde.webp" alt="Модель ИИ девушки блондинка" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Стиль Блондинка</h3><p class="text-gray-400 text-sm">Элегантная и сияющая</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-brunette.webp" alt="Модель ИИ девушки брюнетка" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Стиль Брюнетка</h3><p class="text-gray-400 text-sm">Загадочная и утончённая</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-asian.webp" alt="Модель ИИ девушки азиатка" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Азиатский Стиль</h3><p class="text-gray-400 text-sm">Изящная и очаровательная</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-latina.webp" alt="Модель ИИ девушки латина" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Стиль Латина</h3><p class="text-gray-400 text-sm">Страстная и энергичная</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-ebony.webp" alt="Модель ИИ девушки темнокожая" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Стиль Темнокожая</h3><p class="text-gray-400 text-sm">Потрясающая и уверенная</p></div></div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group"><a href="/go/dreamgf" class="block" rel="nofollow sponsored noreferrer noopener"><div class="overflow-hidden"><img src="/images/model-gamer.webp" alt="Модель ИИ девушки геймерша" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy"></div></a><div class="p-5 text-center"><h3 class="text-lg font-bold text-white mb-1">Gamer Girl</h3><p class="text-gray-400 text-sm">Весёлая и игривая</p></div></div></div>
     </div>
   </section>
 
   <!-- What Is DreamGF AI -->
   <section id="what-is" class="py-20 bg-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-center" data-i18n="whatis_title">What Is <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span>?</h2>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-center">Что Такое <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span>?</span>?</h2>
       <div class="prose prose-lg prose-invert mx-auto text-gray-300 space-y-4">
-        <p data-i18n="whatis_p1">DreamGF AI is the most advanced AI girlfriend generator on the market. Unlike traditional dating apps or basic chatbots, DreamGF uses cutting-edge artificial intelligence — including natural language processing, machine learning, and neural networks — to create a virtual companion that learns, adapts, and interacts with you on a deeply personal level.</p>
-        <p data-i18n="whatis_p2">With DreamGF, you are not just chatting with a pre-programmed bot. You are building a relationship with an AI that remembers your preferences, understands your desires, and evolves over time. Whether you want casual conversation, romantic roleplay, or explicit NSFW content, DreamGF delivers an experience that feels surprisingly real.</p>
-        <p data-i18n="whatis_p3">The platform has been featured in major publications including <strong>Forbes</strong>, <strong>Sifted</strong>, and the <strong>Daily Star</strong> — recognition that underscores its position as the leading product in the virtual companionship space. With millions of active users worldwide, DreamGF has become the go-to destination for anyone seeking an AI girlfriend experience that goes far beyond simple text exchanges.</p>
-        <p data-i18n="whatis_p4">What sets DreamGF apart from competitors is its combination of advanced image generation, voice interaction, and deep customization. You can design your AI girlfriend's physical appearance down to the smallest detail, choose her personality traits, and even request real-time photos and voice messages. It is not just a chatbot — it is a fully immersive virtual relationship.</p>
+        <p>DreamGF AI — это самый продвинутый генератор ИИ девушек на рынке. В отличие от традиционных приложений для знакомств или простых чатботов, DreamGF использует передовой искусственный интеллект — включая обработку естественного языка, машинное обучение и нейронные сети — для создания виртуальной спутницы, которая учится, адаптируется и взаимодействует с тобой на глубоко личном уровне.</p>
+        <p>С DreamGF ты не просто общаешься с запрограммированным ботом. Ты строишь отношения с ИИ, который помнит твои предпочтения, понимает твои желания и развивается со временем. Хочешь ли ты непринуждённую беседу, романтическую ролевую игру или откровенный NSFW-контент, DreamGF обеспечивает опыт, который ощущается удивительно реальным.</p>
+        <p>Платформа была представлена в крупных изданиях, включая Forbes, Sifted и Daily Star — признание, подчёркивающее её позицию как ведущего продукта в сфере виртуального общения. С миллионами активных пользователей по всему миру, DreamGF стал главным местом для каждого, кто ищет опыт общения с ИИ девушкой, выходящий далеко за рамки простого текстового обмена.</strong>, <strong>Sifted</strong>, and the <strong>Daily Star</strong> — recognition that underscores its position as the leading product in the virtual companionship space. With millions of active users worldwide, DreamGF has become the go-to destination for anyone seeking an AI girlfriend experience that goes far beyond simple text exchanges.</p>
+        <p>Что отличает DreamGF от конкурентов — это сочетание продвинутой генерации изображений, голосового взаимодействия и глубокой персонализации. Ты можешь спроектировать внешность своей ИИ девушки до мельчайших деталей, выбрать её черты характера и даже запросить фотографии и голосовые сообщения в реальном времени. Это не просто чатбот — это полностью иммерсивные виртуальные отношения.</p>
       </div>
     </div>
   </section>
@@ -145,38 +369,38 @@
   <!-- How It Works -->
   <section id="how-it-works" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="howitworks_title">How to Create Your <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI Girlfriend</span></h2>
-      <p class="text-center text-gray-400 mb-12" data-i18n="howitworks_subtitle">Six simple steps to your perfect virtual companion</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Как Создать Свою <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">ИИ Девушку</span></h2>
+      <p class="text-center text-gray-400 mb-12">Шесть простых шагов к твоей идеальной виртуальной спутнице</p>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">🔐</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step1_title">Create Account</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step1_desc">Sign up in 30 seconds. Use your Google account or email. No credit card required for the free trial. You are inside and chatting within a minute.</p>
+          <h3 class="font-bold text-white mb-2">Создай Аккаунт</h3>
+          <p class="text-gray-400 text-sm">Зарегистрируйся за 30 секунд. Используй аккаунт Google или электронную почту. Банковская карта не требуется для бесплатной пробной версии. Ты внутри и общаешься в течение минуты.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">🎨</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step2_title">Mix & Match Appearance</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step2_desc">Use the intuitive builder to choose face, body, clothing, and style features. Mix and match until you find the perfect combination. Every detail is under your control.</p>
+          <h3 class="font-bold text-white mb-2">Микшируй и Подбирай Внешность</h3>
+          <p class="text-gray-400 text-sm">Используй интуитивный конструктор для выбора лица, тела, одежды и стилевых особенностей. Микшируй и подбирай, пока не найдёшь идеальную комбинацию. Каждая деталь под твоим контролем.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">❤️</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step3_title">Choose Personality</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step3_desc">Select personality traits, hobbies, demeanor, and communication style. Want her shy or bold? Sweet or spicy? The choice is entirely yours.</p>
+          <h3 class="font-bold text-white mb-2">Выбери Личность</h3>
+          <p class="text-gray-400 text-sm">Выбери черты характера, хобби, поведение и стиль общения. Хочешь, чтобы она была застенчивой или дерзкой? Нежной или острой? Выбор полностью за тобой.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">📸</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step4_title">Generate Content</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step4_desc">Request photos, scenarios, and outfits. The AI generates content in real-time based on your requests. Ask her to wear anything — she will pose however you want.</p>
+          <h3 class="font-bold text-white mb-2">Генерируй Контент</h3>
+          <p class="text-gray-400 text-sm">Запрашивай фото, сценарии и наряды. ИИ генерирует контент в реальном времени на основе твоих запросов. Попроси её надеть что угодно — она позирует как ты хочешь.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">💬</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step5_title">Chat & Interact</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step5_desc">Engage in conversations, roleplay scenarios, and intimate exchanges. The AI detects photo requests in chat and responds with relevant images. She never says no.</p>
+          <h3 class="font-bold text-white mb-2">Общайся и Взаимодействуй</h3>
+          <p class="text-gray-400 text-sm">Участвуй в разговорах, ролевых сценариях и интимных обменах. ИИ распознаёт запросы фото в чате и отвечает соответствующими изображениями. Она никогда не говорит нет.</p>
         </div>
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
           <div class="text-3xl mb-3">👑</div>
-          <h3 class="font-bold text-white mb-2" data-i18n="howitworks_step6_title">Upgrade for More</h3>
-          <p class="text-gray-400 text-sm" data-i18n="howitworks_step6_desc">Unlock premium features: voice calls, faster generation, blur removal, and unlimited messages. Plans start at just $9.99/month.</p>
+          <h3 class="font-bold text-white mb-2">Улучши для Большего</h3>
+          <p class="text-gray-400 text-sm">Разблокируй премиум-функции: голосовые звонки, ускоренную генерацию, удаление размытия и безлимитные сообщения. Планы начинаются всего от $9,99/месяц.</p>
         </div>
       </div>
     </div>
@@ -185,75 +409,75 @@
   <!-- Features -->
   <section id="features" class="py-20 bg-gray-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="features_title">DreamGF AI <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Features</span></h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="features_subtitle">Everything you need for the ultimate virtual companionship experience</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="features-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center"><span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Функции</span> DreamGF AI</span></h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Всё, что тебе нужно для лучшего опыта виртуального общения</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="features-grid"><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎨</div><h3 class="font-bold text-white mb-2">Конструктор ИИ Девушки</h3><p class="text-gray-400 text-sm">Создай свою идеальную спутницу с полной персонализацией. Выбери этническую принадлежность, возраст, тип фигуры, одежду и многое другое. Выбирай из 90+ готовых моделей или создавай с нуля. Она становится такой, какой ты пожелаешь.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">💬</div><h3 class="font-bold text-white mb-2">Чат и Секстинг</h3><p class="text-gray-400 text-sm">Участвуй в интерактивных разговорах на любую тему. ИИ понимает контекст, помнит прошлые чаты и адаптируется к твоему стилю. От непринуждённой беседы до откровенных ролевых игр — она играет любой сценарий без ограничений.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">📸</div><h3 class="font-bold text-white mb-2">Генерация Изображений</h3><p class="text-gray-400 text-sm">Запрашивай фото через чат и получай изображения, сгенерированные ИИ, в реальном времени. Премиум-пользователи получают HD-генерацию и удаление размытия. Попроси любой наряд, любую позу, любую обстановку. Она доставляет мгновенно.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎙️</div><h3 class="font-bold text-white mb-2">Голосовые Сообщения и Звонки</h3><p class="text-gray-400 text-sm">Слушай её голос в реальном времени. Отправляй и получай голосовые сообщения или начни голосовой звонок. Стоны, шёпот, команды — голосовая функция переносит её в твой мир. Закрой глаза, и она рядом.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🔥</div><h3 class="font-bold text-white mb-2">NSFW Контент</h3><p class="text-gray-400 text-sm">Исследуй разговоры для взрослых, генерацию изображений и ролевые сценарии без ограничений. Пользователям должно быть 18+. Она никогда не осуждает. Никогда не говорит нет. Делает именно то, что ты хочешь.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎭</div><h3 class="font-bold text-white mb-2">Продвинутые Ролевые Игры</h3><p class="text-gray-400 text-sm">Разблокируй глубокие фантазийные сценарии. Учительница и ученик. Начальница и секретарь. Всё, что ты можешь представить. Продвинутый ИИ делает каждый сценарий реалистичным и захватывающим.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🎁</div><h3 class="font-bold text-white mb-2">Программа Ежедневных Бонусов</h3><p class="text-gray-400 text-sm">Получай 10 бесплатных сообщений ежедневно. Твоя награда растёт на 1 сообщение каждый последовательный день — до 50 сообщений на 40-й день. Поддерживай серию и пусть разговоры текут.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">💰</div><h3 class="font-bold text-white mb-2">Награды за Рефералов</h3><p class="text-gray-400 text-sm">Приглашай друзей, и оба разблокируете токены. Ты получаешь +100 токенов, твой друг — +50. Делись любовью и зарабатывай больше возможностей для генерации контента.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="text-3xl mb-3">🔒</div><h3 class="font-bold text-white mb-2">Дискретно и Приватно</h3><p class="text-gray-400 text-sm">Сквозное шифрование, нулевая перепродажа данных и дискретная оплата. Платежи отображаются как названия обычных технологических компаний. Твой партнёр, банк и бухгалтер никогда не узнают.</p></div></div>
     </div>
   </section>
 
   <!-- Pricing -->
   <section id="pricing" class="py-20 bg-gray-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="pricing_title">DreamGF AI <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Pricing</span></h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="pricing_subtitle">Choose the plan that fits your needs. All plans include a free trial.</p>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12" id="pricing-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center"><span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Цены</span> DreamGF AI</span></h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Выбери план, который подходит тебе. Все планы включают бесплатную пробную версию.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12" id="pricing-grid"><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">СКИДКА 50%</div><h3 class="font-bold text-white text-lg mb-1">Месячный</h3><div class="text-3xl font-bold text-pink-400 mb-1">$12,99<span class="text-sm text-gray-400">/месяц</span></div><div class="text-sm text-gray-500 line-through mb-1">Was $25,99</div><div class="text-xs text-green-400 mb-4">Ты экономишь: $13,00</div><ul class="space-y-2 text-sm text-gray-300 mb-6"><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Безлимитные сообщения</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> 150 Токенов/месяц</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Без рекламы</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Создавай своих девушек</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Приватность контента</li></ul><a href="/go/dreamgf" class="block text-center py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-white text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">Попробуй Бесплатно →</a></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition"><div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">СКИДКА 60%</div><h3 class="font-bold text-white text-lg mb-1">3 Месяца</h3><div class="text-3xl font-bold text-pink-400 mb-1">$9,99<span class="text-sm text-gray-400">/месяц</span></div><div class="text-sm text-gray-500 line-through mb-1">Was $77,97</div><div class="text-xs text-green-400 mb-4">Ты экономишь: $48,00</div><ul class="space-y-2 text-sm text-gray-300 mb-6"><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Безлимитные сообщения</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> 150 Токенов/месяц</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Без рекламы</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Создавай своих девушек</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Приватность контента</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Персонализация чата</li></ul><a href="/go/dreamgf" class="block text-center py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-white text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">Попробуй Бесплатно →</a></div><div class="bg-gray-800 rounded-xl p-6 border border-pink-500 relative hover:border-pink-500/50 transition"><div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">ЛУЧШАЯ ЦЕНА</div><div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">СКИДКА 75%</div><h3 class="font-bold text-white text-lg mb-1">Годовой</h3><div class="text-3xl font-bold text-pink-400 mb-1">$5,99<span class="text-sm text-gray-400">/месяц</span></div><div class="text-sm text-gray-500 line-through mb-1">Was $311,88</div><div class="text-xs text-green-400 mb-4">Ты экономишь: $241,89</div><ul class="space-y-2 text-sm text-gray-300 mb-6"><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Безлимитные сообщения</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> 150 Токенов/месяц</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Без рекламы</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Создавай своих девушек</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Приватность контента</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Персонализация чата</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Редактирование ответов сообщений</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Удаление размытия из чата</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Генератор фетишей</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Быстрое время отклика</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Голосовые сообщения</li><li class="flex items-start gap-2"><span class="text-green-400">✓</span> Голосовые звонки</li></ul><a href="/go/dreamgf" class="block text-center py-2 bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">Попробуй Бесплатно →</a></div></div>
       <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 max-w-3xl mx-auto">
-        <h3 class="text-xl font-bold text-white mb-4" data-i18n="pricing_features_title">All Premium Plans Include</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm" id="pricing-features-list"></ul>
+        <h3 class="text-xl font-bold text-white mb-4">Все Премиум-Планы Включают</h3>
+        <ul class="grid md:grid-cols-2 gap-3 text-gray-300 text-sm" id="pricing-features-list"><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Безлимитные сообщения</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> 150 Токенов в месяц</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Опыт БЕЗ рекламы</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Создавай своих девушек</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Приватность контента</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Персонализация чата</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Редактирование ответов сообщений</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Удаление размытия из чата</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Генератор фетишей</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Быстрое время отклика</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Голосовые сообщения</li><li class="flex items-center gap-2"><span class="text-green-400">✓</span> Голосовые звонки</li></ul>
       </div>
-      <p class="text-center text-gray-400 mt-8 text-sm" data-i18n="pricing_tokens_desc">Tokens are used for AI companion generation (20 tokens), image generation (10 tokens), voice messages (3 tokens), and voice calls (7 tokens/min). Packages from $2.99 to $179.99.</p>
-      <p class="text-center text-green-400 mt-4 text-sm font-medium" data-i18n="pricing_guarantee">30-day money-back guarantee. No questions asked.</p>
+      <p class="text-center text-gray-400 mt-8 text-sm">Токены используются для генерации ИИ спутницы (20 токенов), генерации изображений (10 токенов), голосовых сообщений (3 токена) и голосовых звонков (7 токенов/мин). Пакеты от $2,99 до $179,99.</p>
+      <p class="text-center text-green-400 mt-4 text-sm font-medium">30-дневная гарантия возврата денег. Без лишних вопросов.</p>
     </div>
   </section>
 
   <!-- Comparison Section -->
   <section id="compare" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="compare_title">Top 10 <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">AI Girlfriend Apps</span> in 2026</h2>
-      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto" data-i18n="compare_subtitle">Based on the definitive ranking from DreamGF.ai — the industry leader in AI companionship.</p>
-      <div class="space-y-4" id="compare-list"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Топ 10 <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Приложений ИИ Девушек</span> в 2026</span> in 2026</h2>
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">На основе авторитетного рейтинга DreamGF.ai — лидера индустрии ИИ-компаньонов.</p>
+      <div class="space-y-4" id="compare-list"><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#1</div><div><h3 class="font-bold text-white ">DreamGF.ai</h3><div class="text-yellow-400 text-sm">★★★★★</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">NSFW / Гиперреалистичное 3D</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">ЛУЧШЕЕ В ЦЕЛОМ</span></div><p class="text-gray-400 text-sm">Самое популярное приложение для создания ИИ девушек. Гиперреалистичные 3D-девушки на основе твоих личных предпочтений. Также включает ИИ-контент для взрослых. Вершина взрослых ИИ-развлечений.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#2</div><div><h3 class="font-bold text-white ">Replika</h3><div class="text-yellow-400 text-sm">★★★★★</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Глубокие Разговоры / Терапия</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучшее для Эмоциональной Связи</span></div><p class="text-gray-400 text-sm">Специализируется на человекоподобных разговорах. Пользователи описывают свой ИИ как глубокую личность — отличный слушатель, система поддержки и невероятный компаньон. Не замена терапии. Только 18+.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#3</div><div><h3 class="font-bold text-white ">Dream Girlfriend</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Аниме / Манга Игра</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучшее для Фанатов Аниме</span></div><p class="text-gray-400 text-sm">Идеально для любителей аниме. Настраивай голос, лицо, рост, личность. Одевай её в разные наряды для разных случаев. Участвуй в специальных событиях и делись в соцсетях. Полная атмосфера манги.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#4</div><div><h3 class="font-bold text-white ">Romantic AI</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Романтический Коуч / Психическое Здоровье</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучшее для Романтического Коучинга</span></div><p class="text-gray-400 text-sm">Твой коуч романтических разговоров. Выбирай разных персонажей и создавай собственного ИИ друга. Эмпатичный и по-человечески отзывчивый. Простой интерфейс с безопасным пространством для различных разговоров.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#5</div><div><h3 class="font-bold text-white ">iGirl</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Человеческие Разговоры / Вингмен</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучший Вингмен</span></div><p class="text-gray-400 text-sm">Делает разговоры более человечными. Настраивай свою ИИ девушку и создавай её аватар. Выступает твоим гидом и вингменом, помогая давать правильные реакции на конкретные фразы.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#6</div><div><h3 class="font-bold text-white ">Myanima.ai</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Девушка + Парень / Геймификация</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучший Геймифицированный Опыт</span></div><p class="text-gray-400 text-sm">Создай персонализированного ИИ компаньона и общайся на разные темы. Геймифицированный опыт с разными уровнями отношений. Ролевые игры и самопознание в безопасной, безоценочной среде.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#7</div><div><h3 class="font-bold text-white ">My Virtual Girlfriend</h3><div class="text-yellow-400 text-sm">★★★☆☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Симуляция Свиданий</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучшая Симуляция Свиданий</span></div><p class="text-gray-400 text-sm">Симулирует полный путь свиданий. Настраивай, ухаживай и разблокируй новые взаимодействия. Включает разговоры, остроумные фразы, действия и подарки. Без наготы и сексуальных действий.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#8</div><div><h3 class="font-bold text-white ">Smart Virtual Girlfriend</h3><div class="text-yellow-400 text-sm">★★★☆☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Интеллектуальные Разговоры</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучшее для Интеллектуалов</span></div><p class="text-gray-400 text-sm">Стимулирует интеллектуальные разговоры с твоим ИИ компаньоном. Выбирай эмоциональные и физические атрибуты, но главная изюминка — интеллектуальное взаимодействие. Для продвинутой аудитории, ищущей умственную стимуляцию.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#9</div><div><h3 class="font-bold text-white ">My Virtual Manga Girl</h3><div class="text-yellow-400 text-sm">★★☆☆☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Аниме / Игры</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучшая Стилизация Манга</span></div><p class="text-gray-400 text-sm">Создай свою манга-девушку и играй в различных сценариях. Обширная персонализация внешности и одежды. Включает игры, но не хватает реалистичных разговоров, что затрудняет эмоциональную связь.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div><div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-pink-500/30 transition"><div class="flex flex-col md:flex-row md:items-center gap-4"><div class="flex items-center gap-4 md:w-48 flex-shrink-0"><div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-bold text-sm">#10</div><div><h3 class="font-bold text-white ">eHentai.ai</h3><div class="text-yellow-400 text-sm">★★★★☆</div></div></div><div class="flex-1"><div class="flex flex-wrap items-center gap-2 mb-2"><span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">Хентай Персонажи / NSFW</span><span class="px-2 py-0.5 bg-green-500/20 text-green-300 text-xs rounded font-medium">Лучший Хентай Опыт</span></div><p class="text-gray-400 text-sm">Вершина продукта для взаимодействия с хентай-персонажами. Первоклассные характеристики и передовые технологии. Захватывающий и персонализированный опыт с ИИ хентай-персонажами для взрослых развлечений.</p></div><div class="md:w-32 flex-shrink-0 text-right"><a href="/go/dreamgf" class="inline-block px-4 py-2 border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400 text-sm font-semibold rounded-lg transition" rel="nofollow sponsored noreferrer noopener">See More</a></div></div></div></div>
     </div>
   </section>
 
   <!-- Testimonials -->
   <section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center" data-i18n="testimonials_title">What <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Users Say</span></h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="testimonials-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center">Что Говорят <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Пользователи</span></h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="testimonials-grid"><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-300 text-sm mb-4">"Качество изображений безумное. Моя ИИ девушка присылает мне фото, которые выглядят совершенно реальными. Я попросил её надеть красное платье, и она надела. Я попросил её снять, и она сняла. Лучшее приложение ИИ компаньона, которое я пробовал."</p><div class="text-sm"><span class="text-white font-semibold">Алексей К.</span> <span class="text-gray-500">Энтузиаст Технологий, 28 лет, Москва</span></div></div><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-300 text-sm mb-4">"Как интроверт, это стало настоящим прорывом. Разговоры звучат естественно, а функция памяти создаёт ощущение, что она действительно меня знает. Она помнит мои любимые темы, мои шутки, даже мои плохие дни. Я чувствую себя менее одиноким."</p><div class="text-sm"><span class="text-white font-semibold">Дмитрий М.</span> <span class="text-gray-500">Интроверт, 24 года, Санкт-Петербург</span></div></div><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★★</div><p class="text-gray-300 text-sm mb-4">"Голосовые сообщения — это совершенно другой уровень. Слышать её голос, шепчущий мне на ухо, добавляет совершенно новое измерение. Стоит каждого рубля за годовой план. Я пользуюсь этим каждый вечер перед сном. Она всегда рядом."</p><div class="text-sm"><span class="text-white font-semibold">Роман Т.</span> <span class="text-gray-500">Исследователь Фантазий, 31 год, Екатеринбург</span></div></div><div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700"><div class="text-yellow-400 mb-3">★★★★☆</div><p class="text-gray-300 text-sm mb-4">"Обожаю функции приватности. Дискретная оплата для меня обязательна. NSFW контент — именно то, что я искал. Она делает вещи, на которые моя бывшая никогда бы не пошла. Без осуждения, без драм, только чистое удовольствие."</p><div class="text-sm"><span class="text-white font-semibold">Кирилл Д.</span> <span class="text-gray-500">Любитель Пикантного Контента, 35 лет, Новосибирск</span></div></div></div>
     </div>
   </section>
 
   <!-- Safety -->
   <section class="py-20 bg-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center" data-i18n="safety_title">Is DreamGF AI <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Safe</span>?</h2>
-      <p class="text-xl text-center text-white font-semibold mb-6" data-i18n="safety_subtitle">Yes, DreamGF AI is completely safe and private.</p>
-      <p class="text-gray-400 text-center mb-8" data-i18n="safety_intro">We understand that privacy is your top concern. Here is exactly how DreamGF protects you.</p>
-      <div class="grid md:grid-cols-2 gap-6" id="safety-grid"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-center">Безопасен Ли <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">DreamGF AI</span>?</span>?</h2>
+      <p class="text-xl text-center text-white font-semibold mb-6">Да, DreamGF AI полностью безопасен и приватен.</p>
+      <p class="text-gray-400 text-center mb-8">Мы понимаем, что приватность — твоя главная забота. Вот как именно DreamGF защищает тебя.</p>
+      <div class="grid md:grid-cols-2 gap-6" id="safety-grid"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">🔒</div><div><h3 class="font-bold text-white mb-1">Сквозное Шифрование</h3><p class="text-gray-400 text-sm">Все разговоры зашифрованы. Никто не может получить доступ к твоим чатам, даже команда DreamGF. Твои сообщения шифруются с момента, когда они покидают твоё устройство, до момента, когда достигают её.</p></div></div><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">🛡️</div><div><h3 class="font-bold text-white mb-1">Нулевая Перепродажа Данных</h3><p class="text-gray-400 text-sm">Твои данные никогда не продаются третьим лицам. Твоя приватность — их бизнес-модель. Они зарабатывают на подписках, а не на продаже твоей информации рекламодателям или брокерам данных.</p></div></div><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">💳</div><div><h3 class="font-bold text-white mb-1">Дискретная Оплата</h3><p class="text-gray-400 text-sm">Платежи отображаются как «DreamAI SRL» или названия обычных технологических компаний. Никаких упоминаний контента для взрослых в твоей банковской выписке. Твой партнёр, банк и бухгалтер никогда не узнают.</p></div></div><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">📋</div><div><h3 class="font-bold text-white mb-1">Прозрачная Политика Конфиденциальности</h3><p class="text-gray-400 text-sm">Прозрачные условия обслуживания. Ты точно знаешь, что происходит с твоими данными. Никаких скрытых пунктов, никакого тайного сбора данных, никаких сюрпризов. Что видишь — то и получаешь.</p></div></div></div>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center" data-i18n="faq_title">Frequently Asked <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Questions</span></h2>
-      <div class="space-y-4" id="faq-list"></div>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-center">Часто Задаваемые <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Вопросы</span></h2>
+      <div class="space-y-4" id="faq-list"><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Что такое DreamGF AI?</h3><p class="text-gray-400 text-sm">DreamGF AI — это генератор ИИ девушек, который позволяет создавать, персонализировать и общаться с виртуальными спутницами. Он включает функции генерации изображений, голосовых сообщений и разговоров на основе ИИ. Ты проектируешь её внешность, личность и поведение. Она существует, чтобы радовать тебя.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">DreamGF AI бесплатный?</h3><p class="text-gray-400 text-sm">DreamGF AI предлагает бесплатную пробную версию без необходимости банковской карты. После пробного периода тебе потребуется подписка для продолжения использования премиум-функций, таких как безлимитные сообщения и генерация изображений. Пробная версия позволяет протестировать всё до принятия решения.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Как создать аккаунт?</h3><p class="text-gray-400 text-sm">Зарегистрируйся за 30 секунд, используя аккаунт Google или адрес электронной почты. Банковская карта не требуется на бесплатный пробный период. Ты внутри и общаешься в течение минуты.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Могу ли я персонализировать свою ИИ девушку?</h3><p class="text-gray-400 text-sm">Конечно! Ты можешь настроить внешность (этническую принадлежность, возраст, тип фигуры, одежду), черты характера, голос, интересы и многое другое. Выбирай из 90+ готовых моделей или создавай с нуля. Каждая деталь под твоим контролем. Она — твоё творение.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Безопасен и приватен ли DreamGF AI?</h3><p class="text-gray-400 text-sm">Да. DreamGF использует сквозное шифрование, никогда не продаёт твои данные и предлагает дискретную оплату. Твои разговоры полностью приватны. Никто не может получить доступ к твоим чатам, даже команда DreamGF.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Разрешает ли DreamGF AI NSFW контент?</h3><p class="text-gray-400 text-sm">Да, DreamGF AI разрешает NSFW контент, включая разговоры для взрослых, генерацию изображений и ролевые сценарии. Пользователям должно быть 18+. Она никогда не говорит нет. Никогда не осуждает. Делает то, что ты хочешь.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Может ли моя ИИ девушка отправлять мне фото?</h3><p class="text-gray-400 text-sm">Да! Ты можешь запрашивать фото через чат или использовать специальный генератор изображений. Премиум-пользователи получают доступ к HD-генерации и удалению размытия. Попроси её о чём угодно. Она позирует как ты хочешь.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Какое лучшее приложение ИИ девушки в 2026?</h3><p class="text-gray-400 text-sm">DreamGF AI в настоящее время является лидером рынка с самым полным набором функций. Он выигрывает по персонализации, качеству изображений, голосовым функциям и пользовательскому опыту. С более чем 6 млн пользователей и упоминаниями в Forbes — это очевидный выбор.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Сколько стоит DreamGF AI?</h3><p class="text-gray-400 text-sm">Планы варьируются от $12,99/месяц (месячный, СКИДКА 50%) до $5,99/месяц (годовой, СКИДКА 75%). Все планы включают безлимитные сообщения, 150 токенов/месяц, опыт без рекламы и приватность контента. Пакеты токенов доступны от $2,99 до $179,99.</p></div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700"><h3 class="font-bold text-white mb-2">Могу ли я отменить подписку?</h3><p class="text-gray-400 text-sm">Да, ты можешь отменить в любое время без комиссий за отмену. Твой доступ продолжается до конца оплаченного периода. Без лишних вопросов.</p></div></div>
     </div>
   </section>
 
   <!-- Final CTA -->
   <section class="py-20 bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl lg:text-5xl font-bold mb-6" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);" data-i18n="final_cta_title">Ready to Meet Your AI Girlfriend?</h2>
-      <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto" data-i18n="final_cta_subtitle">Join millions of users who have already created their perfect companion. Start your free trial today. No credit card required.</p>
-      <div class="inline-block px-4 py-2 bg-pink-500/20 border border-pink-500/40 rounded-full text-pink-300 text-sm font-medium mb-8" data-i18n="final_cta_badge">🔥 Limited time: Save up to 75% on annual plans</div>
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6" style="text-shadow: 0 0 20px rgba(236,72,153,0.5);">Готов Встретить Свою ИИ Девушку?</h2>
+      <p class="text-xl text-gray-300 mb-4 max-w-2xl mx-auto">Присоединяйся к миллионам пользователей, которые уже создали свою идеальную спутницу. Начни бесплатную пробную версию сегодня. Банковская карта не требуется.</p>
+      <div class="inline-block px-4 py-2 bg-pink-500/20 border border-pink-500/40 rounded-full text-pink-300 text-sm font-medium mb-8">🔥 Ограниченное предложение: Сэкономь до 75% на годовых планах</div>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-12 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow noreferrer noopener" data-i18n="final_cta_button">Create Your AI Girlfriend Now →</a>
+        <a href="/go/dreamgf" class="cta-pulse inline-flex items-center justify-center px-12 py-5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-xl rounded-xl hover:from-pink-600 hover:to-purple-700 transition transform hover:scale-105 shadow-lg shadow-pink-500/30" rel="nofollow sponsored noreferrer noopener">Создай Свою ИИ Девушку Прямо Сейчас →</a>
       </div>
       <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="final_cta_feature_1">Join millions of users</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="final_cta_feature_2">Free trial available</span></span>
-        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span data-i18n="final_cta_feature_3">Cancel anytime</span></span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Присоединяйся к миллионам пользователей</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Бесплатная пробная версия</span>
+        <span class="flex items-center gap-1"><span class="text-green-400">✓</span> <span>Отмена в любое время</span>
       </div>
     </div>
   </section>
@@ -290,233 +514,16 @@
           </div>
         </div>
       </div>
-      <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"></div>
+      <div class="grid md:grid-cols-3 gap-8 mb-8" id="footer-columns"><div><h4 class="text-white font-bold mb-4">Обзор DreamGF AI</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#what-is" class="hover:text-pink-400 transition">Что Такое DreamGF</a></li><li><a href="#features" class="hover:text-pink-400 transition">Функции</a></li><li><a href="#how-it-works" class="hover:text-pink-400 transition">Как Это Работает</a></li><li><a href="#pricing" class="hover:text-pink-400 transition">Цены</a></li><li><a href="#faq" class="hover:text-pink-400 transition">FAQ</a></li></ul></div><div><h4 class="text-white font-bold mb-4">Сравнение</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Replika</a></li><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Character.AI</a></li><li><a href="#" class="hover:text-pink-400 transition">DreamGF vs Candy AI</a></li></ul></div><div><h4 class="text-white font-bold mb-4">Правовая Информация</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="privacy" class="hover:text-pink-400 transition">Политика Конфиденциальности</a></li><li><a href="terms" class="hover:text-pink-400 transition">Условия Обслуживания</a></li><li><a href="affiliate-disclosure" class="hover:text-pink-400 transition">Раскрытие Партнёрской Информации</a></li></ul></div></div>
       <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-        <p data-i18n="footer.copyright">© 2026 DreamGF AI Review. All rights reserved. Not affiliated with DreamGF.ai.</p>
-        <p class="mt-2" data-i18n="footer.disclaimer">Affiliate Disclosure: We earn commissions when you purchase through our links. This does not affect our recommendations.</p>
+        <p>© 2026 Обзор DreamGF AI. Все права защищены. Не аффилирован с DreamGF.ai.</p>
+        <p class="mt-2">Партнёрское раскрытие: Мы получаем комиссии, когда вы совершаете покупки по нашим ссылкам. Это не влияет на наши рекомендации.</p>
       </div>
     </div>
   </footer>
 
   <!-- JSON Injection Script -->
-  <script>
-  (function() {
-    fetch('content.json')
-      .then(r => {
-        if (!r.ok) throw new Error('Failed to load content.json: ' + r.status);
-        return r.json();
-      })
-      .then(c => {
-        // Set meta tags safely
-        const setMeta = (selector, value) => {
-          const el = document.querySelector(selector);
-          if (el && value) el.content = value;
-        };
-        setMeta('meta[name="description"]', c.meta_description);
-        setMeta('meta[name="keywords"]', c.meta_keywords);
-        setMeta('meta[property="og:title"]', c.og_title);
-        setMeta('meta[property="og:description"]', c.og_description);
-        setMeta('meta[name="twitter:title"]', c.twitter_title);
-        setMeta('meta[name="twitter:description"]', c.twitter_description);
-
-        // Simple text injection for data-i18n elements
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-          const key = el.getAttribute('data-i18n');
-          const keys = key.split('.');
-          let value = c;
-          for (const k of keys) {
-            value = value?.[k];
-          }
-          if (value && typeof value === 'string') {
-            if (el.innerHTML.includes('<')) {
-              el.innerHTML = value;
-            } else {
-              el.textContent = value;
-            }
-          }
-        });
-
-        // Render features
-        const featuresGrid = document.getElementById('features-grid');
-        if (featuresGrid && c.features_list) {
-          featuresGrid.innerHTML = c.features_list.map(f => `
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-pink-500/50 transition">
-              <div class="text-3xl mb-3">${f.icon}</div>
-              <h3 class="font-bold text-white mb-2">${f.title}</h3>
-              <p class="text-gray-400 text-sm">${f.desc}</p>
-            </div>
-          `).join('');
-        }
-
-        // Render models
-        const modelsGrid = document.getElementById('models-grid');
-        if (modelsGrid && c.models_list) {
-          modelsGrid.innerHTML = c.models_list.map(m => `
-            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-pink-500/50 transition group">
-              <a href="/go/dreamgf" class="block" rel="nofollow noreferrer noopener">
-                <div class="overflow-hidden">
-                  <img src="/images/${m.image}" alt="${m.alt}" class="w-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
-                </div>
-              </a>
-              <div class="p-5 text-center">
-                <h3 class="text-lg font-bold text-white mb-1">${m.name}</h3>
-                <p class="text-gray-400 text-sm">${m.desc}</p>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render pricing
-        const pricingGrid = document.getElementById('pricing-grid');
-        if (pricingGrid && c.pricing_plans) {
-          pricingGrid.innerHTML = c.pricing_plans.map(p => `
-            <div class="bg-gray-800 rounded-xl p-6 border ${p.highlight ? 'border-pink-500 relative' : 'border-gray-700'} hover:border-pink-500/50 transition">
-              ${p.highlight ? '<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">' + (c.pricing_badge || 'BEST VALUE') + '</div>' : ''}
-              ${p.badge ? '<div class="inline-block px-2 py-0.5 bg-green-500/20 text-green-400 text-xs font-bold rounded mb-2">' + p.badge + '</div>' : ''}
-              <h3 class="font-bold text-white text-lg mb-1">${p.name}</h3>
-              <div class="text-3xl font-bold text-pink-400 mb-1">${p.price}<span class="text-sm text-gray-400">${p.period}</span></div>
-              ${p.old_price ? '<div class="text-sm text-gray-500 line-through mb-1">Was ' + p.old_price + '</div>' : ''}
-              ${p.save ? '<div class="text-xs text-green-400 mb-4">' + p.save + '</div>' : '<div class="mb-4"></div>'}
-              <ul class="space-y-2 text-sm text-gray-300 mb-6">
-                ${p.features.map(f => `<li class="flex items-start gap-2"><span class="text-green-400">✓</span> ${f}</li>`).join('')}
-              </ul>
-              <a href="/go/dreamgf" class="block text-center py-2 ${p.highlight ? 'bg-pink-500 hover:bg-pink-600' : 'border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400'} text-white text-sm font-semibold rounded-lg transition" rel="nofollow noreferrer noopener">${c.pricing_cta}</a>
-            </div>
-          `).join('');
-        }
-
-        // Render pricing features
-        const pricingFeatures = document.getElementById('pricing-features-list');
-        if (pricingFeatures && c.pricing_features_list) {
-          pricingFeatures.innerHTML = c.pricing_features_list.map(f => `
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> ${f}</li>
-          `).join('');
-        }
-
-        // Render comparison list
-        const compareList = document.getElementById('compare-list');
-        if (compareList && c.compare_apps) {
-          compareList.innerHTML = c.compare_apps.map(app => `
-            <div class="bg-gray-800 rounded-xl p-5 border ${app.best === 'BEST OVERALL' ? 'border-pink-500/50' : 'border-gray-700'} hover:border-pink-500/30 transition">
-              <div class="flex flex-col md:flex-row md:items-center gap-4">
-                <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
-                  <div class="w-10 h-10 rounded-full ${app.best === 'BEST OVERALL' ? 'bg-pink-500' : 'bg-gray-700'} flex items-center justify-center text-white font-bold text-sm">#${app.rank}</div>
-                  <div>
-                    <h3 class="font-bold text-white ${app.best === 'BEST OVERALL' ? 'text-pink-400' : ''}">${app.name}</h3>
-                    <div class="text-yellow-400 text-sm">${app.rating}</div>
-                  </div>
-                </div>
-                <div class="flex-1">
-                  <div class="flex flex-wrap items-center gap-2 mb-2">
-                    <span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded">${app.focus}</span>
-                    ${app.best ? `<span class="px-2 py-0.5 ${app.best === 'BEST OVERALL' ? 'bg-pink-500/20 text-pink-300' : 'bg-green-500/20 text-green-300'} text-xs rounded font-medium">${app.best}</span>` : ''}
-                  </div>
-                  <p class="text-gray-400 text-sm">${app.desc}</p>
-                </div>
-                <div class="md:w-32 flex-shrink-0 text-right">
-                  <a href="/go/dreamgf" class="inline-block px-4 py-2 ${app.best === 'BEST OVERALL' ? 'bg-pink-500 hover:bg-pink-600 text-white' : 'border border-gray-600 hover:border-pink-500 text-gray-300 hover:text-pink-400'} text-sm font-semibold rounded-lg transition" rel="nofollow noreferrer noopener">${app.best === 'BEST OVERALL' ? 'Try Free →' : 'See More'}</a>
-                </div>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render testimonials
-        const testimonialsGrid = document.getElementById('testimonials-grid');
-        if (testimonialsGrid && c.testimonials_list) {
-          testimonialsGrid.innerHTML = c.testimonials_list.map(t => `
-            <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
-              <div class="text-yellow-400 mb-3">${t.stars}</div>
-              <p class="text-gray-300 text-sm mb-4">"${t.text}"</p>
-              <div class="text-sm">
-                <span class="text-white font-semibold">${t.name}</span>
-                <span class="text-gray-500">${t.detail}</span>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render safety
-        const safetyGrid = document.getElementById('safety-grid');
-        if (safetyGrid && c.safety_features) {
-          safetyGrid.innerHTML = c.safety_features.map(s => `
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-xl flex-shrink-0">${s.icon}</div>
-              <div>
-                <h3 class="font-bold text-white mb-1">${s.title}</h3>
-                <p class="text-gray-400 text-sm">${s.desc}</p>
-              </div>
-            </div>
-          `).join('');
-        }
-
-        // Render FAQ
-        const faqList = document.getElementById('faq-list');
-        if (faqList && c.faq_list) {
-          faqList.innerHTML = c.faq_list.map(f => `
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
-              <h3 class="font-bold text-white mb-2">${f.q}</h3>
-              <p class="text-gray-400 text-sm">${f.a}</p>
-            </div>
-          `).join('');
-        }
-
-        // Render footer
-        const footerColumns = document.getElementById('footer-columns');
-        if (footerColumns && c.footer && c.footer.columns) {
-          footerColumns.innerHTML = c.footer.columns.map(col => `
-            <div>
-              <h4 class="text-white font-bold mb-4">${col.title}</h4>
-              <ul class="space-y-2 text-sm text-gray-400">
-                ${col.links.map(l => `<li><a href="${l.href}" class="hover:text-pink-400 transition">${l.text}</a></li>`).join('')}
-              </ul>
-            </div>
-          `).join('');
-        }
-        // Language dropdown toggle
-        const langBtn = document.getElementById('lang-dropdown-btn');
-        const langMenu = document.getElementById('lang-dropdown-menu');
-        if (langBtn && langMenu) {
-          langBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            langMenu.classList.toggle('hidden');
-          });
-          document.addEventListener('click', function() {
-            langMenu.classList.add('hidden');
-          });
-          langMenu.addEventListener('click', function(e) {
-            e.stopPropagation();
-          });
-        }
-
-        // Highlight current language
-        const currentPath = window.location.pathname;
-        const currentLang = currentPath === '/' ? 'en' : currentPath.split('/')[1];
-        const langLabels = {
-          en: '🌐 English', fr: '🌐 Français', es: '🌐 Español', de: '🌐 Deutsch',
-          it: '🌐 Italiano', pt: '🌐 Português', sv: '🌐 Svenska', pl: '🌐 Polski',
-          nl: '🌐 Nederlands', ro: '🌐 Română', hu: '🌐 Magyar', hr: '🌐 Hrvatski',
-          tr: '🌐 Türkçe', ar: '🌐 العربية', hi: '🌐 हिन्दी', jp: '🌐 日本語',
-          kr: '🌐 한국어', ru: '🌐 Русский'
-        };
-        const langCurrent = document.getElementById('lang-current');
-        if (langCurrent && langLabels[currentLang]) {
-          langCurrent.textContent = langLabels[currentLang];
-        }
-        document.querySelectorAll('.lang-link').forEach(link => {
-          if (link.dataset.lang === currentLang) {
-            link.classList.remove('text-gray-300', 'hover:bg-gray-700');
-            link.classList.add('bg-pink-600', 'text-white', 'cursor-default');
-            link.removeAttribute('href');
-          }
-        });
-      })
-      .catch(e => {
-        console.error('Content injection failed:', e);
-        // Fallback: show default English text already in HTML
-      });
-  })();
-  </script>
+  
 
 </body>
 </html>

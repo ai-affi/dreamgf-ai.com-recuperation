@@ -287,6 +287,44 @@
     /* Language dropdown */
     #lang-dropdown-menu.hidden{display:none}
   </style>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('lang-dropdown-btn');
+    var menu = document.getElementById('lang-dropdown-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.toggle('hidden');
+      });
+      document.addEventListener('click', function() {
+        menu.classList.add('hidden');
+      });
+      menu.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    }
+    var currentPath = window.location.pathname;
+    var currentLang = currentPath === '/' ? 'en' : currentPath.split('/')[1];
+    var langLabels = {
+      en: '🌐 English', fr: '🌐 Français', es: '🌐 Español', de: '🌐 Deutsch',
+      it: '🌐 Italiano', pt: '🌐 Português', sv: '🌐 Svenska', pl: '🌐 Polski',
+      nl: '🌐 Nederlands', ro: '🌐 Română', hu: '🌐 Magyar', hr: '🌐 Hrvatski',
+      tr: '🌐 Türkçe', ar: '🌐 العربية', hi: '🌐 हिन्दी', jp: '🌐 日本語',
+      kr: '🌐 한국어', ru: '🌐 Русский'
+    };
+    var langCurrent = document.getElementById('lang-current');
+    if (langCurrent && langLabels[currentLang]) {
+      langCurrent.textContent = langLabels[currentLang];
+    }
+    document.querySelectorAll('.lang-link').forEach(function(link) {
+      if (link.dataset.lang === currentLang) {
+        link.classList.remove('text-gray-300', 'hover:bg-gray-700');
+        link.classList.add('bg-pink-600', 'text-white', 'cursor-default');
+        link.removeAttribute('href');
+      }
+    });
+  });
+  </script>
 </head>
 <body class="bg-gray-900 text-white font-sans antialiased">
 
